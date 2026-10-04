@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Primal — Unleash Yourself</title>
+<meta name="description" content="PRIMAL: discover elegance and craftsmanship with an exquisite jewelry collection, designed to inspire and shine.">
+<meta name="theme-color" content="#b9c3cf">
+<style>
+@font-face{font-family:'Aloevera Display';src:url(assets/fonts/AloeveraDisplay-ExtraLight.woff2) format('woff2');font-weight:200;font-style:normal;font-display:block}
+@font-face{font-family:'Aloevera Display';src:url(assets/fonts/AloeveraDisplay-Light.woff2) format('woff2');font-weight:300;font-style:normal;font-display:block}
+@font-face{font-family:'Aloevera Display';src:url(assets/fonts/AloeveraDisplay-Medium.woff2) format('woff2');font-weight:500;font-style:normal;font-display:block}
+@font-face{font-family:'Outfit';src:url(assets/fonts/Outfit-500.woff2) format('woff2');font-weight:500;font-style:normal;font-display:block}
+@font-face{font-family:'TOP LUXURY';src:url(assets/fonts/TOPLUXURY.woff2) format('woff2');font-weight:400;font-style:normal;font-display:block}
+:root{--bg:#b9c3cf;--ink:#1b2f4c;color-scheme:light}
+html,body{background:var(--bg);margin:0}
+body{overflow-x:clip;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:geometricPrecision}
+html.is-locked,html.is-locked body{overflow:hidden}
+.hero{position:relative;height:calc(100vh + var(--track,400vh));height:calc(100svh + var(--track,400vh))}
+.stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;background:var(--bg)}
+.blk{position:absolute;left:0;top:0;width:0;height:0}
+.org{position:absolute;left:0;top:0}
+.blk *{box-sizing:border-box}
+.b,.t,.v,.g{position:absolute}
+.t{margin:0}
+.pl img{display:block}
+.sx{position:absolute;left:0;top:0;width:0;height:0;margin:0;padding:0;list-style:none}
+.blk li{list-style:none;margin:0;padding:0}
+.blk a{color:inherit;text-decoration:none;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.blk a.lk{position:absolute;left:0;top:0;right:0;bottom:0;display:block;border-radius:inherit}
+.blk a:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+.blk *{pointer-events:none}
+.blk .t,.blk .t *,.blk a,.blk a *{pointer-events:auto}
+.v svg{display:block}
+.loader{position:fixed;inset:0;z-index:50;display:grid;place-items:center;background:var(--bg);transition:opacity .9s cubic-bezier(.22,1,.36,1),visibility .9s}
+.loader.is-done{opacity:0;visibility:hidden;pointer-events:none}
+.loader-in{display:grid;justify-items:center;gap:14px;color:var(--ink);font:500 11px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.24em}
+.loader-bar{width:160px;height:1px;background:color-mix(in srgb,var(--ink) 20%,transparent);overflow:hidden}
+.loader-bar i{display:block;height:100%;width:100%;background:var(--ink);transform:scaleX(0);transform-origin:left}
+[data-f="9001:5708"],[data-f="9001:5709"]{mix-blend-mode:normal!important}[data-f="9001:5708"] svg [stroke],[data-f="9001:5709"] svg [stroke]{stroke:#000!important}[data-f="9001:5708"] svg [fill]:not([fill="none"]),[data-f="9001:5709"] svg [fill]:not([fill="none"]){fill:#000!important}
+</style>
+</head>
+<body>
+<div class="loader" id="loader" aria-hidden="true"><div class="loader-in"><span>PRIMAL</span><div class="loader-bar"><i id="loaderBar"></i></div><span id="loaderPct">000</span></div></div>
+<main class="hero" id="hero" aria-label="Primal — Unleash Yourself">
+<div class="stage" id="stage">
+<div class="blk bleed" id="bk0" style="width:1440px;height:810px"><div class="org"><div class="b" id="e1" data-f="9001:5676" data-n="Animation" style="position:absolute;left:0px;top:0px;width:1440px;height:810px;background-color:#000000"></div></div></div>
+<div class="blk bleed" id="bk1" data-k="Background Image"><div class="org" style="left:0px;top:0px"><div class="b" id="e2" data-f="9001:5677" data-n="Background Image" style="position:absolute;left:0px;top:0px;width:1440px;height:810px"><i class="pl" style="position:absolute;inset:0;border-radius:inherit;overflow:hidden;pointer-events:none"><video id="e2v0" class="vid" muted playsinline preload="auto" data-src="assets/video/a5af3797c8.mp4" poster="assets/video/a5af3797c8.jpg" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></video></i></div></div></div>
+<div class="blk" id="bk2" data-k="Footer Background"><div class="org" style="left:0px;top:-650.046px"><div class="b" id="e3" data-f="9001:5678" data-n="Footer Background" style="position:absolute;left:0;top:0;width:1440px;height:159.954px;transform-origin:0 0;transform:translate(0px,810px) rotate(0rad) scale(1,-1);background-color:rgba(255,255,255,0.01)"><i class="bb" style="position:absolute;inset:0;border-radius:inherit;pointer-events:none;-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);-webkit-mask:linear-gradient(180deg, rgba(0,0,0,1), rgba(0,0,0,0));mask:linear-gradient(180deg, rgba(0,0,0,1), rgba(0,0,0,0))"></i></div></div></div>
+<div class="blk" id="bk3" data-k="Music Button"><div class="org" style="left:-1382.206px;top:-750.086px"><a href="#" aria-label="Music" class="b" id="e4" data-f="9001:5679" data-n="Music Button" style="position:absolute;left:1382.206px;top:750.086px;width:53.933px;height:52.193px;background-color:rgba(74,92,115,0.01)"><i class="bb" style="position:absolute;border-radius:inherit;pointer-events:none;-webkit-backdrop-filter:blur(50px);backdrop-filter:blur(50px);inset:-5px;-webkit-mask:linear-gradient(90deg,transparent,#000 10px,#000 calc(100% - 10px),transparent),linear-gradient(180deg,transparent,#000 10px,#000 calc(100% - 10px),transparent);-webkit-mask-composite:source-in;mask:linear-gradient(90deg,transparent,#000 10px,#000 calc(100% - 10px),transparent),linear-gradient(180deg,transparent,#000 10px,#000 calc(100% - 10px),transparent);mask-composite:intersect"></i></a></div></div>
+<div class="blk" id="bk4" data-k="PRIMAL"><div class="org" style="left:-121px;top:-197.954px"><div class="g" id="e5" data-f="9001:5680" data-n="PRIMAL" style="position:absolute;left:0;top:0;width:0;height:0"><div class="b" id="e6" data-f="9001:5681" data-n="PRI CONTAINER" style="position:absolute;left:121px;top:197.954px;width:494.5px;height:223px"><div class="g" id="e7" data-f="9001:5682" data-n="PRI" style="position:absolute;left:0;top:0;width:0;height:0"><div class="t" id="e8" data-f="9001:5683" style="position:absolute;left:417.5px;top:0px;width:77px;height:223px;mix-blend-mode:difference;white-space:pre;text-align:left;text-box:trim-both cap alphabetic;filter:blur(0px);font-family:'TOP LUXURY',system-ui,sans-serif;font-weight:400;font-size:320px;line-height:0.84;letter-spacing:-0.02em;text-transform:uppercase;color:#c58878">I</div><div class="t" id="e9" data-f="9001:5684" style="position:absolute;left:200.5px;top:0px;width:224px;height:223px;mix-blend-mode:difference;white-space:pre;text-align:left;text-box:trim-both cap alphabetic;filter:blur(0px);font-family:'TOP LUXURY',system-ui,sans-serif;font-weight:400;font-size:320px;line-height:0.84;letter-spacing:-0.02em;text-transform:uppercase;color:#c58878">R</div><div class="t" id="e10" data-f="9001:5685" style="position:absolute;left:0px;top:0px;width:207px;height:223px;mix-blend-mode:difference;white-space:pre;text-align:left;text-box:trim-both cap alphabetic;filter:blur(0px);font-family:'TOP LUXURY',system-ui,sans-serif;font-weight:400;font-size:320px;line-height:0.84;letter-spacing:-0.02em;text-transform:uppercase;color:#c58878">P</div></div></div><div class="b" id="e11" data-f="9001:5686" data-n="MAL CONTAINER" style="position:absolute;left:615.5px;top:197.954px;width:704.5px;height:223px"><div class="g" id="e12" data-f="9001:5687" data-n="MAL" style="position:absolute;left:0;top:0;width:0;height:0"><div class="t" id="e13" data-f="9001:5688" style="position:absolute;left:497.5px;top:0px;width:207px;height:223px;mix-blend-mode:difference;white-space:pre;text-align:left;text-box:trim-both cap alphabetic;filter:blur(0px);font-family:'TOP LUXURY',system-ui,sans-serif;font-weight:400;font-size:320px;line-height:0.84;letter-spacing:-0.02em;text-transform:uppercase;color:#c58878">L</div><div class="t" id="e14" data-f="9001:5689" style="position:absolute;left:293.5px;top:0px;width:211px;height:223px;mix-blend-mode:difference;white-space:pre;text-align:left;text-box:trim-both cap alphabetic;filter:blur(0px);font-family:'TOP LUXURY',system-ui,sans-serif;font-weight:400;font-size:320px;line-height:0.84;letter-spacing:-0.02em;text-transform:uppercase;color:#c58878">A</div><div class="t" id="e15" data-f="9001:5690" style="position:absolute;left:0px;top:0px;width:300px;height:223px;mix-blend-mode:difference;white-space:pre;text-align:left;text-box:trim-both cap alphabetic;filter:blur(0px);font-family:'TOP LUXURY',system-ui,sans-serif;font-weight:400;font-size:320px;line-height:0.84;letter-spacing:-0.02em;text-transform:uppercase;color:#c58878">M</div></div></div></div></div></div>
+<div class="blk" id="bk5" data-k="Product Description Container"><div class="org" style="left:-33px;top:-625px"><div class="g" id="e16" data-f="9001:5691" data-n="Product Description Container" style="position:absolute;left:0;top:0;width:0;height:0"><div class="t" id="e17" data-f="9001:5692" style="position:absolute;left:33px;top:625px;width:183px;height:105px;mix-blend-mode:difference;white-space:pre-wrap;overflow-wrap:break-word;text-align:left;font-family:'Aloevera Display',system-ui,sans-serif;font-weight:200;font-size:38px;line-height:0.93;letter-spacing:-0.01em;color:#c58878">Unleash your inner beast.</div><div class="t" id="e18" data-f="9001:5693" style="position:absolute;left:285px;top:634px;width:129px;height:96px;mix-blend-mode:difference;white-space:pre-wrap;overflow-wrap:break-word;text-align:left;font-family:'Aloevera Display',system-ui,sans-serif;font-weight:300;font-size:14px;line-height:1.17;color:#c58878">Discover elegance and craftsmanship with our exquisite jewelry collection, designed to inspire and shine.</div></div></div></div>
+<div class="blk" id="bk6" data-k="Woman Necklace Image 2"><div class="org" style="left:-1249px;top:-432.954px"><div class="b" id="e19" data-f="9001:5694" data-n="Woman Necklace Image 2" style="position:absolute;left:1249px;top:432.954px;width:161px;height:201px;border-radius:40px"><i class="pl" style="position:absolute;inset:0;border-radius:inherit;overflow:hidden;pointer-events:none"><img src="assets/img/1c8b46370c.webp" alt="" decoding="async" style="position:absolute;left:0;top:0;width:1122px;height:1402px;max-width:none;transform-origin:0 0;transform:matrix(0.192111,0,0,0.192111,-27.274,-34.17)"></i></div></div></div>
+<div class="blk" id="bk7" data-k="Woman Necklace Image 1"><div class="org" style="left:-1061px;top:-362.954px"><div class="b" id="e20" data-f="9001:5695" data-n="Woman Necklace Image 1" style="position:absolute;left:1061px;top:362.954px;width:161px;height:201px;border-radius:40px"><i class="pl" style="position:absolute;inset:0;border-radius:inherit;overflow:hidden;pointer-events:none"><img src="assets/img/47d81e9d82.webp" alt="" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover"></i></div></div></div>
+<div class="blk" id="bk8" data-k="Jewelry Buttons"><div class="org" style="left:-1315px;top:-673.954px"><a href="#" aria-label="Jewel 2" class="b" id="e21" data-f="9001:5696" data-n="Jewelry Buttons" style="position:absolute;left:1315px;top:673.954px;width:80px;height:80px;border-radius:66px;overflow:hidden;background-color:#ffffff"><div class="b" id="e22" data-f="9001:5697" data-n="Jewelry Image 2" style="position:absolute;left:0;top:0;width:42.667px;height:44.667px;transform-origin:0 0;transform:translate(17.333px,61.333px) rotate(-1.570796rad)"><i class="pl" style="position:absolute;inset:0;border-radius:inherit;overflow:hidden;pointer-events:none"><img src="assets/img/29a1fd1750-7cb199.webp" alt="" decoding="async" style="position:absolute;left:0;top:0;width:1968px;height:2464px;max-width:none;transform-origin:0 0;transform:matrix(0.051337,0,0,0.051378,-31.182,-43.631)"></i></div></a></div></div>
+<div class="blk" id="bk9" data-k="Jewelry Buttons"><div class="org" style="left:-1218px;top:-673.954px"><a href="#" aria-label="Jewel 1" class="b" id="e23" data-f="9001:5698" data-n="Jewelry Buttons" style="position:absolute;left:1218px;top:673.954px;width:80px;height:80px;border-radius:66px;overflow:hidden;background-color:#ffffff"><div class="b" id="e24" data-f="9001:5699" data-n="Jewelry Image 1" style="position:absolute;left:18px;top:17px;width:44px;height:46px"><i class="pl" style="position:absolute;inset:0;border-radius:inherit;overflow:hidden;pointer-events:none"><img src="assets/img/168e446c4d-83538e.webp" alt="" decoding="async" style="position:absolute;left:0;top:0;width:1968px;height:2464px;max-width:none;transform-origin:0 0;transform:matrix(0.022358,0,0,0.028455,0,-12.057)"></i></div></a></div></div>
+<div class="blk" id="bk10" data-k="Explore Button"><div class="org" style="left:-626px;top:-610px"><a href="#" class="g" id="e25" data-f="9001:5700" data-n="Explore Button" style="position:absolute;left:0;top:0;width:0;height:0;transform-origin:720.191px 704.191px"><div class="b" id="e26" data-f="9001:5701" data-n="Ellipse 2" style="position:absolute;left:626px;top:610px;width:188.383px;height:188.383px;opacity:0.5;border-radius:50%"><i class="sk" style="position:absolute;inset:-1px;pointer-events:none;border-radius:50%;border:1px solid rgba(255,255,255,0.8)"></i></div><div class="b" id="e27" data-f="9001:5702" data-n="Ellipse 1" style="position:absolute;left:659.469px;top:643.469px;width:121.444px;height:121.444px;border-radius:50%;background-color:#ffffff"></div><div class="t" id="e28" data-f="9001:5703" style="position:absolute;left:686.691px;top:694.691px;width:67px;height:17px;white-space:pre;text-align:center;font-family:'Outfit',system-ui,sans-serif;font-weight:500;font-size:15px;line-height:1.14;text-transform:uppercase;color:#34414b">Explore</div></a></div></div>
+<div class="blk" id="bk11" data-k="Top Navigation Bar"><div class="org" style="left:-19.508px;top:-14px"><div class="g" id="e29" data-f="9001:5704" data-n="Top Navigation Bar" style="position:absolute;left:0;top:0;width:0;height:0;transform-origin:711.754px 38px"><a href="#" aria-label="Primal — Home" class="g" id="e30" data-f="9001:5705" data-n="Logo Container" style="position:absolute;left:0;top:0;width:0;height:0"><div class="b" id="e31" data-f="9001:5706" data-n="Logo Image" style="position:absolute;left:19.508px;top:21px;width:26.656px;height:32.928px;mix-blend-mode:multiply"><i class="pl" style="position:absolute;inset:0;border-radius:inherit;overflow:hidden;pointer-events:none"><img src="assets/img/a73bf73aad-a.webp" alt="" decoding="async" style="position:absolute;left:0;top:0;width:2048px;height:2048px;max-width:none;transform-origin:0 0;transform:matrix(0.029675,0,0,0.029675,-17.06,-13.924)"></i></div></a><div class="b" id="e32" data-f="9001:5707" data-n="Navigation Actions" style="position:absolute;left:1161px;top:14px;width:243px;height:48px"><nav class="sx" aria-label="Shop actions"><ul class="sx"><li class="b" id="e33" data-f="9001:5708" data-n="MagnifyingGlass" style="position:absolute;left:0px;top:16px;width:16px;height:16px;mix-blend-mode:difference"><a href="#" class="lk" aria-label="Search"><div class="v" id="e35" data-f="I9001:5708;8899:47244" data-n="Vector" style="position:absolute;left:1.33px;top:1.33px;width:11.34px;height:11.34px"><svg aria-hidden="true" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;overflow:visible" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.67078 10.6708C8.4322 10.6708 10.6708 8.4322 10.6708 5.67078C10.6708 2.90935 8.4322 0.670776 5.67078 0.670776C2.90935 0.670776 0.670776 2.90935 0.670776 5.67078C0.670776 8.4322 2.90935 10.6708 5.67078 10.6708Z" stroke="#777777" stroke-width="1.34167" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div><div class="v" id="e36" data-f="I9001:5708;8899:47245" data-n="Vector" style="position:absolute;left:9.86px;top:9.86px;width:4.81px;height:4.81px"><svg aria-hidden="true" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;overflow:visible" width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.670776 0.670776L4.13515 4.13515" stroke="#777777" stroke-width="1.34167" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div></a></li><li class="b" id="e37" data-f="9001:5709" data-n="HandbagSimple" style="position:absolute;left:55px;top:16px;width:16px;height:16px"><a href="#" class="lk" aria-label="Bag"><div class="v" id="e39" data-f="I9001:5709;8899:68755" data-n="Vector" style="position:absolute;left:0.83px;top:3.83px;width:14.34px;height:9.84px"><svg aria-hidden="true" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;overflow:visible" width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.2735 0.670776H2.06479C1.94189 0.670761 1.82323 0.715673 1.73114 0.797057C1.63905 0.878442 1.57989 0.990684 1.56479 1.11265L0.674168 8.61265C0.665929 8.68302 0.672742 8.75434 0.694153 8.82188C0.715564 8.88942 0.751086 8.95164 0.798363 9.00442C0.84564 9.05719 0.903594 9.09931 0.968383 9.12799C1.03317 9.15667 1.10332 9.17126 1.17417 9.17078H13.1642C13.235 9.17126 13.3052 9.15667 13.37 9.12799C13.4347 9.09931 13.4927 9.05719 13.54 9.00442C13.5872 8.95164 13.6228 8.88942 13.6442 8.82188C13.6656 8.75434 13.6724 8.68302 13.6642 8.61265L12.7735 1.11265C12.7584 0.990684 12.6993 0.878442 12.6072 0.797057C12.5151 0.715673 12.3964 0.670761 12.2735 0.670776Z" stroke="#1B2F4C" stroke-width="1.34167" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div><div class="v" id="e40" data-f="I9001:5709;8899:68756" data-n="Vector" style="position:absolute;left:4.83px;top:0.83px;width:6.34px;height:4.34px"><svg aria-hidden="true" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;overflow:visible" width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.670776 3.67078V3.17078C0.670776 2.50774 0.934168 1.87185 1.40301 1.40301C1.87185 0.934168 2.50774 0.670776 3.17078 0.670776C3.83382 0.670776 4.4697 0.934168 4.93854 1.40301C5.40738 1.87185 5.67078 2.50774 5.67078 3.17078V3.67078" stroke="#1B2F4C" stroke-width="1.34167" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div></a></li><li class="b" id="e41" data-f="9001:5710" data-n="Buy Now Container" style="position:absolute;left:110px;top:0px;width:133px;height:48px;border-radius:999px;background-color:#ffffff"><a href="#" class="lk"><div class="t" id="e42" data-f="9001:5711" style="position:absolute;left:22px;top:19.5px;width:63px;height:9px;white-space:pre;text-align:right;text-box:trim-both cap alphabetic;font-family:'Aloevera Display',system-ui,sans-serif;font-weight:500;font-size:14px;line-height:1.14;text-transform:uppercase;color:#1b2f4c">Buy Now</div><div class="b" id="e43" data-f="9001:5712" data-n="HandbagSimple" style="position:absolute;left:95px;top:16px;width:16px;height:16px"><div class="v" id="e45" data-f="I9001:5712;8899:68755" data-n="Vector" style="position:absolute;left:0.83px;top:3.83px;width:14.34px;height:9.84px"><svg aria-hidden="true" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;overflow:visible" width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.2735 0.670776H2.06479C1.94189 0.670761 1.82323 0.715673 1.73114 0.797057C1.63905 0.878442 1.57989 0.990684 1.56479 1.11265L0.674168 8.61265C0.665929 8.68302 0.672742 8.75434 0.694153 8.82188C0.715564 8.88942 0.751086 8.95164 0.798363 9.00442C0.84564 9.05719 0.903594 9.09931 0.968383 9.12799C1.03317 9.15667 1.10332 9.17126 1.17417 9.17078H13.1642C13.235 9.17126 13.3052 9.15667 13.37 9.12799C13.4347 9.09931 13.4927 9.05719 13.54 9.00442C13.5872 8.95164 13.6228 8.88942 13.6442 8.82188C13.6656 8.75434 13.6724 8.68302 13.6642 8.61265L12.7735 1.11265C12.7584 0.990684 12.6993 0.878442 12.6072 0.797057C12.5151 0.715673 12.3964 0.670761 12.2735 0.670776Z" stroke="#1B2F4C" stroke-width="1.34167" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div><div class="v" id="e46" data-f="I9001:5712;8899:68756" data-n="Vector" style="position:absolute;left:4.83px;top:0.83px;width:6.34px;height:4.34px"><svg aria-hidden="true" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;overflow:visible" width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.670776 3.67078V3.17078C0.670776 2.50774 0.934168 1.87185 1.40301 1.40301C1.87185 0.934168 2.50774 0.670776 3.17078 0.670776C3.83382 0.670776 4.4697 0.934168 4.93854 1.40301C5.40738 1.87185 5.67078 2.50774 5.67078 3.17078V3.67078" stroke="#1B2F4C" stroke-width="1.34167" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div></div></a></li></ul></nav></div></div></div></div>
+<div class="blk" id="bk12" data-k="Unleash yourself"><div class="org" style="left:-200px;top:-102px"><div class="t" id="e47" data-f="9001:5713" style="position:absolute;left:200px;top:102px;width:1040px;height:70px;mix-blend-mode:difference;white-space:pre;text-align:center;text-box:trim-both cap alphabetic;font-family:'TOP LUXURY',system-ui,sans-serif;font-weight:400;font-size:100px;line-height:0.84;letter-spacing:-0.02em;text-transform:uppercase;color:#c58878">Unleash yourself</div></div></div>
+<div class="blk" id="bk13" data-k="cards"><div class="org" style="left:-366px;top:-457px"><div class="g" id="e48" data-f="9001:5714" data-n="cards" style="position:absolute;left:0;top:0;width:0;height:0"><ul class="sx"><li class="g" id="e49" data-f="9001:5715" data-n="card1" style="position:absolute;left:0;top:0;width:0;height:0;transform-origin:466px 617.5px"><a href="#" class="lk"><div class="v" id="e50" data-f="9001:5716" data-n="Subtract" style="position:absolute;left:366px;top:457px;width:200px;height:321px"><svg aria-hidden="true" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;overflow:visible" width="200" height="321" viewBox="0 0 200 321" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M116 31.5C116 48.897 130.103 63 147.5 63H160C182.091 63 200 80.9086 200 103V281C200 303.091 182.091 321 160 321H40C17.9086 321 0 303.091 0 281V40C1.90082e-06 17.9086 17.9086 3.2213e-07 40 0H84.5C101.897 0 116 14.103 116 31.5Z" fill="white"/>
+</svg>
+</div><div class="t" id="e51" data-f="9001:5719" style="position:absolute;left:386.486px;top:633px;width:90px;height:52px;mix-blend-mode:difference;white-space:pre;text-align:left;font-family:'Aloevera Display',system-ui,sans-serif;font-weight:200;font-size:28px;line-height:0.93;letter-spacing:-0.01em;font-feature-settings:'zero' 1;color:#c58878">Ocean
+Heart</div><div class="t" id="e52" data-f="9001:5720" style="position:absolute;left:386px;top:698px;width:160px;height:48px;mix-blend-mode:difference;white-space:pre-wrap;overflow-wrap:break-word;text-align:left;font-family:'Aloevera Display',system-ui,sans-serif;font-weight:300;font-size:14px;line-height:1.17;font-feature-settings:'zero' 1;color:#c58878">A stunning jewel ring that captures the essence of the sea.</div><div class="b" id="e53" data-f="9001:5721" data-n="Frame 42" style="position:absolute;left:366px;top:457px;width:200px;height:162px;border-radius:40px 40px 0px 40px;overflow:hidden"><div class="b" id="e54" data-f="9001:5722" data-n="a8be356d-2bfc-4da7-a692-993957fb52c3-2026-06-30 5" style="position:absolute;left:-25px;top:-159px;width:371px;height:321px;border-radius:40px 0px 0px 0px"><i class="pl" style="position:absolute;inset:0;border-radius:inherit;overflow:hidden;pointer-events:none"><img src="assets/img/eebd383d3e-5ccc07.webp" alt="" decoding="async" style="position:absolute;left:0;top:0;width:2880px;height:2880px;max-width:none;transform-origin:0 0;transform:matrix(0.285267,0,0,0.264583,-428.57,-397)"></i></div></div><div class="g" id="e55" data-f="9001:5723" data-n="Group 44" style="position:absolute;left:0;top:0;width:0;height:0"><div class="b" id="e56" data-f="9001:5724" data-n="Ellipse 13" style="position:absolute;left:494px;top:464px;width:44.785px;height:44.785px;border-radius:50%;background-color:#ffffff"></div><div class="g" id="e57" data-f="9001:5725" data-n="Group 45" style="position:absolute;left:0;top:0;width:0;height:0"><div class="b" id="e58" data-f="9001:5726" data-n="Ellipse 15" style="position:absolute;left:0;top:0;width:2.71px;height:2.71px;transform-origin:0 0;transform:translate(512.667px,481.332px) rotate(0.785398rad);border-radius:50%;background-color:#0056a1"></div><div class="b" id="e59" data-f="9001:5727" data-n="Ellipse 17" style="position:absolute;left:0;top:0;width:2.71px;height:2.71px;transform-origin:0 0;transform:translate(519.333px,487.998px) rotate(0.785398rad);border-radius:50%;background-color:#0056a1"></div><div class="b" id="e60" data-f="9001:5728" data-n="Ellipse 16" style="position:absolute;left:0;top:0;width:2.71px;height:2.71px;transform-origin:0 0;transform:translate(519.333px,481.332px) rotate(0.785398rad);border-radius:50%;background-color:#0056a1"></div></div></div></a></li><li class="g" id="e61" data-f="9001:5729" data-n="card2" style="position:absolute;left:0;top:0;width:0;height:0;transform-origin:708px 617.5px"><a href="#" class="lk"><div class="v" id="e62" data-f="9001:5730" data-n="Subtract" style="position:absolute;left:608px;top:457px;width:200px;height:321px"><svg aria-hidden="true" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;overflow:visible" width="200" height="321" viewBox="0 0 200 321" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M116 31.5C116 48.897 130.103 63 147.5 63H160C182.091 63 200 80.9086 200 103V281C200 303.091 182.091 321 160 321H40C17.9086 321 0 303.091 0 281V40C1.90082e-06 17.9086 17.9086 3.2213e-07 40 0H84.5C101.897 0 116 14.103 116 31.5Z" fill="white"/>
+</svg>
+</div><div class="t" id="e63" data-f="9001:5733" style="position:absolute;left:628.486px;top:633px;width:120px;height:52px;mix-blend-mode:difference;white-space:pre;text-align:left;font-family:'Aloevera Display',system-ui,sans-serif;font-weight:200;font-size:28px;line-height:0.93;letter-spacing:-0.01em;font-feature-settings:'zero' 1;color:#c58878">Sapphire 
+Tide</div><div class="t" id="e64" data-f="9001:5734" style="position:absolute;left:628px;top:698px;width:160px;height:48px;mix-blend-mode:difference;white-space:pre-wrap;overflow-wrap:break-word;text-align:left;font-family:'Aloevera Display',system-ui,sans-serif;font-weight:300;font-size:14px;line-height:1.17;font-feature-settings:'zero' 1;color:#c58878">A radiant necklace inspired by the rhythm of blue waves.</div><div class="b" id="e65" data-f="9001:5735" data-n="Frame 43" style="position:absolute;left:608px;top:457px;width:200px;height:162px;border-radius:40px 40px 0px 40px;overflow:hidden"><div class="b" id="e66" data-f="9001:5736" data-n="a8be356d-2bfc-4da7-a692-993957fb52c3-2026-06-30 5" style="position:absolute;left:-25px;top:-159px;width:371px;height:321px"><i class="pl" style="position:absolute;inset:0;border-radius:inherit;overflow:hidden;pointer-events:none"><img src="assets/img/eebd383d3e-5ccc07.webp" alt="" decoding="async" style="position:absolute;left:0;top:0;width:2880px;height:2880px;max-width:none;transform-origin:0 0;transform:matrix(0.255518,0,0,0.245977,-364.892,0)"></i></div></div><div class="g" id="e67" data-f="9001:5737" data-n="Group 44" style="position:absolute;left:0;top:0;width:0;height:0"><div class="b" id="e68" data-f="9001:5738" data-n="Ellipse 13" style="position:absolute;left:736px;top:464px;width:44.785px;height:44.785px;border-radius:50%;background-color:#ffffff"></div><div class="g" id="e69" data-f="9001:5739" data-n="Group 45" style="position:absolute;left:0;top:0;width:0;height:0"><div class="b" id="e70" data-f="9001:5740" data-n="Ellipse 15" style="position:absolute;left:0;top:0;width:2.71px;height:2.71px;transform-origin:0 0;transform:translate(754.667px,481.331px) rotate(0.785398rad);border-radius:50%;background-color:#0056a1"></div><div class="b" id="e71" data-f="9001:5741" data-n="Ellipse 17" style="position:absolute;left:0;top:0;width:2.71px;height:2.71px;transform-origin:0 0;transform:translate(761.333px,487.998px) rotate(0.785398rad);border-radius:50%;background-color:#0056a1"></div><div class="b" id="e72" data-f="9001:5742" data-n="Ellipse 16" style="position:absolute;left:0;top:0;width:2.71px;height:2.71px;transform-origin:0 0;transform:translate(761.333px,481.331px) rotate(0.785398rad);border-radius:50%;background-color:#0056a1"></div></div></div></a></li><li class="g" id="e73" data-f="9001:5743" data-n="card3" style="position:absolute;left:0;top:0;width:0;height:0;transform-origin:950px 617.5px"><a href="#" class="lk"><div class="v" id="e74" data-f="9001:5744" data-n="Subtract" style="position:absolute;left:850px;top:457px;width:200px;height:321px"><svg aria-hidden="true" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;overflow:visible" width="200" height="321" viewBox="0 0 200 321" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M116 31.5C116 48.897 130.103 63 147.5 63H160C182.091 63 200 80.9086 200 103V281C200 303.091 182.091 321 160 321H40C17.9086 321 0 303.091 0 281V40C1.90082e-06 17.9086 17.9086 3.2213e-07 40 0H84.5C101.897 0 116 14.103 116 31.5Z" fill="white"/>
+</svg>
+</div><div class="t" id="e75" data-f="9001:5747" style="position:absolute;left:870.486px;top:633px;width:87px;height:52px;mix-blend-mode:difference;white-space:pre;text-align:left;font-family:'Aloevera Display',system-ui,sans-serif;font-weight:200;font-size:28px;line-height:0.93;letter-spacing:-0.01em;font-feature-settings:'zero' 1;color:#c58878">Crystal
+Drop</div><div class="t" id="e76" data-f="9001:5748" style="position:absolute;left:870px;top:698px;width:160px;height:48px;mix-blend-mode:difference;white-space:pre-wrap;overflow-wrap:break-word;text-align:left;font-family:'Aloevera Display',system-ui,sans-serif;font-weight:300;font-size:14px;line-height:1.17;font-feature-settings:'zero' 1;color:#c58878">A delicate jewel piece with drops of ocean-blue light.</div><div class="b" id="e77" data-f="9001:5749" data-n="Frame 43" style="position:absolute;left:850px;top:457px;width:200px;height:162px;border-radius:40px 40px 0px 40px;overflow:hidden"><div class="b" id="e78" data-f="9001:5750" data-n="a8be356d-2bfc-4da7-a692-993957fb52c3-2026-06-30 5" style="position:absolute;left:-85px;top:-203px;width:449px;height:389px"><i class="pl" style="position:absolute;inset:0;border-radius:inherit;overflow:hidden;pointer-events:none"><img src="assets/img/eebd383d3e-5ccc07.webp" alt="" decoding="async" style="position:absolute;left:0;top:0;width:2880px;height:2880px;max-width:none;transform-origin:0 0;transform:matrix(0.319129,0,0,0.270139,0,-389)"></i></div></div><div class="g" id="e79" data-f="9001:5751" data-n="Group 44" style="position:absolute;left:0;top:0;width:0;height:0"><div class="b" id="e80" data-f="9001:5752" data-n="Ellipse 13" style="position:absolute;left:978px;top:464px;width:44.785px;height:44.785px;border-radius:50%;background-color:#ffffff"></div><div class="g" id="e81" data-f="9001:5753" data-n="Group 45" style="position:absolute;left:0;top:0;width:0;height:0"><div class="b" id="e82" data-f="9001:5754" data-n="Ellipse 15" style="position:absolute;left:0;top:0;width:2.71px;height:2.71px;transform-origin:0 0;transform:translate(996.667px,481.332px) rotate(0.785398rad);border-radius:50%;background-color:#0056a1"></div><div class="b" id="e83" data-f="9001:5755" data-n="Ellipse 17" style="position:absolute;left:0;top:0;width:2.71px;height:2.71px;transform-origin:0 0;transform:translate(1003.333px,487.998px) rotate(0.785398rad);border-radius:50%;background-color:#0056a1"></div><div class="b" id="e84" data-f="9001:5756" data-n="Ellipse 16" style="position:absolute;left:0;top:0;width:2.71px;height:2.71px;transform-origin:0 0;transform:translate(1003.333px,481.332px) rotate(0.785398rad);border-radius:50%;background-color:#0056a1"></div></div></div></a></li></ul></div></div></div>
+</div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js"></script>
+<script>window.SCENE={"frame":{"w":1440,"h":810},"E":[["l"],["b",0,1.0712,1,1],["b",0,1.07,1,1],["b",0,0,1,-0.03],["b",0.5,0,0.5,1],["b",0,0,0,1],["b",0,1.05,0.5,1],["b",0,1.0521,0.5,1]],"els":[{"id":"e8","m":"lt","b":{"x":417.5,"y":0,"w":77,"h":223,"a":0.0,"f":false,"o":1},"t":{"o":[[0.7602,0,4],[1.3941,1,4]],"tx":[[0.7602,0,0],[5.957,0,5]],"ty":[[0.7602,245.0458984375,0],[5.957,0,5]]}},{"id":"e9","m":"lt","b":{"x":200.5,"y":0,"w":224,"h":223,"a":0.0,"f":false,"o":1},"t":{"o":[[0.632,0,4],[1.2646,1,4]],"tx":[[0.6377,0,0],[5.8235,0,5]],"ty":[[0.6377,245.0458984375,0],[5.8235,0,5]]}},{"id":"e10","m":"lt","b":{"x":0,"y":0,"w":207,"h":223,"a":0.0,"f":false,"o":1},"t":{"o":[[0.4857,0,4],[1.1189,1,4]],"tx":[[0.4857,0,0],[5.6772,0,5]],"ty":[[0.4857,245.0458984375,0],[5.6772,0,5]]}},{"id":"e6","m":"lt","b":{"x":121,"y":197.954,"w":494.5,"h":223,"a":0.0,"f":false,"o":1},"t":{"tx":[[2.4784,0,0],[4.239,-121,1],[4.4517,-121,0],[6.239,-271,2],[7.854,-271,0],[9.7938,-596,3]],"ty":[[2.4784,0,0],[4.364,0,1]]}},{"id":"e13","m":"lt","b":{"x":497.5,"y":0,"w":207,"h":223,"a":0.0,"f":false,"o":1},"t":{"o":[[1.1189,0,4],[1.7474,1,4]],"tx":[[1.1189,0,0],[6.2716,0,5]],"ty":[[1.1189,245.0458984375,0],[6.2716,0,5]]}},{"id":"e14","m":"lt","b":{"x":293.5,"y":0,"w":211,"h":223,"a":0.0,"f":false,"o":1},"t":{"o":[[0.9973,0,4],[1.6241,1,4]],"tx":[[0.9973,0,0],[6.1365,0,5]],"ty":[[0.9973,245.0458984375,0],[6.1365,0,5]]}},{"id":"e15","m":"lt","b":{"x":0,"y":0,"w":300,"h":223,"a":0.0,"f":false,"o":1},"t":{"o":[[0.8785,0,4],[1.5046,1,4]],"tx":[[0.8785,0,0],[6.012,0,5]],"ty":[[0.8785,245.0458984375,0],[6.012,0,5]]}},{"id":"e11","m":"lt","b":{"x":615.5,"y":197.954,"w":704.5,"h":223,"a":0.0,"f":false,"o":1},"t":{"tx":[[2.4752,0,0],[4.2105,129.5,2],[4.4397,129.5,0],[6.239,319.5,2],[7.8697,319.5,0],[9.7938,824.5,3]],"ty":[[2.4752,0,0],[4.2105,0,2],[4.4397,0,0],[6.239,0,2],[7.8697,0,0],[9.7938,0,3]]}},{"id":"e17","m":"lt","b":{"x":33,"y":625,"w":183,"h":105,"a":0.0,"f":false,"o":1},"t":{"o":[[2.496,0,4],[3.0053,1,4]],"tx":[[2.496,0,0],[3.6472,0,1]],"ty":[[2.496,62,0],[3.6472,0,1]]}},{"id":"e18","m":"lt","b":{"x":285,"y":634,"w":129,"h":96,"a":0.0,"f":false,"o":1},"t":{"o":[[2.6755,0,4],[3.1771,1,4]],"tx":[[2.6755,0,0],[3.7836,0,1]],"ty":[[2.6755,62,0],[3.7836,0,1]]}},{"id":"e16","m":"g","b":{"o":1},"t":{"o":[[7.8565,1,4],[8.0655,0,4]]},"org":[223.5,677.5]},{"id":"e19","m":"lt","b":{"x":1249,"y":432.954,"w":161,"h":201,"a":0.0,"f":false,"o":1},"t":{"o":[[2.514,0,4],[2.8244,1,4],[7.885,1,4],[8.328,0,4]],"tx":[[2.514,0,0],[4.2093,0,6],[7.8898,0,0],[9.235,0,0],[9.2408,0,1]],"ty":[[2.514,92.0458984375,0],[4.2093,0,6],[7.8898,0,0],[9.235,-344.953857421875,0],[9.2408,-123.9541015625,1]]}},{"id":"e20","m":"lt","b":{"x":1061,"y":362.954,"w":161,"h":201,"a":0.0,"f":false,"o":1},"t":{"o":[[2.6755,0,4],[2.9808,1,4],[7.894,1,4],[8.3099,0,4]],"ty":[[2.6755,114.0458984375,0],[4.2078,0,7],[7.873,0,0],[9.234,-137.9541015625,1]]}},{"id":"e21","m":"lt","b":{"x":1315,"y":673.954,"w":80,"h":80,"a":0.0,"f":false,"o":1},"t":{"tx":[[2.905,0,0],[3.879,0,1]],"ty":[[2.905,164.0458984375,0],[3.879,0,1]]}},{"id":"e23","m":"lt","b":{"x":1218,"y":673.954,"w":80,"h":80,"a":0.0,"f":false,"o":1},"t":{"tx":[[3.0964,0,0],[4.0704,0,1]],"ty":[[3.0964,164.0458984375,0],[4.0704,0,1]]}},{"id":"e25","m":"g","b":{"o":1},"t":{"tx":[[9.234,0,0],[10.1135,0,1]],"ty":[[9.234,0,0],[10.1135,210,1]]},"org":[720.19140625,704.19140625]},{"id":"e29","m":"g","b":{"o":1},"t":{"tx":[[0,0,0],[1.8539,0,1]],"ty":[[0,-102,0],[1.8539,0,1]]},"org":[711.75390625,37.9998779296875]},{"id":"e47","m":"lt","b":{"x":200,"y":102,"w":1040,"h":70,"a":0.0,"f":false,"o":1},"t":{"o":[[9.7938,0,4],[10.2093,1,4]],"tx":[[9.7938,0,0],[11.7877,0,1]],"ty":[[9.7938,244,0],[11.7877,0,1]]}},{"id":"e49","m":"g","b":{"o":1},"t":{"ar":[[10.789,-7.000000052497138,4],[11.1866,0,1]],"tx":[[10.789,-5.238037586212158,0],[12.9502,0,1]],"ty":[[10.789,395.660400390625,0],[12.9502,0,1]]},"org":[466.0,617.5]},{"id":"e61","m":"g","b":{"o":1},"t":{"ar":[[10.9619,-7.000000052497138,4],[11.3595,0,1]],"tx":[[10.9619,-5.238037586212158,0],[13.1231,0,1]],"ty":[[10.9619,395.660400390625,0],[13.1231,0,1]]},"org":[708.0,617.5]},{"id":"e73","m":"g","b":{"o":1},"t":{"ar":[[11.0982,-7.000000052497138,4],[11.4958,0,1]],"tx":[[11.0982,-5.238037586212158,0],[13.2594,0,1]],"ty":[[11.0982,395.660400390625,0],[13.2594,0,1]]},"org":[950.0,617.5]}],"blocks":[{"id":"bk0","k":"__bg","bleed":true,"x":0,"y":0,"w":1440,"h":810,"ax":0,"ay":0,"par":0},{"id":"bk1","k":"Background Image","bleed":true,"x":0,"y":0,"w":1440.0,"h":810.0,"ax":0,"ay":0,"par":0},{"id":"bk2","k":"Footer Background","bleed":false,"x":0.0,"y":650.05,"w":1440.0,"h":159.95,"ax":0,"ay":1,"par":0},{"id":"bk3","k":"Music Button","bleed":false,"x":1382.21,"y":750.09,"w":53.93,"h":52.19,"ax":1,"ay":1,"par":0},{"id":"bk4","k":"PRIMAL","bleed":false,"x":121,"y":197.95,"w":1199,"h":223,"ax":0,"ay":0,"par":0},{"id":"bk5","k":"Product Description Container","bleed":false,"x":33,"y":625,"w":381,"h":105,"ax":-1,"ay":1,"par":0},{"id":"bk6","k":"Woman Necklace Image 2","bleed":false,"x":1249.0,"y":432.95,"w":161.0,"h":201.0,"ax":1,"ay":1,"par":0},{"id":"bk7","k":"Woman Necklace Image 1","bleed":false,"x":1061.0,"y":362.95,"w":161.0,"h":201.0,"ax":1,"ay":0,"par":0},{"id":"bk8","k":"Jewelry Buttons","bleed":false,"x":1315.0,"y":673.95,"w":80.0,"h":80.0,"ax":1,"ay":1,"par":0},{"id":"bk9","k":"Jewelry Buttons","bleed":false,"x":1218.0,"y":673.95,"w":80.0,"h":80.0,"ax":1,"ay":1,"par":0},{"id":"bk10","k":"Explore Button","bleed":false,"x":626,"y":610,"w":188.38,"h":188.38,"ax":0,"ay":1,"par":0},{"id":"bk11","k":"Top Navigation Bar","bleed":false,"x":19.51,"y":14.0,"w":1384.49,"h":48,"ax":0,"ay":-1,"par":0},{"id":"bk12","k":"Unleash yourself","bleed":false,"x":200.0,"y":102.0,"w":1040.0,"h":70.0,"ax":0,"ay":-1,"par":0},{"id":"bk13","k":"cards","bleed":false,"x":366,"y":457,"w":684,"h":321,"ax":0,"ay":1,"par":0}],"videos":[{"id":"e2v0","mode":"scrub","t0":0,"rate":1,"wrap":false}],"end":13.559,"intro":2.45,"holds":[[6.3,7.8],[13.259,13.559]],"vhPerSec":45,"vhPerSecM":40,"mobile":{"w":390,"h":844,"blocks":{"Top Navigation Bar":{"x":16,"y":14,"z":0.9},"Unleash yourself":{"x":15.600000000000023,"y":104,"z":0.345},"PRIMAL":{"x":9.155000000000001,"y":150,"z":0.31},"Woman Necklace Image 1":{"x":196,"y":330,"z":0.6},"Woman Necklace Image 2":{"x":290,"y":372,"z":0.6},"Product Description Container":{"x":16,"y":578,"z":0.85},"Explore Button":{"x":16,"y":704,"z":0.56},"bk9":{"x":252,"y":740,"z":0.7},"bk8":{"x":318,"y":740,"z":0.7},"cards":{"x":17.159999999999997,"y":560,"z":0.52},"Footer Background":{"hide":1},"Music Button":{"hide":1}},"nodes":{"9001:5707":{"dx":-986.5},"9001:5715":{"tk":[1,2.3]},"9001:5729":{"tk":[1,2.3]},"9001:5743":{"tk":[1,2.3]},"9001:5700":{"tk":[1,1.7]}}},"ptr":null,"cur":null,"hov":null,"cn":null,"cnb":null,"ns":{"9001:5705":{"k":1.65,"a":[19.5,21]},"9001:5708":{"k":1.4,"a":[8,24]},"9001:5709":{"k":1.4,"a":[63,24]}},"nfx":null,"introDelay":0};</script>
+<script>/* Figma hero runtime: layout (zoomed blocks), smart-animate + keyframe tracks, scroll-driven timeline. */
+(() => {
+  'use strict';
+  const S = window.SCENE;
+  const root = document.documentElement;
+  const $ = (s) => document.querySelector(s);
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const fine = matchMedia('(hover: hover) and (pointer: fine)').matches;
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+
+  /* ---------------------------------------------------------------- easing */
+  function bezier(x1, y1, x2, y2) {
+    const cx = 3 * x1, bx = 3 * (x2 - x1) - cx, ax = 1 - cx - bx;
+    const cy = 3 * y1, by = 3 * (y2 - y1) - cy, ay = 1 - cy - by;
+    const X = (t) => ((ax * t + bx) * t + cx) * t, Y = (t) => ((ay * t + by) * t + cy) * t;
+    const dX = (t) => (3 * ax * t + 2 * bx) * t + cx;
+    return (x) => {
+      if (x <= 0) return 0; if (x >= 1) return 1;
+      let t = x;
+      for (let i = 0; i < 8; i++) { const e = X(t) - x, d = dX(t); if (Math.abs(e) < 1e-6) break; if (Math.abs(d) < 1e-6) break; t -= e / d; }
+      if (t < 0 || t > 1 || Math.abs(X(t) - x) > 1e-4) { let lo = 0, hi = 1; t = x; for (let i = 0; i < 30; i++) { const v = X(t); if (Math.abs(v - x) < 1e-6) break; if (v < x) lo = t; else hi = t; t = (lo + hi) / 2; } }
+      return Y(t);
+    };
+  }
+  function spring(m, k, c, dur) {
+    const w0 = Math.sqrt(k / m), z = c / (2 * Math.sqrt(k * m));
+    let x;
+    if (z < 1) { const wd = w0 * Math.sqrt(1 - z * z); x = (t) => 1 - Math.exp(-z * w0 * t) * (Math.cos(wd * t) + (z * w0 / wd) * Math.sin(wd * t)); }
+    else if (z === 1) { x = (t) => 1 - Math.exp(-w0 * t) * (1 + w0 * t); }
+    else { const q = Math.sqrt(z * z - 1), r1 = -w0 * (z - q), r2 = -w0 * (z + q); x = (t) => 1 + (r2 * Math.exp(r1 * t) - r1 * Math.exp(r2 * t)) / (r1 - r2); }
+    const end = x(dur) || 1;
+    return (p) => (p <= 0 ? 0 : p >= 1 ? 1 : x(p * dur) / end);
+  }
+  const EF = S.E.map((e) => e[0] === 'l' ? (p) => p : e[0] === 'h' ? (p) => (p < 1 ? 0 : 1)
+    : e[0] === 'b' ? bezier(e[1], e[2], e[3], e[4]) : spring(e[1], e[2], e[3], e[4]));
+
+  function tv(tr, t, d) {
+    if (Array.isArray(tr)) return val(tr, t);
+    let v = tr.s ? val(tr.s, t) : d;
+    if (tr.a) for (const a of tr.a) v += val(a, t);
+    if (tr.m) for (const m of tr.m) v *= val(m, t);
+    return v;
+  }
+  const lerp = (a, b, k) => (Array.isArray(a) ? a.map((v, i) => v + (b[i] - v) * k) : a + (b - a) * k);
+  function val(tr, t) {
+    const n = tr.length;
+    if (t <= tr[0][0]) return tr[0][1];
+    if (t >= tr[n - 1][0]) return tr[n - 1][1];
+    let i = 1; while (i < n && tr[i][0] < t) i++;
+    const a = tr[i - 1], b = tr[i];
+    const span = b[0] - a[0];
+    const p = span > 0 ? (t - a[0]) / span : 1;
+    return lerp(a[1], b[1], EF[b[2]](p));
+  }
+
+  /* ---------------------------------------------------------------- elements */
+  const stage = $('#stage'), hero = $('#hero');
+  const els = S.els.map((r) => ({ ...r, el: document.getElementById(r.id), c: {} })).filter((r) => r.el);
+  let isM = false;
+  const px = (v) => (Math.round(v * 100) / 100) + 'px';
+  function put(r, k, v, fn) { if (r.c[k] !== v) { r.c[k] = v; fn(v); } }
+
+  /* per-node overrides, keyed by figma id
+     mobile (S.mobile.nodes): {hide} | {dx, dy, z} offsets in parent units | {mx, my, mz, rx, ry, may}: place the node so that its
+       frame point (rx, ry) lands on (mx, my) of the mobile design, at mz × the mobile scale (independent of the block's zoom)
+     desktop (S.cn): nodes inside a bleed (cover) block that must keep the contain scale/position of the frame */
+  let nodeOv = null, L$ = {};
+  function initNodeOv() {
+    const map = new Map();
+    const add = (fid, key, val) => document.querySelectorAll(`[data-f="${CSS.escape(fid)}"]`).forEach((el) => {
+      if (!map.has(el)) { const blkEl = el.closest('.blk'); map.set(el, { el, rec: els.find((r) => r.el === el), blk: blocks.find((b) => b.el === blkEl), l: el.style.left, t0: el.style.top, d: el.style.display }); }
+      map.get(el)[key] = val;
+    });
+    if (S.mobile && S.mobile.nodes) for (const [fid, ov] of Object.entries(S.mobile.nodes)) add(fid, 'm', ov);
+    if (S.cn) for (const fid of S.cn) add(fid, 'c', true);
+    if (S.ns) for (const [fid, spec] of Object.entries(S.ns)) add(fid, 's', spec);
+    if (S.nfx) for (const [fid, spec] of Object.entries(S.nfx)) add(fid, 'x', spec);
+    nodeOv = [...map.values()];
+  }
+  function applyNodeOv() {
+    if (!nodeOv) initNodeOv();
+    for (const n of nodeOv) {
+      const { el, rec, blk } = n, ov = isM ? n.m : null;
+      if (ov && ov.hide) { el.style.display = 'none'; continue; }
+      el.style.display = n.d;
+      let z = 1, mo = null, tk = null;
+      let bl = null;
+      // place: map frame coords to screen = (OX, OY) + x * Se; with a blend window bw the node moves from its
+      // natural (block) mapping to that target while t crosses bw
+      const place = (Se, OX, OY, bw) => {
+        if (bw && rec) { bl = { bz: blk.z, sx0: blk.sx0, sy0: blk.sy0, Q1: Se, P1x: OX, P1y: OY, w: bw }; return; }
+        z = Se / blk.z; mo = [(OX - blk.sx0) / Se, (OY - blk.sy0) / Se, zoomScalesOffsets ? 1 : 1 / z];
+      };
+      if (ov && ov.mx != null && blk) {
+        const Se = L$.sm * (ov.mz || 1);
+        place(Se, L$.mox + ov.mx * L$.sm - (ov.rx || 0) * Se, L$.moy * (1 + (ov.may || 0)) + ov.my * L$.sm - (ov.ry || 0) * Se, ov.bw);
+        tk = ov.tk || null;
+      } else if (ov) {
+        z = ov.z || 1; mo = [ov.dx || 0, ov.dy || 0, zoomScalesOffsets ? z : 1]; tk = ov.tk || null;
+      } else if (!isM && n.c && blk && blk.bleed) {
+        place(L$.s, (L$.W - L$.FW * L$.s) / 2, (L$.H - L$.FH * L$.s) / 2, S.cnb);
+      } else if (n.s) {
+        // uniform enlargement about a fixed frame point (a = [x, y])
+        z = n.s.k; const a = n.s.a || [0, 0];
+        mo = zoomScalesOffsets ? [a[0] * (1 / z - 1), a[1] * (1 / z - 1), 1] : [a[0] * (1 - z) / z, a[1] * (1 - z) / z, 1 / z];
+      }
+      el.style.zoom = z === 1 ? '' : z;
+      if (n.w0 === undefined) n.w0 = el.style.width;
+      const wo = ov && ov.w ? ov.w : 0;
+      el.style.width = wo ? px(wo) : n.w0;
+      if (rec) { rec.mo = mo; rec.bl = bl; rec.tk = tk; rec.wo = wo; rec.fd = ov && ov.fade ? ov.fade : null; rec.fi = n.x && n.x.fi ? n.x.fi : null; rec.c = {}; continue; }
+      const L = parseFloat(n.l) || 0, T = parseFloat(n.t0) || 0;
+      el.style.left = mo ? ((L + mo[0]) / mo[2]) + 'px' : n.l;
+      el.style.top = mo ? ((T + mo[1]) / mo[2]) + 'px' : n.t0;
+    }
+  }
+  function applyAt(t) {
+    for (const r of els) {
+      const T = r.t, b = (isM && S.mobile && S.mobile.base && S.mobile.base[r.id]) ? { ...r.b, ...S.mobile.base[r.id] } : r.b, st = r.el.style;
+      const g = (k, d) => (T[k] ? tv(T[k], t, d) : d);
+      const kx = r.tk ? r.tk[0] : 1, ky = r.tk ? r.tk[1] : 1;
+      if (r.bl) {
+        const B = r.bl; let w = Math.max(0, Math.min(1, (t - B.w[0]) / (B.w[1] - B.w[0]))); w = w * w * (3 - 2 * w);
+        const Q = B.bz + (B.Q1 - B.bz) * w, Px = B.sx0 + (B.P1x - B.sx0) * w, Py = B.sy0 + (B.P1y - B.sy0) * w, k = Q / B.bz;
+        put(r, 'zm', Math.round(k * 10000) / 10000, (v) => (st.zoom = v === 1 ? '' : v));
+        r.mo = [(Px - B.sx0) / Q, (Py - B.sy0) / Q, zoomScalesOffsets ? 1 : 1 / k];
+      }
+      let o = g('o', b.o == null ? 1 : b.o);
+      if (r.fd && t > r.fd[0]) o *= Math.max(0, Math.min(1, (r.fd[1] - t) / (r.fd[1] - r.fd[0])));
+      if (r.fi) o *= Math.max(0, Math.min(1, (t - r.fi[0]) / (r.fi[1] - r.fi[0])));
+      put(r, 'o', Math.round(o * 1000) / 1000, (v) => (st.opacity = v));
+      // fully transparent layers are also taken out of hit-testing / tab order, so hidden states never catch clicks
+      put(r, 'vh', o <= 0.001, (v) => (st.visibility = v ? 'hidden' : ''));
+      if (r.m === 'o') continue;
+      if (r.m === 'g') {
+        if (r.mo) { put(r, 'ml', r.mo[0] / r.mo[2], (v) => (st.left = px(v))); put(r, 'mt', r.mo[1] / r.mo[2], (v) => (st.top = px(v))); }
+        if (T.tx || T.ty || T.ar || T.sx || T.sy) {
+          const tf = `translate(${px(g('tx', 0) * kx)},${px(g('ty', 0) * ky)}) rotate(${g('ar', 0)}deg) scale(${g('sx', 1)},${g('sy', 1)})`;
+          put(r, 'tf', tf, (v) => (st.transform = v));
+        }
+        continue;
+      }
+      let x = g('x', b.x) + g('tx', 0) * kx, y = g('y', b.y) + g('ty', 0) * ky;
+      const w = r.wo || g('w', b.w), h = g('h', b.h);
+      if (r.mo) { x = (x + r.mo[0]) / r.mo[2]; y = (y + r.mo[1]) / r.mo[2]; }
+      if (r.m === 'lt') {
+        put(r, 'x', x, (v) => (st.left = px(v)));
+        put(r, 'y', y, (v) => (st.top = px(v)));
+        if (T.w || r.wo) put(r, 'w', w, (v) => (st.width = px(v)));
+        if (T.h) put(r, 'h', h, (v) => (st.height = px(v)));
+      } else {
+        const a = g('a', b.a || 0), ar = g('ar', 0), sx = g('sx', 1), sy = g('sy', 1);
+        let tf = b.mt ? `translate(${px(x)},${px(y)}) matrix(${b.mt.join(',')})` : `translate(${px(x)},${px(y)}) rotate(${a}rad)${b.f ? ' scale(1,-1)' : ''}`;
+        if (T.k) tf += ` scale(${Math.round(g('k', 1) * 100000) / 100000})`;
+        if (ar || sx !== 1 || sy !== 1) { const cx = b.pv ? b.pv[0] : w / 2, cy = b.pv ? b.pv[1] : h / 2; tf += ` translate(${px(cx)},${px(cy)}) rotate(${ar}deg) scale(${sx},${sy}) translate(${px(-cx)},${px(-cy)})`; }
+        put(r, 'tf', tf, (v) => (st.transform = v));
+        if (T.w || r.wo) put(r, 'w', w, (v) => (st.width = px(v)));
+        if (T.h) put(r, 'h', h, (v) => (st.height = px(v)));
+      }
+      if (T.r) put(r, 'r', g('r', 0), (v) => (st.borderRadius = px(v)));
+      if (T.bg) { const c = g('bg'); put(r, 'bg', `rgba(${c[0] | 0},${c[1] | 0},${c[2] | 0},${Math.round(c[3] * 1000) / 1000})`, (v) => (b.fc ? (st.color = v) : (st.backgroundColor = v))); }
+      if (T.blur) put(r, 'blur', g('blur', 0), (v) => (st.filter = `blur(${px(v)})`));
+    }
+  }
+
+  /* ---------------------------------------------------------------- layout */
+  const blocks = S.blocks.map((b) => ({ ...b, el: document.getElementById(b.id) })).filter((b) => b.el);
+  let zoomScalesOffsets = true;
+  function calibrateZoom() {
+    const p = document.createElement('div');
+    p.style.cssText = 'position:absolute;left:10px;top:0;width:2px;height:2px;zoom:2;visibility:hidden';
+    stage.appendChild(p);
+    zoomScalesOffsets = Math.abs(p.getBoundingClientRect().left - stage.getBoundingClientRect().left - 20) < 3;
+    p.remove();
+  }
+  function layout() {
+    const W = stage.clientWidth, H = stage.clientHeight;
+    const M = S.mobile && (W < 768 || W / H < 0.82) ? S.mobile : null;
+    isM = !!M;
+    root.classList.toggle('is-m', isM);
+    const FW = S.frame.w, FH = S.frame.h;
+    const s = Math.min(W / FW, H / FH), cov = Math.max(W / FW, H / FH);
+    const sm = M ? Math.min(W / M.w, H / M.h) : 0;
+    curScale = M ? sm : s;
+    for (const b of blocks) {
+      const cfg = M ? (M.blocks[b.k] || M.blocks[b.id] || (b.bleed ? {} : null)) : null;
+      if (M && (!cfg || cfg.hide)) { b.el.style.display = 'none'; continue; }
+      b.el.style.display = '';
+      let z, L, T;
+      if (b.bleed) {
+        const fx = cfg && cfg.fx != null ? cfg.fx : 0.5, fy = cfg && cfg.fy != null ? cfg.fy : 0.5;
+        z = cov * (cfg && cfg.z ? cfg.z : 1);
+        L = (W - FW * z) * fx + b.x * z; T = (H - FH * z) * fy + b.y * z;
+      } else if (M) {
+        z = sm * (cfg.z || 1);
+        const ox = (W - M.w * sm) / 2, oy = (H - M.h * sm) / 2;
+        const ax = cfg.ax != null ? cfg.ax : 0, ay = cfg.ay != null ? cfg.ay : 0;
+        L = ox * (1 + ax) + cfg.x * sm; T = oy * (1 + ay) + cfg.y * sm;
+      } else {
+        z = s;
+        const mx = (W - FW * s) / 2, my = (H - FH * s) / 2;
+        L = mx * (1 + b.ax) + b.x * s; T = my * (1 + b.ay) + b.y * s;
+      }
+      const f = zoomScalesOffsets ? z : 1;
+      b.el.style.zoom = z;
+      b.el.style.left = (L / f) + 'px';
+      b.el.style.top = (T / f) + 'px';
+      b.z = z; b.sx0 = L - b.x * z; b.sy0 = T - b.y * z;
+    }
+    L$ = { W, H, FW, FH, s, cov, sm, mox: M ? (W - M.w * sm) / 2 : 0, moy: M ? (H - M.h * sm) / 2 : 0 };
+    const per = isM ? S.vhPerSecM || 34 : S.vhPerSec || 40;
+    hero.style.setProperty('--track', Math.max(0, Math.round((S.end - S.intro) * per)) + 'vh');
+    for (const r of els) r.c = {};
+    applyNodeOv();
+  }
+
+  /* ---------------------------------------------------------------- media */
+  const videos = (S.videos || []).map((v) => ({ ...v, el: document.getElementById(v.id) })).filter((v) => v.el);
+  const blobs = {};
+  function fetchBlob(url, onp) {
+    if (blobs[url]) return Promise.resolve(blobs[url]);
+    return fetch(url).then((res) => {
+      if (!res.ok) throw new Error(res.status);
+      const total = +res.headers.get('content-length') || 0;
+      if (!res.body || !total) return res.blob();
+      const rd = res.body.getReader(), chunks = []; let got = 0;
+      const pump = () => rd.read().then(({ done, value }) => { if (done) return new Blob(chunks, { type: res.headers.get('content-type') || 'video/mp4' }); chunks.push(value); got += value.length; onp && onp(got / total); return pump(); });
+      return pump();
+    }).then((b) => (blobs[url] = URL.createObjectURL(b))).catch(() => url);
+  }
+  function attach(v) {
+    const url = v.el.dataset.src;
+    v.el.addEventListener('error', () => { if (v.el.src.startsWith('blob:')) { v.el.src = url; v.el.load(); } }, { once: true });
+    v.el.src = blobs[url] || url;
+    if (v.mode === 'loop') { v.el.loop = true; }
+    if (v.mode === 'once') { v.el.loop = false; v.el.removeAttribute('loop'); }
+  }
+  function syncMedia(t) {
+    for (const v of videos) {
+      if (v.mode === 'scrub') {
+        if (v.el.readyState >= 2 && !v.el.seeking) {
+          const d = v.el.duration || v.dur || 1;
+          let vt = Math.max(0, t - (v.t0 || 0)) * (v.rate || 1);
+          vt = v.wrap ? vt % d : Math.min(vt, d - 0.04);
+          if (Math.abs(v.el.currentTime - vt) > 0.012) v.el.currentTime = vt;
+        }
+      } else if (v.mode === 'once') {
+        // plays through once with the autoplayed timeline (no scroll scrubbing) and rests on its last frame
+        const on = started && t >= (v.t0 || 0) - 0.05;
+        if (on !== v.on) {
+          v.on = on;
+          if (on && reduced) { const d = v.el.duration || v.dur || 1; v.el.currentTime = Math.max(0, d - 0.05); }
+          else if (on) { v.el.currentTime = Math.max(0, t - (v.t0 || 0)); const p = v.el.play(); p && p.catch(() => {}); }
+          else v.el.pause();
+        }
+      } else {
+        const on = t >= (v.t0 || 0) - 0.05;
+        if (on !== v.on) { v.on = on; if (on) { const p = v.el.play(); p && p.catch(() => {}); } else v.el.pause(); }
+      }
+    }
+  }
+
+  /* ---------------------------------------------------------------- scroll */
+  let lenis = null, t = 0, ready = false, started = false, snapping = false, dir = 1, idle = 0, lastY = 0;
+  const INTRO = reduced ? S.end : S.intro, END = S.end;
+  const range = () => { const top = hero.offsetTop; return [top, top + hero.offsetHeight - stage.clientHeight]; };
+  const tFromY = (y) => { const [a, b] = range(); const p = b > a ? Math.min(1, Math.max(0, (y - a) / (b - a))) : 1; return INTRO + p * (END - INTRO); };
+  const yFromT = (tt) => { const [a, b] = range(); return a + ((tt - INTRO) / (END - INTRO || 1)) * (b - a); };
+  function onScroll() {
+    const y = lenis ? lenis.scroll : window.scrollY;
+    dir = y > lastY ? 1 : y < lastY ? -1 : dir; lastY = y;
+    if (!ready) return;
+    t = tFromY(y);
+    if (!reduced) armSnap();
+  }
+  function armSnap() {
+    clearTimeout(idle);
+    if (snapping || !lenis || window.__noSnap || !S.holds || !S.holds.length) return;
+    idle = setTimeout(() => {
+      if (S.holds.some(([a, b]) => t >= a - 0.02 && t <= b + 0.02)) return;
+      let target;
+      if (dir > 0) target = (S.holds.find(([a]) => a > t) || S.holds[S.holds.length - 1])[0];
+      else target = ([...S.holds].reverse().find(([, b]) => b < t) || S.holds[0])[1];
+      snapping = true;
+      lenis.scrollTo(yFromT(target), { duration: Math.min(1.8, Math.max(0.6, Math.abs(target - t) * 0.45)), easing: (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2), onComplete: () => { snapping = false; } });
+      setTimeout(() => { snapping = false; }, 2200);
+    }, 170);
+  }
+
+  /* ---------------------------------------------------------------- parallax */
+  let px0 = 0, py0 = 0, pxT = 0, pyT = 0;
+  const bleeds = blocks.filter((b) => b.bleed && b.par);
+  if (fine && !reduced && bleeds.length) {
+    window.addEventListener('pointermove', (e) => { pxT = (e.clientX / innerWidth - 0.5); pyT = (e.clientY / innerHeight - 0.5); }, { passive: true });
+  }
+  function parallax() {
+    if (!bleeds.length) return;
+    px0 += (pxT - px0) * 0.06; py0 += (pyT - py0) * 0.06;
+    for (const b of bleeds) b.el.style.translate = `${(-px0 * b.par).toFixed(2)}% ${(-py0 * b.par).toFixed(2)}%`;
+  }
+
+  /* ---------------------------------------------------------------- pointer: parallax, custom cursor, hover */
+  // S.ptr = {blocks: {key: [kx, ky]}, fade: [t0, t1]}: blocks follow the pointer (frame px per normalised offset)
+  // S.cur = {size, fade: [t0, t1]}: custom cursor dot (exclusion blend) replacing the system cursor
+  // S.hov = {f: figmaId, a, b}: hovering that node plays the [a, b] segment of the timeline forward
+  const ptrOn = fine && !reduced;
+  let pin = false, ex = -200, ey = -200, cx = -200, cy = -200, pxs = 0, pys = 0, hv = 0, curScale = 1;
+  const pBlocks = (S.ptr && ptrOn) ? Object.entries(S.ptr.blocks).map(([k, f]) => ({ b: blocks.find((x) => x.k === k), f })).filter((o) => o.b) : [];
+  let curEl = null;
+  if (S.cur && ptrOn) { curEl = document.createElement('div'); curEl.className = 'cur'; curEl.setAttribute('aria-hidden', 'true'); stage.appendChild(curEl); }
+  const hovEl = S.hov && ptrOn ? document.querySelector(`[data-f="${CSS.escape(S.hov.f)}"]`) : null;
+  if (ptrOn && (pBlocks.length || curEl || hovEl)) {
+    window.addEventListener('pointermove', (e) => { const r = stage.getBoundingClientRect(); ex = e.clientX - r.left; ey = e.clientY - r.top; if (!pin) { cx = ex; cy = ey; } pin = true; }, { passive: true });
+    document.documentElement.addEventListener('pointerleave', () => { pin = false; });
+  }
+  const fadeW = (fd) => (!fd ? 1 : t <= fd[0] ? 1 : t >= fd[1] ? 0 : 1 - (t - fd[0]) / (fd[1] - fd[0]));
+  function pointerFx() {
+    const W = stage.clientWidth, H = stage.clientHeight;
+    const nx = pin ? Math.max(-1, Math.min(1, (ex / W - 0.5) * 2)) : 0, ny = pin ? Math.max(-1, Math.min(1, (ey / H - 0.5) * 2)) : 0;
+    pxs += (nx - pxs) * 0.06; pys += (ny - pys) * 0.06;
+    if (pBlocks.length) {
+      const w = isM ? 0 : fadeW(S.ptr.fade);
+      for (const o of pBlocks) o.b.el.style.translate = `${(pxs * o.f[0] * w).toFixed(2)}px ${(pys * o.f[1] * w).toFixed(2)}px`;
+    }
+    if (curEl) {
+      const cw = isM ? 0 : fadeW(S.cur.fade);
+      cx += (ex - cx) * 0.3; cy += (ey - cy) * 0.3;
+      const sz = S.cur.size * curScale;
+      curEl.style.width = curEl.style.height = px(sz);
+      curEl.style.transform = `translate(${px(cx - sz / 2)},${px(cy - sz / 2)})`;
+      curEl.style.opacity = pin ? cw : 0;
+      root.classList.toggle('has-cur', pin && cw > 0.5);
+    }
+    if (hovEl) {
+      let on = false;
+      if (pin && t >= S.hov.a - 0.05 && t <= S.hov.b) {
+        const r = hovEl.getBoundingClientRect(), sr = stage.getBoundingClientRect();
+        const dx = ex - (r.left - sr.left + r.width / 2), dy = ey - (r.top - sr.top + r.height / 2);
+        on = r.width > 0 && dx * dx + dy * dy <= (r.width / 2) * (r.width / 2);
+      }
+      hv += ((on ? 1 : 0) - hv) * 0.12;
+      if (hv < 0.001) hv = 0;
+    }
+  }
+  function effT() {
+    if (!S.hov || !hv || t < S.hov.a - 0.05 || t > S.hov.b) return t;
+    return Math.max(t, S.hov.a + hv * (S.hov.b - S.hov.a));
+  }
+
+  /* ---------------------------------------------------------------- loop */
+  function frame(now) {
+    if (lenis) lenis.raf(now);
+    pointerFx();
+    applyAt(effT()); syncMedia(t); parallax();
+    requestAnimationFrame(frame);
+  }
+
+  /* ---------------------------------------------------------------- boot */
+  calibrateZoom();
+  layout();
+  applyAt(0);
+  if (!reduced && window.Lenis) {
+    lenis = new Lenis({ lerp: 0.085, wheelMultiplier: 0.9, smoothWheel: true });
+    lenis.on('scroll', onScroll);
+    lenis.stop();
+  } else {
+    window.addEventListener('scroll', onScroll, { passive: true });
+  }
+  window.scrollTo(0, 0);
+  root.classList.add('is-locked');
+  let rz = 0;
+  window.addEventListener('resize', () => { cancelAnimationFrame(rz); rz = requestAnimationFrame(() => { layout(); if (ready) t = tFromY(lenis ? lenis.scroll : scrollY); }); });
+  requestAnimationFrame(frame);
+
+  const loaderBar = $('#loaderBar'), loaderPct = $('#loaderPct');
+  function preload() {
+    const jobs = [], prog = new Map(), wt = new Map();
+    let shown = 0;
+    const report = () => { let a = 0, b = 0; wt.forEach((w, k) => { b += w; a += w * (prog.get(k) || 0); }); shown = Math.max(shown, b ? a / b : 1); if (loaderBar) loaderBar.style.transform = `scaleX(${shown})`; if (loaderPct) loaderPct.textContent = String(Math.round(shown * 100)).padStart(3, '0'); };
+    wt.set('fonts', 1);
+    jobs.push(document.fonts.ready.then(() => { prog.set('fonts', 1); report(); }));
+    document.querySelectorAll('#stage img').forEach((im, i) => {
+      const k = 'i' + i; wt.set(k, 0.4);
+      // wait until the image is loaded AND decoded, so nothing paints late (empty boxes) once the loader is gone
+      const loaded = im.complete ? Promise.resolve() : new Promise((r) => { im.addEventListener('load', r, { once: true }); im.addEventListener('error', r, { once: true }); });
+      jobs.push(loaded.then(() => (im.decode ? im.decode().catch(() => {}) : null)).then(() => { prog.set(k, 1); report(); }));
+    });
+    const seen = new Set();
+    videos.forEach((v) => {
+      const url = v.el.dataset.src; if (seen.has(url)) return; seen.add(url);
+      wt.set(url, v.mode === 'scrub' ? 6 : 1.5);
+      jobs.push(fetchBlob(url, (p) => { prog.set(url, p); report(); }).then(() => { prog.set(url, 1); report(); }));
+    });
+    report();
+    return Promise.race([Promise.all(jobs), new Promise((r) => setTimeout(r, 14000))]);
+  }
+  function waitVideos() {
+    return Promise.race([Promise.all(videos.map((v) => new Promise((r) => { if (v.el.readyState >= 2) return r(); v.el.addEventListener('loadeddata', r, { once: true }); v.el.addEventListener('error', r, { once: true }); }))), new Promise((r) => setTimeout(r, 3000))]);
+  }
+  preload().then(() => { videos.forEach(attach); return waitVideos(); }).then(() => {
+    root.classList.remove('is-locked');
+    const ld = $('#loader'); if (ld) ld.classList.add('is-done');
+    const finish = () => { ready = true; started = true; t = INTRO; if (lenis) lenis.start(); };
+    if (reduced || INTRO <= 0) { t = INTRO; finish(); return; }
+    // the intro starts once the loader has (mostly) faded out, so it is never seen half-way behind it
+    setTimeout(() => {
+      let t0 = null;
+      const intro = (now) => { if (t0 === null) { t0 = now; started = true; } const p = Math.max(0, Math.min(1, (now - t0) / 1000 / INTRO)); t = p * INTRO; if (p < 1) requestAnimationFrame(intro); else finish(); };
+      requestAnimationFrame(intro);
+    }, (S.introDelay || 0) * 1000);
+  });
+  window.__hero = { get t() { return t; }, set t(v) { t = v; }, layout, yFromT, S };
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>BlueBird — Tech Security</title>
+<meta name="description" content="BlueBird: innovation &amp; security. AI that ensures total protection.">
+<meta name="theme-color" content="#c5dce4">
+<style>
+@font-face{font-family:'Host Grotesk';src:url(assets/fonts/HostGrotesk.woff2) format('woff2');font-weight:300 800;font-style:normal;font-display:block}
+:root{--bg:#c5dce4;--ink:#467288;color-scheme:light}
+html,body{background:var(--bg);margin:0}
+body{overflow-x:clip;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:geometricPrecision}
+html.is-locked,html.is-locked body{overflow:hidden}
+.hero{position:relative;height:calc(100vh + var(--track,400vh));height:calc(100svh + var(--track,400vh))}
+.stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;background:var(--bg)}
+.blk{position:absolute;left:0;top:0;width:0;height:0}
+.org{position:absolute;left:0;top:0}
+.blk *{box-sizing:border-box}
+.b,.t,.v,.g{position:absolute}
+.t{margin:0}
+.pl img{display:block}
+.sx{position:absolute;left:0;top:0;width:0;height:0;margin:0;padding:0;list-style:none}
+.blk li{list-style:none;margin:0;padding:0}
+.blk a{color:inherit;text-decoration:none;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.blk a.lk{position:absolute;left:0;top:0;right:0;bottom:0;display:block;border-radius:inherit}
+.blk a:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+.blk *{pointer-events:none}
+.blk .t,.blk .t *,.blk a,.blk a *{pointer-events:auto}
+.v svg{display:block}
+.loader{position:fixed;inset:0;z-index:50;display:grid;place-items:center;background:var(--bg);transition:opacity .9s cubic-bezier(.22,1,.36,1),visibility .9s}
+.loader.is-done{opacity:0;visibility:hidden;pointer-events:none}
+.loader-in{display:grid;justify-items:center;gap:14px;color:var(--ink);font:500 11px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.24em}
+.loader-bar{width:160px;height:1px;background:color-mix(in srgb,var(--ink) 20%,transparent);overflow:hidden}
+.loader-bar i{display:block;height:100%;width:100%;background:var(--ink);transform:scaleX(0);transform-origin:left}
+
+</style>
+</head>
+<body>
+<div class="loader" id="loader" aria-hidden="true"><div class="loader-in"><span>BLUEBIRD</span><div class="loader-bar"><i id="loaderBar"></i></div><span id="loaderPct">000</span></div></div>
+<main class="hero" id="hero" aria-label="BlueBird — Tech Security">
+<div class="stage" id="stage">
+<div class="blk bleed" id="bk0" style="width:1920px;height:1080px"><div class="org"><div class="b" id="e1" data-f="9001:709" data-n="Animation" style="position:absolute;left:0px;top:0px;width:1920px;height:1080px;background:linear-gradient(180deg, #c5dce4 38.64%, #467389 116%)"></div></div></div>
+<div class="blk" id="bk1" data-k="Ellipse 1"><div class="org" style="left:-232.49px;top:-481px"><div class="b" id="e2" data-f="9001:710" data-n="Ellipse 1" style="position:absolute;left:232.49px;top:481px;width:1418.931px;height:957.203px;border-radius:50%;background-color:#ddf6ff;filter:blur(200px)"></div></div></div>
+<div class="blk bleed" id="bk2" data-k="freepik_video-upscale_2860829408 1"><div class="org" style="left:0px;top:0px"><div class="b" id="e3" data-f="9001:711" data-n="freepik_video-upscale_2860829408 1" style="position:absolute;left:0px;top:-7px;width:1920px;height:1104px"><i class="pl" style="position:absolute;inset:0;border-radius:inherit;overflow:hidden;pointer-events:none"><video id="e3v0" class="vid" muted playsinline preload="auto" data-src="assets/video/0595b4e124.mp4" poster="assets/video/0595b4e124.jpg" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></video></i></div></div></div>
+<div class="blk" id="bk4" data-k="Menu"><div class="org" style="left:-60px;top:-37.923px"><div class="b" id="e4" data-f="9001:713" data-n="Menu" style="position:absolute;left:60px;top:37.923px;width:1797.38px;height:43px"><a href="#" aria-label="BlueBird — Home" class="b" id="e5" data-f="I9001:713;9001:733" data-n="image 5" style="position:absolute;left:-250px;top:10.041px;width:73.38px;height:22.918px"><i class="pl" style="position:absolute;inset:0;border-radius:inherit;overflow:hidden;pointer-events:none"><img src="assets/img/60247e6cf4.webp" alt="" decoding="async" style="position:absolute;left:0;top:0;width:2464px;height:1856px;max-width:none;transform-origin:0 0;transform:matrix(0.047488,0,0,0.047488,-19.053,-32.862)"></i></a><nav class="sx" aria-label="Main navigation"><ul class="sx"><li class="b" id="e6" data-f="I9001:713;9001:734" data-n="Frame 11" style="position:absolute;left:490.5px;top:-300.001px;width:78px;height:43px;border-radius:999px"><a href="#" class="lk"><div class="t" id="e7" data-f="I9001:713;9001:735" style="position:absolute;left:18px;top:12px;width:42px;height:19px;opacity:0.8;white-space:pre;text-align:left;font-family:'Host Grotesk','Helvetica Neue',Arial,sans-serif;font-weight:700;font-size:16px;line-height:1.2;color:#577a8b">home</div><i class="sk" style="position:absolute;inset:0px;pointer-events:none;border-radius:999px;border:1px solid rgba(86,122,139,0.2)"></i></a></li><li class="b" id="e8" data-f="I9001:713;9001:736" data-n="Frame 12" style="position:absolute;left:608.5px;top:-385.167px;width:79px;height:43px;border-radius:999px"><a href="#" class="lk"><div class="t" id="e9" data-f="I9001:713;9001:737" style="position:absolute;left:18px;top:12px;width:43px;height:19px;opacity:0.8;white-space:pre;text-align:left;font-family:'Host Grotesk','Helvetica Neue',Arial,sans-serif;font-weight:400;font-size:16px;line-height:1.2;color:#577a8b">about</div></a></li><li class="b" id="e10" data-f="I9001:713;9001:738" data-n="Frame 13" style="position:absolute;left:727.5px;top:-470.334px;width:96px;height:43px;border-radius:999px"><a href="#" class="lk"><div class="t" id="e11" data-f="I9001:713;9001:739" style="position:absolute;left:18px;top:12px;width:60px;height:19px;opacity:0.8;white-space:pre;text-align:left;font-family:'Host Grotesk','Helvetica Neue',Arial,sans-serif;font-weight:400;font-size:16px;line-height:1.2;color:#577a8b">services</div></a></li><li class="b" id="e12" data-f="I9001:713;9001:740" data-n="Frame 14" style="position:absolute;left:863.5px;top:-555.5px;width:107px;height:43px;border-radius:999px"><a href="#" class="lk"><div class="t" id="e13" data-f="I9001:713;9001:741" style="position:absolute;left:18px;top:12px;width:71px;height:19px;opacity:0.8;white-space:pre;text-align:left;font-family:'Host Grotesk','Helvetica Neue',Arial,sans-serif;font-weight:400;font-size:16px;line-height:1.2;color:#577a8b">Industries</div></a></li><li class="b" id="e14" data-f="I9001:713;9001:742" data-n="Frame 15" style="position:absolute;left:1010.5px;top:-640.667px;width:167px;height:43px;border-radius:999px"><a href="#" class="lk"><div class="t" id="e15" data-f="I9001:713;9001:743" style="position:absolute;left:18px;top:12px;width:131px;height:19px;opacity:0.8;white-space:pre;text-align:left;font-family:'Host Grotesk','Helvetica Neue',Arial,sans-serif;font-weight:400;font-size:16px;line-height:1.2;color:#577a8b">threat Intelligence</div></a></li><li class="b" id="e16" data-f="I9001:713;9001:744" data-n="Frame 16" style="position:absolute;left:1217.5px;top:-725.833px;width:92px;height:43px;border-radius:999px"><a href="#" class="lk"><div class="t" id="e17" data-f="I9001:713;9001:745" style="position:absolute;left:18px;top:12px;width:56px;height:19px;opacity:0.8;white-space:pre;text-align:left;font-family:'Host Grotesk','Helvetica Neue',Arial,sans-serif;font-weight:400;font-size:16px;line-height:1.2;color:#577a8b">contact</div></a></li></ul></nav><a href="#" class="b" id="e18" data-f="I9001:713;9001:746" data-n="Frame 2" style="position:absolute;left:1686.38px;top:-811px;width:111px;height:43px;border-radius:999px;background-color:#ffffff"><div class="t" id="e19" data-f="I9001:713;9001:747" style="position:absolute;left:18px;top:12px;width:75px;height:19px;opacity:0.8;white-space:pre;text-align:left;font-family:'Host Grotesk','Helvetica Neue',Arial,sans-serif;font-weight:700;font-size:16px;line-height:1.2;color:#577a8b">Resources</div></a></div></div></div>
+<div class="blk" id="bk5" data-k="Content"><div class="org" style="left:-60px;top:-627.692px"><div class="b" id="e20" data-f="9001:714" data-n="Content" style="position:absolute;left:60px;top:627.692px;width:1800px;height:392.985px"><div class="g" id="e21" data-f="I9001:714;9001:806" data-n="Group 7" style="position:absolute;left:0;top:0;width:0;height:0"><div class="g" id="e22" data-f="I9001:714;9001:807" data-n="Group 1" style="position:absolute;left:0;top:0;width:0;height:0"><div class="t" id="e23" data-f="I9001:714;9001:808" style="position:absolute;left:-980px;top:0px;width:274px;height:62px;white-space:pre;text-align:right;font-family:'Host Grotesk','Helvetica Neue',Arial,sans-serif;font-weight:400;font-size:62px;line-height:1;letter-spacing:-0.03em;color:#ffffff">Innovation</div><div class="t" id="e24" data-f="I9001:714;9001:809" style="position:absolute;left:-776.508px;top:62px;width:273px;height:62px;white-space:pre;text-align:right;font-family:'Host Grotesk','Helvetica Neue',Arial,sans-serif;line-height:1"><span style="font-family:'Host Grotesk','Helvetica Neue',Arial,sans-serif;font-weight:400;font-size:62px;line-height:1;letter-spacing:-0.03em;color:rgba(255,255,255,0.33)">&amp;</span><span style="font-family:'Host Grotesk','Helvetica Neue',Arial,sans-serif;font-weight:400;font-size:62px;line-height:1;letter-spacing:-0.03em;color:#ffffff"> security</span></div><div class="t" id="e25" data-f="I9001:714;9001:810" style="position:absolute;left:-606.508px;top:156px;width:300px;height:38px;opacity:0.8;white-space:pre-wrap;overflow-wrap:break-word;text-align:left;font-family:'Host Grotesk','Helvetica Neue',Arial,sans-serif;font-weight:400;font-size:16px;line-height:1.2;color:#ffffff">We are at the forefront of merging cutting-edge technology</div><div class="g" id="e26" data-f="I9001:714;9001:811" data-n="Group 8" style="position:absolute;left:0;top:0;width:0;height:0"><a href="#" class="b" id="e27" data-f="I9001:714;9001:812" data-n="Frame 1" style="position:absolute;left:-516.508px;top:254px;width:239.971px;height:71.971px;border-radius:999px;background:linear-gradient(81.63deg, #0172f8 8.71%, #019dcf 111.04%)"><div class="t" id="e28" data-f="I9001:714;9001:813" style="position:absolute;left:24px;top:23.485px;width:124px;height:25px;white-space:pre;text-align:left;font-family:'Host Grotesk','Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:21px;line-height:1.2;letter-spacing:-0.02em;color:#ffffff">Our Solutions</div><div class="g" id="e29" data-f="I9001:714;9001:814" data-n="Group 2" style="position:absolute;left:0;top:0;width:0;height:0"><div class="b" id="e30" data-f="I9001:714;9001:815" data-n="Ellipse 1" style="position:absolute;left:180px;top:12px;width:47.971px;height:47.971px;border-radius:50%;background-color:#ffffff"></div><div class="b" id="e31" data-f="I9001:714;9001:816" data-n="CaretRight" style="position:absolute;left:193.923px;top:25.923px;width:20.125px;height:20.125px"><div class="v" id="e33" data-f="I9001:714;9001:816;8899:79863" data-n="Vector" style="position:absolute;left:6.795px;top:3.017px;width:7.8px;height:14.09px"><svg aria-hidden="true" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;overflow:visible" width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.754639 0.754639L7.0437 7.0437L0.754639 13.3328" stroke="#0195D7" stroke-width="1.50938" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div></div></div></a><a href="#" class="b" id="e34" data-f="I9001:714;9001:817" data-n="Frame 2" style="position:absolute;left:-212.537px;top:255.485px;width:149px;height:69px;border-radius:999px;background-color:#ffffff"><div class="t" id="e35" data-f="I9001:714;9001:818" style="position:absolute;left:24px;top:22px;width:101px;height:25px;white-space:pre;text-align:left;font-family:'Host Grotesk','Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:21px;line-height:1.2;letter-spacing:-0.02em;color:#567a8b">Contact us</div></a></div></div><div class="g" id="e36" data-f="I9001:714;9001:819" data-n="Group 2" style="position:absolute;left:0;top:0;width:0;height:0"><div class="v" id="e37" data-f="I9001:714;9001:820" data-n="Union" style="position:absolute;left:1079.82px;top:919.66px;width:300px;height:322.65px"><svg aria-hidden="true" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;overflow:visible" width="300" height="323" viewBox="0 0 300 323" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="e37_path-1-inside-1_9001_764" fill="white">
+<path d="M159.36 59.0078C163.976 76.5919 179.869 88.8516 198.049 88.8516H260C282.091 88.8516 300 106.76 300 128.852V282.646C300 304.738 282.091 322.646 260 322.646H40C17.9086 322.646 0 304.738 0 282.646V40C0 17.9086 17.9086 0 40 0H113.015C131.195 0 147.088 12.2597 151.704 29.8438L159.36 59.0078Z"/>
+</mask>
+<path d="M159.36 59.0078C163.976 76.5919 179.869 88.8516 198.049 88.8516H260C282.091 88.8516 300 106.76 300 128.852V282.646C300 304.738 282.091 322.646 260 322.646H40C17.9086 322.646 0 304.738 0 282.646V40C0 17.9086 17.9086 0 40 0H113.015C131.195 0 147.088 12.2597 151.704 29.8438L159.36 59.0078Z" fill="url(#e37_paint0_linear_9001_764)"/>
+<path d="M159.36 59.0078L158.393 59.2617L159.36 59.0078ZM198.049 88.8516V89.8516H260V88.8516V87.8516H198.049V88.8516ZM300 128.852H299V282.646H300H301V128.852H300ZM260 322.646V321.646H40V322.646V323.646H260V322.646ZM0 282.646H1V40H0H-1V282.646H0ZM40 0V1H113.015V0V-1H40V0ZM151.704 29.8438L150.737 30.0977L158.393 59.2617L159.36 59.0078L160.327 58.7539L152.672 29.5899L151.704 29.8438ZM113.015 0V1C130.741 1 146.237 12.9532 150.737 30.0977L151.704 29.8438L152.672 29.5899C147.94 11.5662 131.65 -1 113.015 -1V0ZM0 40H1C1 18.4609 18.4609 1 40 1V0V-1C17.3563 -1 -1 17.3563 -1 40H0ZM40 322.646V321.646C18.4609 321.646 1 304.186 1 282.646H0H-1C-1 305.29 17.3563 323.646 40 323.646V322.646ZM300 282.646H299C299 304.186 281.539 321.646 260 321.646V322.646V323.646C282.644 323.646 301 305.29 301 282.646H300ZM260 88.8516V89.8516C281.539 89.8516 299 107.312 299 128.852H300H301C301 106.208 282.644 87.8516 260 87.8516V88.8516ZM198.049 88.8516V87.8516C180.324 87.8516 164.828 75.8984 160.327 58.7539L159.36 59.0078L158.393 59.2617C163.124 77.2854 179.415 89.8516 198.049 89.8516V88.8516Z" fill="url(#e37_paint1_linear_9001_764)" mask="url(#e37_path-1-inside-1_9001_764)"/>
+<defs>
+<linearGradient id="e37_paint0_linear_9001_764" x1="300" y1="341.827" x2="83.5781" y2="125.405" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.2"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+<linearGradient id="e37_paint1_linear_9001_764" x1="59.58" y1="289.703" x2="300" y2="114.75" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.21"/>
+<stop offset="0.37549" stop-color="white" stop-opacity="0.85"/>
+<stop offset="1" stop-color="white" stop-opacity="0.2"/>
+</linearGradient>
+</defs>
+</svg>
+</div><div class="t" id="e38" data-f="I9001:714;9001:823" style="position:absolute;left:1113.786px;top:1104.558px;width:174.986px;height:68px;white-space:pre-wrap;overflow-wrap:break-word;text-align:left;font-family:'Host Grotesk','Helvetica Neue',Arial,sans-serif;font-weight:400;font-size:28px;line-height:1.2;letter-spacing:-0.03em;color:#567a8b">Integrated AI Agent</div><div class="t" id="e39" data-f="I9001:714;9001:824" style="position:absolute;left:1113.786px;top:1221.122px;width:180.426px;height:57px;opacity:0.8;white-space:pre-wrap;overflow-wrap:break-word;text-align:left;font-family:'Host Grotesk','Helvetica Neue',Arial,sans-serif;font-weight:400;font-size:16px;line-height:1.2;color:#567a8b">Integrated AI agent for personalized client experiences.</div><div class="g" id="e40" data-f="I9001:714;9001:825" data-n="Group 5" style="position:absolute;left:0;top:0;width:0;height:0"><div class="b" id="e41" data-f="I9001:714;9001:826" data-n="image 8" style="position:absolute;left:1126.895px;top:911.7px;width:88.689px;height:88.759px;opacity:0.5;filter:blur(16.35px)"><i class="pl" style="position:absolute;inset:0;border-radius:inherit;overflow:hidden;pointer-events:none"><img src="assets/img/9d14b49773-439242.webp" alt="" decoding="async" style="position:absolute;left:0;top:0;width:1856px;height:2464px;max-width:none;transform-origin:0 0;transform:matrix(0.06892,0,0,0.06892,-19.613,-40.53)"></i></div><div class="b" id="e42" data-f="I9001:714;9001:827" data-n="image 7" style="position:absolute;left:0;top:0;width:97.176px;height:97.253px;transform-origin:0 0;transform:translate(1092.088px,954.345px) rotate(-1.066939rad)"><i class="pl" style="position:absolute;inset:0;border-radius:inherit;overflow:hidden;pointer-events:none"><img src="assets/img/9d14b49773-2d22da.webp" alt="" decoding="async" style="position:absolute;left:0;top:0;width:1856px;height:2464px;max-width:none;transform-origin:0 0;transform:matrix(0.075516,0,0,0.075516,-21.49,-44.409)"></i></div></div><a href="#" aria-label="Integrated AI Agent" class="g" id="e43" data-f="I9001:714;9001:828" data-n="Group 2" style="position:absolute;left:0;top:0;width:0;height:0"><div class="b" id="e44" data-f="I9001:714;9001:829" data-n="Ellipse 1" style="position:absolute;left:0;top:0;width:47.971px;height:47.971px;transform-origin:0 0;transform:translate(1309.883px,1047.02px) rotate(-0.785398rad);opacity:0.5;border-radius:50%;background-color:rgba(255,255,255,0.45);box-shadow:0px 11px 17px 0px rgba(105,144,163,0.34)"></div><div class="b" id="e45" data-f="I9001:714;9001:830" data-n="ArrowUpRight" style="position:absolute;left:0;top:0;width:20.125px;height:20.125px;transform-origin:0 0;transform:translate(1329.573px,1047.02px) rotate(-0.785398rad)"><div class="v" id="e47" data-f="I9001:714;9001:830;8899:77685" data-n="Vector" style="position:absolute;left:4.279px;top:4.272px;width:11.57px;height:11.57px"><svg aria-hidden="true" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;overflow:visible" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.754639 10.8171L10.8171 0.754639" stroke="#567A8B" stroke-width="1.50938" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div><div class="v" id="e48" data-f="I9001:714;9001:830;8899:77686" data-n="Vector" style="position:absolute;left:6.159px;top:4.272px;width:9.69px;height:9.69px"><svg aria-hidden="true" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;overflow:visible" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.754639 0.754639H8.93042V8.93042" stroke="#567A8B" stroke-width="1.50938" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div></div></a></div><div class="b" id="e49" data-f="I9001:714;9001:831" data-n="Frame 5" style="position:absolute;left:1404px;top:1393px;width:396px;height:230px;border-radius:40px;overflow:hidden;background:linear-gradient(58.13deg, rgba(255,255,255,0.2) 13.25%, rgba(129,163,180,0.2) 76.88%)"><i class="gl" style="position:absolute;inset:0;border-radius:inherit;pointer-events:none;-webkit-backdrop-filter:blur(9.5px) saturate(1.25);backdrop-filter:blur(9.5px) saturate(1.25)"></i><i class="is" style="position:absolute;inset:0;border-radius:inherit;pointer-events:none;box-shadow:inset 0.849px -0.849px 0 0 rgba(255,255,255,0.44),inset -0.849px 0.849px 0 0 rgba(255,255,255,0.144),inset 0 0 7.92px 0 rgba(255,255,255,0.144)"></i><div class="g" id="e50" data-f="I9001:714;9001:832" data-n="Group 3" style="position:absolute;left:0;top:0;width:0;height:0"><div class="t" id="e51" data-f="I9001:714;9001:833" style="position:absolute;left:24.937px;top:118.698px;width:84px;height:90px;white-space:pre;text-align:left;text-box:trim-both cap alphabetic;font-family:'Host Grotesk','Helvetica Neue',Arial,sans-serif;font-weight:300;font-size:127.98px;line-height:1.2;letter-spacing:-0.03em;color:#ffffff">4</div><div class="b" id="e52" data-f="I9001:714;9001:834" data-n="Frame 6" style="position:absolute;left:93.582px;top:86.703px;width:83.827px;height:102.384px;overflow:hidden"><div class="t" id="e53" data-f="I9001:714;9001:835" style="position:absolute;left:-0.32px;top:111.995px;width:84px;height:90px;white-space:pre;text-align:left;text-box:trim-both cap alphabetic;font-family:'Host Grotesk','Helvetica Neue',Arial,sans-serif;font-weight:300;font-size:127.98px;line-height:1.2;letter-spacing:-0.03em;color:#ffffff">2</div></div><div class="t" id="e54" data-f="I9001:714;9001:836" style="position:absolute;left:168px;top:144.294px;width:55px;height:45px;white-space:pre;text-align:left;text-box:trim-both cap alphabetic;font-family:'Host Grotesk','Helvetica Neue',Arial,sans-serif;font-weight:300;font-size:63.99px;line-height:1.2;letter-spacing:-0.03em;color:#ffffff">%</div></div><div class="t" id="e55" data-f="I9001:714;9001:837" style="position:absolute;left:101.465px;top:235.297px;width:261.672px;height:38px;white-space:pre-wrap;overflow-wrap:break-word;text-align:left;font-family:'Host Grotesk','Helvetica Neue',Arial,sans-serif;font-weight:400;font-size:16px;line-height:1.2;color:#ffffff">Join us in redefining the future of security with innovative solutions</div><a href="#" aria-label="Join us" class="g" id="e56" data-f="I9001:714;9001:838" data-n="Group 2" style="position:absolute;left:0;top:0;width:0;height:0"><div class="b" id="e57" data-f="I9001:714;9001:839" data-n="Ellipse 1" style="position:absolute;left:0;top:0;width:47.971px;height:47.971px;transform-origin:0 0;transform:translate(324.185px,34.713px) rotate(-0.785398rad);opacity:0.1;border-radius:50%;background-color:#ffffff"></div><div class="b" id="e58" data-f="I9001:714;9001:840" data-n="ArrowUpRight" style="position:absolute;left:0;top:0;width:20.125px;height:20.125px;transform-origin:0 0;transform:translate(343.875px,34.713px) rotate(-0.785398rad)"><div class="v" id="e60" data-f="I9001:714;9001:840;8899:77685" data-n="Vector" style="position:absolute;left:4.277px;top:4.274px;width:11.57px;height:11.57px"><svg aria-hidden="true" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;overflow:visible" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.754639 10.8171L10.8171 0.754639" stroke="white" stroke-width="1.50938" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div><div class="v" id="e61" data-f="I9001:714;9001:840;8899:77686" data-n="Vector" style="position:absolute;left:6.167px;top:4.274px;width:9.69px;height:9.69px"><svg aria-hidden="true" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;overflow:visible" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.754639 0.754639H8.93042V8.93042" stroke="white" stroke-width="1.50938" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div></div></a><i class="sk" style="position:absolute;inset:0px;pointer-events:none;border-radius:40px;padding:1px;background:linear-gradient(116.55deg, rgba(255,255,255,0.21) 18.57%, rgba(255,255,255,0.85) 49.14%, rgba(255,255,255,0.2) 100%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0)"></i></div><div class="b" id="e62" data-f="I9001:714;9001:841" data-n="Frame 7" style="position:absolute;left:660px;top:592.308px;width:396px;height:230px;border-radius:40px;overflow:hidden;background:linear-gradient(58.13deg, rgba(255,255,255,0.2) 13.25%, rgba(129,163,180,0.2) 76.88%)"><i class="gl" style="position:absolute;inset:0;border-radius:inherit;pointer-events:none;-webkit-backdrop-filter:blur(9.5px) saturate(1.25);backdrop-filter:blur(9.5px) saturate(1.25)"></i><i class="is" style="position:absolute;inset:0;border-radius:inherit;pointer-events:none;box-shadow:inset 0.849px -0.849px 0 0 rgba(255,255,255,0.44),inset -0.849px 0.849px 0 0 rgba(255,255,255,0.144),inset 0 0 7.92px 0 rgba(255,255,255,0.144)"></i><div class="g" id="e63" data-f="I9001:714;9001:842" data-n="Group 4" style="position:absolute;left:0;top:0;width:0;height:0"><div class="g" id="e64" data-f="I9001:714;9001:843" data-n="Mask group" style="position:absolute;left:0;top:0;width:0;height:0"><div class="mk" style="position:absolute;left:0;top:0;width:182.063px;height:196.767px;transform-origin:0 0;transform:matrix(0.954927,-0.296839,0.296839,0.954927,-212.164,56.106);overflow:hidden;border-radius:0px;-webkit-mask-image:radial-gradient(99.54px 45.34px at 95.612px 151.427px, #ffffff 0%, rgba(153,153,153,0) 100%);mask-image:radial-gradient(99.54px 45.34px at 95.612px 151.427px, #ffffff 0%, rgba(153,153,153,0) 100%);mix-blend-mode:multiply"><div style="position:absolute;left:0;top:0;transform-origin:0 0;transform:matrix(0.954927,0.296839,-0.296839,0.954927,219.256,9.401)"><div class="b" id="e65" data-f="I9001:714;9001:845" data-n="Rectangle 3" style="position:absolute;left:0;top:0;width:182.063px;height:196.767px;transform-origin:0 0;transform:translate(-212.164px,56.106px) rotate(-0.301381rad);mix-blend-mode:multiply"><i class="pl" style="position:absolute;inset:0;border-radius:inherit;overflow:hidden;pointer-events:none"><img src="assets/img/4dacaf9e88-65183b.webp" alt="" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover"></i></div></div></div></div><div class="b" id="e66" data-f="I9001:714;9001:846" data-n="Rectangle 5" style="position:absolute;left:0;top:0;width:182.063px;height:196.767px;transform-origin:0 0;transform:translate(-212.164px,56.106px) rotate(-0.301381rad)"><i class="pl" style="position:absolute;inset:0;border-radius:inherit;overflow:hidden;pointer-events:none"><img src="assets/img/f06877bf9f-59b33d.webp" alt="" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover"></i></div></div><div class="b" id="e67" data-f="I9001:714;9001:847" data-n="Frame 8" style="position:absolute;left:175px;top:237.384px;width:123px;height:29px;border-radius:40px;background-color:rgba(255,255,255,0.2)"><div class="t" id="e68" data-f="I9001:714;9001:848" style="position:absolute;left:10px;top:6px;width:103px;height:17px;white-space:pre;text-align:left;font-family:'Host Grotesk','Helvetica Neue',Arial,sans-serif;font-weight:400;font-size:14px;line-height:1.2;color:#ffffff">Perfect Security </div><i class="sk" style="position:absolute;inset:0px;pointer-events:none;border-radius:40px;padding:1px;background:linear-gradient(101.46deg, rgba(255,255,255,0.21) 16.46%, rgba(255,255,255,0.85) 47.83%, rgba(255,255,255,0.2) 100%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0)"></i></div><div class="t" id="e69" data-f="I9001:714;9001:849" style="position:absolute;left:175px;top:304.616px;width:190px;height:68px;white-space:pre-wrap;overflow-wrap:break-word;text-align:left;font-family:'Host Grotesk','Helvetica Neue',Arial,sans-serif;font-weight:400;font-size:28px;line-height:1.2;letter-spacing:-0.03em;color:#ffffff">AI ensures total protection</div><a href="#" aria-label="AI ensures total protection" class="g" id="e70" data-f="I9001:714;9001:850" data-n="Group 2" style="position:absolute;left:0;top:0;width:0;height:0"><div class="b" id="e71" data-f="I9001:714;9001:851" data-n="Ellipse 1" style="position:absolute;left:0;top:0;width:47.971px;height:47.971px;transform-origin:0 0;transform:translate(325.074px,34.713px) rotate(-0.785398rad);opacity:0.1;border-radius:50%;background-color:#ffffff"></div><div class="b" id="e72" data-f="I9001:714;9001:852" data-n="ArrowUpRight" style="position:absolute;left:0;top:0;width:20.125px;height:20.125px;transform-origin:0 0;transform:translate(344.764px,34.713px) rotate(-0.785398rad)"><div class="v" id="e74" data-f="I9001:714;9001:852;8899:77685" data-n="Vector" style="position:absolute;left:4.278px;top:4.272px;width:11.57px;height:11.57px"><svg aria-hidden="true" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;overflow:visible" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.754639 10.8171L10.8171 0.754639" stroke="white" stroke-width="1.50938" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div><div class="v" id="e75" data-f="I9001:714;9001:852;8899:77686" data-n="Vector" style="position:absolute;left:6.168px;top:4.272px;width:9.69px;height:9.69px"><svg aria-hidden="true" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;overflow:visible" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.754639 0.754639H8.93042V8.93042" stroke="white" stroke-width="1.50938" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div></div></a><i class="sk" style="position:absolute;inset:0px;pointer-events:none;border-radius:40px;padding:1px;background:linear-gradient(116.55deg, rgba(255,255,255,0.21) 18.57%, rgba(255,255,255,0.85) 49.14%, rgba(255,255,255,0.2) 100%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0)"></i></div><div class="b" id="e76" data-f="I9001:714;9001:853" data-n="Frame 10" style="position:absolute;left:2217px;top:30px;width:234px;height:46px;border-radius:4px 40px 40px 4px;background:linear-gradient(78.12deg, rgba(255,255,255,0.2) 14.62%, rgba(129,163,180,0.2) 77.26%)"><i class="gl" style="position:absolute;inset:0;border-radius:inherit;pointer-events:none;-webkit-backdrop-filter:blur(9.5px) saturate(1.25);backdrop-filter:blur(9.5px) saturate(1.25)"></i><i class="is" style="position:absolute;inset:0;border-radius:inherit;pointer-events:none;box-shadow:inset 0.849px -0.849px 0 0 rgba(255,255,255,0.44),inset -0.849px 0.849px 0 0 rgba(255,255,255,0.144),inset 0 0 7.92px 0 rgba(255,255,255,0.144)"></i><div class="t" id="e77" data-f="I9001:714;9001:854" style="position:absolute;left:24px;top:11px;width:107px;height:24px;opacity:0.6;white-space:pre;text-align:left;font-family:'Host Grotesk','Helvetica Neue',Arial,sans-serif;font-weight:400;font-size:20px;line-height:1.2;letter-spacing:-0.03em;color:#ffffff">Active Users</div><div class="t" id="e78" data-f="I9001:714;9001:855" style="position:absolute;left:141px;top:6px;width:69px;height:34px;white-space:pre;text-align:left;font-family:'Host Grotesk','Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:28px;line-height:1.2;letter-spacing:-0.03em;color:#ffffff">+323</div><i class="sk" style="position:absolute;inset:0px;pointer-events:none;border-radius:4px 40px 40px 4px;padding:1px;background:linear-gradient(99.6deg, rgba(255,255,255,0.21) 16.3%, rgba(255,255,255,0.85) 47.73%, rgba(255,255,255,0.2) 100%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0)"></i></div><div class="g" id="e79" data-f="I9001:714;9001:856" data-n="Group 6" style="position:absolute;left:0;top:0;width:0;height:0"><div class="b" id="e80" data-f="I9001:714;9001:857" data-n="Ellipse 1" style="position:absolute;left:2082.761px;top:20.635px;width:64.729px;height:64.729px;border-radius:50%"><i class="pl" style="position:absolute;inset:0;border-radius:inherit;overflow:hidden;pointer-events:none"><img src="assets/img/81fce8013c.webp" alt="" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover"></i><i class="sk" style="position:absolute;inset:0px;pointer-events:none;border-radius:50%;border:0.894px solid #ffffff"></i></div><div class="b" id="e81" data-f="I9001:714;9001:858" data-n="Ellipse 2" style="position:absolute;left:2210.998px;top:20.635px;width:64.729px;height:64.729px;border-radius:50%"><i class="pl" style="position:absolute;inset:0;border-radius:inherit;overflow:hidden;pointer-events:none"><img src="assets/img/4a0bc518bb.webp" alt="" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover"></i><i class="sk" style="position:absolute;inset:0px;pointer-events:none;border-radius:50%;border:0.894px solid #ffffff"></i></div><div class="b" id="e82" data-f="I9001:714;9001:859" data-n="Ellipse 3" style="position:absolute;left:2339.234px;top:20.635px;width:64.729px;height:64.729px;border-radius:50%"><i class="pl" style="position:absolute;inset:0;border-radius:inherit;overflow:hidden;pointer-events:none"><img src="assets/img/2c63754389.webp" alt="" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover"></i><i class="sk" style="position:absolute;inset:0px;pointer-events:none;border-radius:50%;border:0.894px solid #ffffff"></i></div><div class="b" id="e83" data-f="I9001:714;9001:860" data-n="Ellipse 4" style="position:absolute;left:2467.47px;top:20.635px;width:64.729px;height:64.729px;border-radius:50%"><i class="pl" style="position:absolute;inset:0;border-radius:inherit;overflow:hidden;pointer-events:none"><img src="assets/img/8c96ba50fb.webp" alt="" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover"></i><i class="sk" style="position:absolute;inset:0px;pointer-events:none;border-radius:50%;border:0.894px solid #ffffff"></i></div></div></div></div></div></div>
+</div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js"></script>
+<script>window.SCENE={"frame":{"w":1920,"h":1080},"E":[["s",1,100,15,2.5552],["l"]],"els":[{"id":"e5","m":"lt","b":{"x":-250,"y":10.041,"w":73.3801,"h":22.9176,"a":0.0,"f":false,"o":1},"t":{"x":[[0,-250,0],[0.001,-250,1],[2.5562,0,0]]}},{"id":"e6","m":"lt","b":{"x":490.5,"y":-300.0008,"w":78,"h":43,"a":0.0,"f":false,"o":1},"t":{"y":[[0,-300.0008239746094,0],[0.001,-300.0008239746094,1],[2.5562,0,0]]}},{"id":"e8","m":"lt","b":{"x":608.5,"y":-385.1673,"w":79,"h":43,"a":0.0,"f":false,"o":1},"t":{"y":[[0,-385.1673278808594,0],[0.001,-385.1673278808594,1],[2.5562,0,0]]}},{"id":"e10","m":"lt","b":{"x":727.5,"y":-470.3338,"w":96,"h":43,"a":0.0,"f":false,"o":1},"t":{"y":[[0,-470.3338317871094,0],[0.001,-470.3338317871094,1],[2.5562,0,0]]}},{"id":"e12","m":"lt","b":{"x":863.5,"y":-555.5003,"w":107,"h":43,"a":0.0,"f":false,"o":1},"t":{"y":[[0,-555.5003051757812,0],[0.001,-555.5003051757812,1],[2.5562,0,0]]}},{"id":"e14","m":"lt","b":{"x":1010.5,"y":-640.6668,"w":167,"h":43,"a":0.0,"f":false,"o":1},"t":{"y":[[0,-640.6668090820312,0],[0.001,-640.6668090820312,1],[2.5562,0,0]]}},{"id":"e16","m":"lt","b":{"x":1217.5,"y":-725.8333,"w":92,"h":43,"a":0.0,"f":false,"o":1},"t":{"y":[[0,-725.8333129882812,0],[0.001,-725.8333129882812,1],[2.5562,0,0]]}},{"id":"e18","m":"lt","b":{"x":1686.3801,"y":-811,"w":111,"h":43,"a":0.0,"f":false,"o":1},"t":{"y":[[0,-811,0],[0.001,-811,1],[2.5562,0,0]]}},{"id":"e23","m":"lt","b":{"x":-980,"y":0,"w":274,"h":62,"a":0.0,"f":false,"o":1},"t":{"x":[[0,-980,0],[3.0,-980,1],[5.5552,0,0]]}},{"id":"e24","m":"lt","b":{"x":-776.5076,"y":62,"w":273,"h":62,"a":0.0,"f":false,"o":1},"t":{"x":[[0,-776.507568359375,0],[3.0,-776.507568359375,1],[5.5552,63.492431640625,0]]}},{"id":"e25","m":"lt","b":{"x":-606.5076,"y":156,"w":300,"h":38,"a":0.0,"f":false,"o":0.8},"t":{"x":[[0,-606.507568359375,0],[3.0,-606.507568359375,1],[5.5552,63.492431640625,0]]}},{"id":"e27","m":"lt","b":{"x":-516.5076,"y":254,"w":239.9707,"h":71.9707,"a":0.0,"f":false,"o":1},"t":{"x":[[0,-516.507568359375,0],[3.0,-516.507568359375,1],[5.5552,63.492431640625,0]]}},{"id":"e34","m":"lt","b":{"x":-212.5369,"y":255.4854,"w":149,"h":69,"a":0.0,"f":false,"o":1},"t":{"x":[[0,-212.536865234375,0],[3.0,-212.536865234375,1],[5.5552,317.463134765625,0]]}},{"id":"e37","m":"lt","b":{"x":1079.82,"y":919.66,"w":300,"h":322.65,"a":0,"f":false,"o":1},"t":{"y":[[0,919.6599999999999,0],[3.0,919.6599999999999,1],[5.5552,69.65999999999985,0]]}},{"id":"e38","m":"lt","b":{"x":1113.7856,"y":1104.5576,"w":174.9861,"h":68,"a":0.0,"f":false,"o":1},"t":{"x":[[0,1113.78564453125,0],[3.0,1113.78564453125,1],[5.5552,1113.7856140136719,0]],"y":[[0,1104.5576171875,0],[3.0,1104.5576171875,1],[5.5552,204.55755615234375,0]]}},{"id":"e39","m":"lt","b":{"x":1113.7856,"y":1221.1221,"w":180.4259,"h":57,"a":0.0,"f":false,"o":0.8},"t":{"x":[[0,1113.78564453125,0],[3.0,1113.78564453125,1],[5.5552,1113.7856750488281,0]],"y":[[0,1221.1220703125,0],[3.0,1221.1220703125,1],[5.5552,291.1221923828125,0]]}},{"id":"e41","m":"lt","b":{"x":1126.8946,"y":911.7,"w":88.6891,"h":88.759,"a":0.0,"f":false,"o":0.5},"t":{"x":[[0,1126.8945922851562,0],[3.0,1126.8945922851562,1],[5.5552,1126.8945007324219,0]],"y":[[0,911.6999654769897,0],[3.0,911.6999654769897,1],[5.5552,111.69744873046875,0]]}},{"id":"e42","m":"tf","b":{"x":1092.0879,"y":954.3447,"w":97.1765,"h":97.253,"a":-1.0669,"f":false,"o":1},"t":{"x":[[0,1092.0879364013672,0],[3.0,1092.0879364013672,1],[5.5552,1109.5419616699219,0]],"y":[[0,954.3447484970093,0],[3.0,954.3447484970093,1],[5.5552,86.6427001953125,0]],"a":[[0,-1.066938677863876,0],[3.0,-1.066938677863876,1],[5.5552,0.0,0]]}},{"id":"e44","m":"tf","b":{"x":1309.8831,"y":1047.0205,"w":47.9707,"h":47.9707,"a":-0.7854,"f":false,"o":0.5},"t":{"x":[[0,1309.883056640625,0],[3.0,1309.883056640625,1],[5.5552,1319.818115234375,0]],"y":[[0,1047.020492553711,0],[3.0,1047.020492553711,1],[5.5552,173.03509521484375,0]],"a":[[0,-0.7853981633974483,0],[3.0,-0.7853981633974483,1],[5.5552,0.0,0]]}},{"id":"e45","m":"tf","b":{"x":1329.573,"y":1047.0205,"w":20.125,"h":20.125,"a":-0.7854,"f":false,"o":1},"t":{"x":[[0,1329.5729566459322,0],[3.0,1329.5729566459322,1],[5.5552,1333.7409763336182,0]],"y":[[0,1047.0204939024102,0],[3.0,1047.0204939024102,1],[5.5552,186.95795822143555,0]],"a":[[0,-0.7853981633974483,0],[3.0,-0.7853981633974483,1],[5.5552,0.0,0]]}},{"id":"e51","m":"lt","b":{"x":24.9373,"y":118.698,"w":84,"h":90,"a":0.0,"f":false,"o":1},"t":{"y":[[0,118.69803237915039,0],[3.0,118.69803237915039,1],[5.5552,58.698123931884766,0]]}},{"id":"e53","m":"lt","b":{"x":-0.3199,"y":111.9951,"w":84,"h":90,"a":0.0,"f":false,"o":1},"t":{"x":[[0,-0.3199462890625,0],[3.0,-0.3199462890625,1],[5.5552,-0.31997936964035034,0]],"y":[[0,111.9951171875,0],[3.0,111.9951171875,1],[5.5552,31.99490737915039,0]]}},{"id":"e52","m":"lt","b":{"x":93.582,"y":86.7031,"w":83.8267,"h":102.3838,"a":0.0,"f":false,"o":1},"t":{"y":[[0,86.70310407732904,0],[3.0,86.70310407732904,1],[5.5552,26.70319563006342,0]]}},{"id":"e54","m":"lt","b":{"x":168.0,"y":144.294,"w":55,"h":45,"a":0.0,"f":false,"o":1},"t":{"y":[[0,144.29397583007812,0],[3.0,144.29397583007812,1],[5.5552,84.2940673828125,0]]}},{"id":"e55","m":"lt","b":{"x":101.4648,"y":235.2969,"w":261.6719,"h":38,"a":0.0,"f":false,"o":1},"t":{"x":[[0,101.46484375,0],[3.0,101.46484375,1],[5.5552,101.46488952636719,0]],"y":[[0,235.296875,0],[3.0,235.296875,1],[5.5552,155.2969970703125,0]]}},{"id":"e57","m":"tf","b":{"x":324.1851,"y":34.7129,"w":47.9707,"h":47.9707,"a":-0.7854,"f":false,"o":0.1},"t":{"x":[[0,324.18505859375,0],[3.0,324.18505859375,1],[5.5552,334.1200866699219,0]],"y":[[0,34.712886810302734,0],[3.0,34.712886810302734,1],[5.5552,10.727497100830078,0]],"a":[[0,-0.7853983319848452,0],[3.0,-0.7853983319848452,1],[5.5552,0.0,0]]}},{"id":"e58","m":"tf","b":{"x":343.875,"y":34.7129,"w":20.125,"h":20.125,"a":-0.7854,"f":false,"o":1},"t":{"x":[[0,343.87495725035865,0],[3.0,343.87495725035865,1],[5.5552,348.0429458618164,0]],"y":[[0,34.71288618823223,0],[3.0,34.71288618823223,1],[5.5552,24.650360107421875,0]],"a":[[0,-0.7853983319848452,0],[3.0,-0.7853983319848452,1],[5.5552,0.0,0]]}},{"id":"e49","m":"lt","b":{"x":1404,"y":1393,"w":396,"h":230,"a":0.0,"f":false,"o":1},"t":{"y":[[0,1393,0],[3.0,1393,1],[5.5552,162.9853515625,0]]}},{"id":"e65","m":"tf","b":{"x":-212.1641,"y":56.1064,"w":182.063,"h":196.7668,"a":-0.3014,"f":false,"o":1},"t":{"x":[[0,-212.1640625,0],[3.0,-212.1640625,1],[5.5552,-7.06298828125,0]],"y":[[0,56.1064453125,0],[3.0,56.1064453125,1],[5.5552,24.65032958984375,0]],"a":[[0,-0.3013811417450866,0],[3.0,-0.3013811417450866,1],[5.5552,0.0,0]]}},{"id":"e66","m":"tf","b":{"x":-212.1641,"y":56.1064,"w":182.063,"h":196.7668,"a":-0.3014,"f":false,"o":1},"t":{"x":[[0,-212.1640625,0],[3.0,-212.1640625,1],[5.5552,-7.06298828125,0]],"y":[[0,56.1064453125,0],[3.0,56.1064453125,1],[5.5552,24.65032958984375,0]],"a":[[0,-0.3013811417450866,0],[3.0,-0.3013811417450866,1],[5.5552,0.0,0]]}},{"id":"e67","m":"lt","b":{"x":175,"y":237.3838,"w":123,"h":29,"a":0.0,"f":false,"o":1},"t":{"y":[[0,237.3837890625,0],[3.0,237.3837890625,1],[5.5552,57.38336181640625,0]]}},{"id":"e69","m":"lt","b":{"x":175,"y":304.6162,"w":190,"h":68,"a":0.0,"f":false,"o":1},"t":{"y":[[0,304.6162109375,0],[3.0,304.6162109375,1],[5.5552,104.61663818359375,0]]}},{"id":"e71","m":"tf","b":{"x":325.0743,"y":34.7129,"w":47.9707,"h":47.9707,"a":-0.7854,"f":false,"o":0.1},"t":{"x":[[0,325.0743408203125,0],[3.0,325.0743408203125,1],[5.5552,335.0094299316406,0]],"y":[[0,34.712886810302734,0],[3.0,34.712886810302734,1],[5.5552,10.72747802734375,0]],"a":[[0,-0.7853983319848452,0],[3.0,-0.7853983319848452,1],[5.5552,0.0,0]]}},{"id":"e72","m":"tf","b":{"x":344.7642,"y":34.7129,"w":20.125,"h":20.125,"a":-0.7854,"f":false,"o":1},"t":{"x":[[0,344.76423947692115,0],[3.0,344.76423947692115,1],[5.5552,348.93228912353516,0]],"y":[[0,34.71288618823223,0],[3.0,34.71288618823223,1],[5.5552,24.650341033935547,0]],"a":[[0,-0.7853983319848452,0],[3.0,-0.7853983319848452,1],[5.5552,0.0,0]]}},{"id":"e62","m":"lt","b":{"x":660,"y":592.3076,"w":396,"h":230,"a":0.0,"f":false,"o":1},"t":{"y":[[0,592.3076171875,0],[3.0,592.3076171875,1],[5.5552,162.3076171875,0]]}},{"id":"e76","m":"lt","b":{"x":2217,"y":30,"w":234,"h":46,"a":0.0,"f":false,"o":1},"t":{"x":[[0,2217,0],[3.0,2217,1],[5.5552,1566,0]]}},{"id":"e80","m":"lt","b":{"x":2082.7612,"y":20.6348,"w":64.729,"h":64.729,"a":0.0,"f":false,"o":1},"t":{"x":[[0,2082.761224269867,0],[3.0,2082.761224269867,1],[5.5552,1393.48974609375,0]]}},{"id":"e81","m":"lt","b":{"x":2210.9976,"y":20.6348,"w":64.729,"h":64.729,"a":0.0,"f":false,"o":1},"t":{"x":[[0,2210.997604370117,0],[3.0,2210.997604370117,1],[5.5552,1434.4832763671875,0]]}},{"id":"e82","m":"lt","b":{"x":2339.2338,"y":20.6348,"w":64.729,"h":64.729,"a":0.0,"f":false,"o":1},"t":{"x":[[0,2339.2337951660156,0],[3.0,2339.2337951660156,1],[5.5552,1475.476806640625,0]]}},{"id":"e83","m":"lt","b":{"x":2467.47,"y":20.6348,"w":64.729,"h":64.729,"a":0.0,"f":false,"o":1},"t":{"x":[[0,2467.469970703125,0],[3.0,2467.469970703125,1],[5.5552,1516.47021484375,0]]}}],"blocks":[{"id":"bk0","k":"__bg","bleed":true,"x":0,"y":0,"w":1920,"h":1080,"ax":0,"ay":0,"par":0},{"id":"bk1","k":"Ellipse 1","bleed":false,"x":232.49,"y":481.0,"w":1418.93,"h":957.2,"ax":0,"ay":1,"par":0},{"id":"bk2","k":"freepik_video-upscale_2860829408 1","bleed":true,"x":0,"y":0,"w":1920.0,"h":1104.0,"ax":0,"ay":0,"par":0},{"id":"bk4","k":"Menu","bleed":false,"x":60.0,"y":37.92,"w":1797.38,"h":43.0,"ax":0,"ay":-1,"par":0},{"id":"bk5","k":"Content","bleed":false,"x":60.0,"y":627.69,"w":1800.0,"h":392.99,"ax":0,"ay":1,"par":0}],"videos":[{"id":"e3v0","mode":"once","t0":0,"rate":1,"wrap":false}],"end":5.805,"intro":5.805,"holds":[],"vhPerSec":60,"vhPerSecM":48,"mobile":{"w":390,"h":844,"blocks":{"Menu":{"x":20,"y":22,"z":0.86},"Content":{"x":20,"y":567,"z":0.74,"ay":1},"Ellipse 1":{"x":-230,"y":470,"z":0.6,"ay":1},"freepik_video-upscale_2860829408 1":{"fx":0.6}},"nodes":{"I9001:713;9001:734":{"hide":1},"I9001:713;9001:736":{"hide":1},"I9001:713;9001:738":{"hide":1},"I9001:713;9001:740":{"hide":1},"I9001:713;9001:742":{"hide":1},"I9001:713;9001:744":{"hide":1},"I9001:713;9001:746":{"dx":-1390.4},"I9001:714;9001:841":{"hide":1},"I9001:714;9001:819":{"hide":1},"I9001:714;9001:831":{"hide":1},"I9001:714;9001:853":{"dx":-1393,"dy":-113.6},"I9001:714;9001:856":{"dx":-1393,"dy":-113.6}}},"ptr":null,"cur":null,"hov":null,"cn":null,"cnb":null,"ns":null,"nfx":null,"introDelay":0};</script>
+<script>/* Figma hero runtime: layout (zoomed blocks), smart-animate + keyframe tracks, scroll-driven timeline. */
+(() => {
+  'use strict';
+  const S = window.SCENE;
+  const root = document.documentElement;
+  const $ = (s) => document.querySelector(s);
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const fine = matchMedia('(hover: hover) and (pointer: fine)').matches;
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+
+  /* ---------------------------------------------------------------- easing */
+  function bezier(x1, y1, x2, y2) {
+    const cx = 3 * x1, bx = 3 * (x2 - x1) - cx, ax = 1 - cx - bx;
+    const cy = 3 * y1, by = 3 * (y2 - y1) - cy, ay = 1 - cy - by;
+    const X = (t) => ((ax * t + bx) * t + cx) * t, Y = (t) => ((ay * t + by) * t + cy) * t;
+    const dX = (t) => (3 * ax * t + 2 * bx) * t + cx;
+    return (x) => {
+      if (x <= 0) return 0; if (x >= 1) return 1;
+      let t = x;
+      for (let i = 0; i < 8; i++) { const e = X(t) - x, d = dX(t); if (Math.abs(e) < 1e-6) break; if (Math.abs(d) < 1e-6) break; t -= e / d; }
+      if (t < 0 || t > 1 || Math.abs(X(t) - x) > 1e-4) { let lo = 0, hi = 1; t = x; for (let i = 0; i < 30; i++) { const v = X(t); if (Math.abs(v - x) < 1e-6) break; if (v < x) lo = t; else hi = t; t = (lo + hi) / 2; } }
+      return Y(t);
+    };
+  }
+  function spring(m, k, c, dur) {
+    const w0 = Math.sqrt(k / m), z = c / (2 * Math.sqrt(k * m));
+    let x;
+    if (z < 1) { const wd = w0 * Math.sqrt(1 - z * z); x = (t) => 1 - Math.exp(-z * w0 * t) * (Math.cos(wd * t) + (z * w0 / wd) * Math.sin(wd * t)); }
+    else if (z === 1) { x = (t) => 1 - Math.exp(-w0 * t) * (1 + w0 * t); }
+    else { const q = Math.sqrt(z * z - 1), r1 = -w0 * (z - q), r2 = -w0 * (z + q); x = (t) => 1 + (r2 * Math.exp(r1 * t) - r1 * Math.exp(r2 * t)) / (r1 - r2); }
+    const end = x(dur) || 1;
+    return (p) => (p <= 0 ? 0 : p >= 1 ? 1 : x(p * dur) / end);
+  }
+  const EF = S.E.map((e) => e[0] === 'l' ? (p) => p : e[0] === 'h' ? (p) => (p < 1 ? 0 : 1)
+    : e[0] === 'b' ? bezier(e[1], e[2], e[3], e[4]) : spring(e[1], e[2], e[3], e[4]));
+
+  function tv(tr, t, d) {
+    if (Array.isArray(tr)) return val(tr, t);
+    let v = tr.s ? val(tr.s, t) : d;
+    if (tr.a) for (const a of tr.a) v += val(a, t);
+    if (tr.m) for (const m of tr.m) v *= val(m, t);
+    return v;
+  }
+  const lerp = (a, b, k) => (Array.isArray(a) ? a.map((v, i) => v + (b[i] - v) * k) : a + (b - a) * k);
+  function val(tr, t) {
+    const n = tr.length;
+    if (t <= tr[0][0]) return tr[0][1];
+    if (t >= tr[n - 1][0]) return tr[n - 1][1];
+    let i = 1; while (i < n && tr[i][0] < t) i++;
+    const a = tr[i - 1], b = tr[i];
+    const span = b[0] - a[0];
+    const p = span > 0 ? (t - a[0]) / span : 1;
+    return lerp(a[1], b[1], EF[b[2]](p));
+  }
+
+  /* ---------------------------------------------------------------- elements */
+  const stage = $('#stage'), hero = $('#hero');
+  const els = S.els.map((r) => ({ ...r, el: document.getElementById(r.id), c: {} })).filter((r) => r.el);
+  let isM = false;
+  const px = (v) => (Math.round(v * 100) / 100) + 'px';
+  function put(r, k, v, fn) { if (r.c[k] !== v) { r.c[k] = v; fn(v); } }
+
+  /* per-node overrides, keyed by figma id
+     mobile (S.mobile.nodes): {hide} | {dx, dy, z} offsets in parent units | {mx, my, mz, rx, ry, may}: place the node so that its
+       frame point (rx, ry) lands on (mx, my) of the mobile design, at mz × the mobile scale (independent of the block's zoom)
+     desktop (S.cn): nodes inside a bleed (cover) block that must keep the contain scale/position of the frame */
+  let nodeOv = null, L$ = {};
+  function initNodeOv() {
+    const map = new Map();
+    const add = (fid, key, val) => document.querySelectorAll(`[data-f="${CSS.escape(fid)}"]`).forEach((el) => {
+      if (!map.has(el)) { const blkEl = el.closest('.blk'); map.set(el, { el, rec: els.find((r) => r.el === el), blk: blocks.find((b) => b.el === blkEl), l: el.style.left, t0: el.style.top, d: el.style.display }); }
+      map.get(el)[key] = val;
+    });
+    if (S.mobile && S.mobile.nodes) for (const [fid, ov] of Object.entries(S.mobile.nodes)) add(fid, 'm', ov);
+    if (S.cn) for (const fid of S.cn) add(fid, 'c', true);
+    if (S.ns) for (const [fid, spec] of Object.entries(S.ns)) add(fid, 's', spec);
+    if (S.nfx) for (const [fid, spec] of Object.entries(S.nfx)) add(fid, 'x', spec);
+    nodeOv = [...map.values()];
+  }
+  function applyNodeOv() {
+    if (!nodeOv) initNodeOv();
+    for (const n of nodeOv) {
+      const { el, rec, blk } = n, ov = isM ? n.m : null;
+      if (ov && ov.hide) { el.style.display = 'none'; continue; }
+      el.style.display = n.d;
+      let z = 1, mo = null, tk = null;
+      let bl = null;
+      // place: map frame coords to screen = (OX, OY) + x * Se; with a blend window bw the node moves from its
+      // natural (block) mapping to that target while t crosses bw
+      const place = (Se, OX, OY, bw) => {
+        if (bw && rec) { bl = { bz: blk.z, sx0: blk.sx0, sy0: blk.sy0, Q1: Se, P1x: OX, P1y: OY, w: bw }; return; }
+        z = Se / blk.z; mo = [(OX - blk.sx0) / Se, (OY - blk.sy0) / Se, zoomScalesOffsets ? 1 : 1 / z];
+      };
+      if (ov && ov.mx != null && blk) {
+        const Se = L$.sm * (ov.mz || 1);
+        place(Se, L$.mox + ov.mx * L$.sm - (ov.rx || 0) * Se, L$.moy * (1 + (ov.may || 0)) + ov.my * L$.sm - (ov.ry || 0) * Se, ov.bw);
+        tk = ov.tk || null;
+      } else if (ov) {
+        z = ov.z || 1; mo = [ov.dx || 0, ov.dy || 0, zoomScalesOffsets ? z : 1]; tk = ov.tk || null;
+      } else if (!isM && n.c && blk && blk.bleed) {
+        place(L$.s, (L$.W - L$.FW * L$.s) / 2, (L$.H - L$.FH * L$.s) / 2, S.cnb);
+      } else if (n.s) {
+        // uniform enlargement about a fixed frame point (a = [x, y])
+        z = n.s.k; const a = n.s.a || [0, 0];
+        mo = zoomScalesOffsets ? [a[0] * (1 / z - 1), a[1] * (1 / z - 1), 1] : [a[0] * (1 - z) / z, a[1] * (1 - z) / z, 1 / z];
+      }
+      el.style.zoom = z === 1 ? '' : z;
+      if (n.w0 === undefined) n.w0 = el.style.width;
+      const wo = ov && ov.w ? ov.w : 0;
+      el.style.width = wo ? px(wo) : n.w0;
+      if (rec) { rec.mo = mo; rec.bl = bl; rec.tk = tk; rec.wo = wo; rec.fd = ov && ov.fade ? ov.fade : null; rec.fi = n.x && n.x.fi ? n.x.fi : null; rec.c = {}; continue; }
+      const L = parseFloat(n.l) || 0, T = parseFloat(n.t0) || 0;
+      el.style.left = mo ? ((L + mo[0]) / mo[2]) + 'px' : n.l;
+      el.style.top = mo ? ((T + mo[1]) / mo[2]) + 'px' : n.t0;
+    }
+  }
+  function applyAt(t) {
+    for (const r of els) {
+      const T = r.t, b = (isM && S.mobile && S.mobile.base && S.mobile.base[r.id]) ? { ...r.b, ...S.mobile.base[r.id] } : r.b, st = r.el.style;
+      const g = (k, d) => (T[k] ? tv(T[k], t, d) : d);
+      const kx = r.tk ? r.tk[0] : 1, ky = r.tk ? r.tk[1] : 1;
+      if (r.bl) {
+        const B = r.bl; let w = Math.max(0, Math.min(1, (t - B.w[0]) / (B.w[1] - B.w[0]))); w = w * w * (3 - 2 * w);
+        const Q = B.bz + (B.Q1 - B.bz) * w, Px = B.sx0 + (B.P1x - B.sx0) * w, Py = B.sy0 + (B.P1y - B.sy0) * w, k = Q / B.bz;
+        put(r, 'zm', Math.round(k * 10000) / 10000, (v) => (st.zoom = v === 1 ? '' : v));
+        r.mo = [(Px - B.sx0) / Q, (Py - B.sy0) / Q, zoomScalesOffsets ? 1 : 1 / k];
+      }
+      let o = g('o', b.o == null ? 1 : b.o);
+      if (r.fd && t > r.fd[0]) o *= Math.max(0, Math.min(1, (r.fd[1] - t) / (r.fd[1] - r.fd[0])));
+      if (r.fi) o *= Math.max(0, Math.min(1, (t - r.fi[0]) / (r.fi[1] - r.fi[0])));
+      put(r, 'o', Math.round(o * 1000) / 1000, (v) => (st.opacity = v));
+      // fully transparent layers are also taken out of hit-testing / tab order, so hidden states never catch clicks
+      put(r, 'vh', o <= 0.001, (v) => (st.visibility = v ? 'hidden' : ''));
+      if (r.m === 'o') continue;
+      if (r.m === 'g') {
+        if (r.mo) { put(r, 'ml', r.mo[0] / r.mo[2], (v) => (st.left = px(v))); put(r, 'mt', r.mo[1] / r.mo[2], (v) => (st.top = px(v))); }
+        if (T.tx || T.ty || T.ar || T.sx || T.sy) {
+          const tf = `translate(${px(g('tx', 0) * kx)},${px(g('ty', 0) * ky)}) rotate(${g('ar', 0)}deg) scale(${g('sx', 1)},${g('sy', 1)})`;
+          put(r, 'tf', tf, (v) => (st.transform = v));
+        }
+        continue;
+      }
+      let x = g('x', b.x) + g('tx', 0) * kx, y = g('y', b.y) + g('ty', 0) * ky;
+      const w = r.wo || g('w', b.w), h = g('h', b.h);
+      if (r.mo) { x = (x + r.mo[0]) / r.mo[2]; y = (y + r.mo[1]) / r.mo[2]; }
+      if (r.m === 'lt') {
+        put(r, 'x', x, (v) => (st.left = px(v)));
+        put(r, 'y', y, (v) => (st.top = px(v)));
+        if (T.w || r.wo) put(r, 'w', w, (v) => (st.width = px(v)));
+        if (T.h) put(r, 'h', h, (v) => (st.height = px(v)));
+      } else {
+        const a = g('a', b.a || 0), ar = g('ar', 0), sx = g('sx', 1), sy = g('sy', 1);
+        let tf = b.mt ? `translate(${px(x)},${px(y)}) matrix(${b.mt.join(',')})` : `translate(${px(x)},${px(y)}) rotate(${a}rad)${b.f ? ' scale(1,-1)' : ''}`;
+        if (T.k) tf += ` scale(${Math.round(g('k', 1) * 100000) / 100000})`;
+        if (ar || sx !== 1 || sy !== 1) { const cx = b.pv ? b.pv[0] : w / 2, cy = b.pv ? b.pv[1] : h / 2; tf += ` translate(${px(cx)},${px(cy)}) rotate(${ar}deg) scale(${sx},${sy}) translate(${px(-cx)},${px(-cy)})`; }
+        put(r, 'tf', tf, (v) => (st.transform = v));
+        if (T.w || r.wo) put(r, 'w', w, (v) => (st.width = px(v)));
+        if (T.h) put(r, 'h', h, (v) => (st.height = px(v)));
+      }
+      if (T.r) put(r, 'r', g('r', 0), (v) => (st.borderRadius = px(v)));
+      if (T.bg) { const c = g('bg'); put(r, 'bg', `rgba(${c[0] | 0},${c[1] | 0},${c[2] | 0},${Math.round(c[3] * 1000) / 1000})`, (v) => (b.fc ? (st.color = v) : (st.backgroundColor = v))); }
+      if (T.blur) put(r, 'blur', g('blur', 0), (v) => (st.filter = `blur(${px(v)})`));
+    }
+  }
+
+  /* ---------------------------------------------------------------- layout */
+  const blocks = S.blocks.map((b) => ({ ...b, el: document.getElementById(b.id) })).filter((b) => b.el);
+  let zoomScalesOffsets = true;
+  function calibrateZoom() {
+    const p = document.createElement('div');
+    p.style.cssText = 'position:absolute;left:10px;top:0;width:2px;height:2px;zoom:2;visibility:hidden';
+    stage.appendChild(p);
+    zoomScalesOffsets = Math.abs(p.getBoundingClientRect().left - stage.getBoundingClientRect().left - 20) < 3;
+    p.remove();
+  }
+  function layout() {
+    const W = stage.clientWidth, H = stage.clientHeight;
+    const M = S.mobile && (W < 768 || W / H < 0.82) ? S.mobile : null;
+    isM = !!M;
+    root.classList.toggle('is-m', isM);
+    const FW = S.frame.w, FH = S.frame.h;
+    const s = Math.min(W / FW, H / FH), cov = Math.max(W / FW, H / FH);
+    const sm = M ? Math.min(W / M.w, H / M.h) : 0;
+    curScale = M ? sm : s;
+    for (const b of blocks) {
+      const cfg = M ? (M.blocks[b.k] || M.blocks[b.id] || (b.bleed ? {} : null)) : null;
+      if (M && (!cfg || cfg.hide)) { b.el.style.display = 'none'; continue; }
+      b.el.style.display = '';
+      let z, L, T;
+      if (b.bleed) {
+        const fx = cfg && cfg.fx != null ? cfg.fx : 0.5, fy = cfg && cfg.fy != null ? cfg.fy : 0.5;
+        z = cov * (cfg && cfg.z ? cfg.z : 1);
+        L = (W - FW * z) * fx + b.x * z; T = (H - FH * z) * fy + b.y * z;
+      } else if (M) {
+        z = sm * (cfg.z || 1);
+        const ox = (W - M.w * sm) / 2, oy = (H - M.h * sm) / 2;
+        const ax = cfg.ax != null ? cfg.ax : 0, ay = cfg.ay != null ? cfg.ay : 0;
+        L = ox * (1 + ax) + cfg.x * sm; T = oy * (1 + ay) + cfg.y * sm;
+      } else {
+        z = s;
+        const mx = (W - FW * s) / 2, my = (H - FH * s) / 2;
+        L = mx * (1 + b.ax) + b.x * s; T = my * (1 + b.ay) + b.y * s;
+      }
+      const f = zoomScalesOffsets ? z : 1;
+      b.el.style.zoom = z;
+      b.el.style.left = (L / f) + 'px';
+      b.el.style.top = (T / f) + 'px';
+      b.z = z; b.sx0 = L - b.x * z; b.sy0 = T - b.y * z;
+    }
+    L$ = { W, H, FW, FH, s, cov, sm, mox: M ? (W - M.w * sm) / 2 : 0, moy: M ? (H - M.h * sm) / 2 : 0 };
+    const per = isM ? S.vhPerSecM || 34 : S.vhPerSec || 40;
+    hero.style.setProperty('--track', Math.max(0, Math.round((S.end - S.intro) * per)) + 'vh');
+    for (const r of els) r.c = {};
+    applyNodeOv();
+  }
+
+  /* ---------------------------------------------------------------- media */
+  const videos = (S.videos || []).map((v) => ({ ...v, el: document.getElementById(v.id) })).filter((v) => v.el);
+  const blobs = {};
+  function fetchBlob(url, onp) {
+    if (blobs[url]) return Promise.resolve(blobs[url]);
+    return fetch(url).then((res) => {
+      if (!res.ok) throw new Error(res.status);
+      const total = +res.headers.get('content-length') || 0;
+      if (!res.body || !total) return res.blob();
+      const rd = res.body.getReader(), chunks = []; let got = 0;
+      const pump = () => rd.read().then(({ done, value }) => { if (done) return new Blob(chunks, { type: res.headers.get('content-type') || 'video/mp4' }); chunks.push(value); got += value.length; onp && onp(got / total); return pump(); });
+      return pump();
+    }).then((b) => (blobs[url] = URL.createObjectURL(b))).catch(() => url);
+  }
+  function attach(v) {
+    const url = v.el.dataset.src;
+    v.el.addEventListener('error', () => { if (v.el.src.startsWith('blob:')) { v.el.src = url; v.el.load(); } }, { once: true });
+    v.el.src = blobs[url] || url;
+    if (v.mode === 'loop') { v.el.loop = true; }
+    if (v.mode === 'once') { v.el.loop = false; v.el.removeAttribute('loop'); }
+  }
+  function syncMedia(t) {
+    for (const v of videos) {
+      if (v.mode === 'scrub') {
+        if (v.el.readyState >= 2 && !v.el.seeking) {
+          const d = v.el.duration || v.dur || 1;
+          let vt = Math.max(0, t - (v.t0 || 0)) * (v.rate || 1);
+          vt = v.wrap ? vt % d : Math.min(vt, d - 0.04);
+          if (Math.abs(v.el.currentTime - vt) > 0.012) v.el.currentTime = vt;
+        }
+      } else if (v.mode === 'once') {
+        // plays through once with the autoplayed timeline (no scroll scrubbing) and rests on its last frame
+        const on = started && t >= (v.t0 || 0) - 0.05;
+        if (on !== v.on) {
+          v.on = on;
+          if (on && reduced) { const d = v.el.duration || v.dur || 1; v.el.currentTime = Math.max(0, d - 0.05); }
+          else if (on) { v.el.currentTime = Math.max(0, t - (v.t0 || 0)); const p = v.el.play(); p && p.catch(() => {}); }
+          else v.el.pause();
+        }
+      } else {
+        const on = t >= (v.t0 || 0) - 0.05;
+        if (on !== v.on) { v.on = on; if (on) { const p = v.el.play(); p && p.catch(() => {}); } else v.el.pause(); }
+      }
+    }
+  }
+
+  /* ---------------------------------------------------------------- scroll */
+  let lenis = null, t = 0, ready = false, started = false, snapping = false, dir = 1, idle = 0, lastY = 0;
+  const INTRO = reduced ? S.end : S.intro, END = S.end;
+  const range = () => { const top = hero.offsetTop; return [top, top + hero.offsetHeight - stage.clientHeight]; };
+  const tFromY = (y) => { const [a, b] = range(); const p = b > a ? Math.min(1, Math.max(0, (y - a) / (b - a))) : 1; return INTRO + p * (END - INTRO); };
+  const yFromT = (tt) => { const [a, b] = range(); return a + ((tt - INTRO) / (END - INTRO || 1)) * (b - a); };
+  function onScroll() {
+    const y = lenis ? lenis.scroll : window.scrollY;
+    dir = y > lastY ? 1 : y < lastY ? -1 : dir; lastY = y;
+    if (!ready) return;
+    t = tFromY(y);
+    if (!reduced) armSnap();
+  }
+  function armSnap() {
+    clearTimeout(idle);
+    if (snapping || !lenis || window.__noSnap || !S.holds || !S.holds.length) return;
+    idle = setTimeout(() => {
+      if (S.holds.some(([a, b]) => t >= a - 0.02 && t <= b + 0.02)) return;
+      let target;
+      if (dir > 0) target = (S.holds.find(([a]) => a > t) || S.holds[S.holds.length - 1])[0];
+      else target = ([...S.holds].reverse().find(([, b]) => b < t) || S.holds[0])[1];
+      snapping = true;
+      lenis.scrollTo(yFromT(target), { duration: Math.min(1.8, Math.max(0.6, Math.abs(target - t) * 0.45)), easing: (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2), onComplete: () => { snapping = false; } });
+      setTimeout(() => { snapping = false; }, 2200);
+    }, 170);
+  }
+
+  /* ---------------------------------------------------------------- parallax */
+  let px0 = 0, py0 = 0, pxT = 0, pyT = 0;
+  const bleeds = blocks.filter((b) => b.bleed && b.par);
+  if (fine && !reduced && bleeds.length) {
+    window.addEventListener('pointermove', (e) => { pxT = (e.clientX / innerWidth - 0.5); pyT = (e.clientY / innerHeight - 0.5); }, { passive: true });
+  }
+  function parallax() {
+    if (!bleeds.length) return;
+    px0 += (pxT - px0) * 0.06; py0 += (pyT - py0) * 0.06;
+    for (const b of bleeds) b.el.style.translate = `${(-px0 * b.par).toFixed(2)}% ${(-py0 * b.par).toFixed(2)}%`;
+  }
+
+  /* ---------------------------------------------------------------- pointer: parallax, custom cursor, hover */
+  // S.ptr = {blocks: {key: [kx, ky]}, fade: [t0, t1]}: blocks follow the pointer (frame px per normalised offset)
+  // S.cur = {size, fade: [t0, t1]}: custom cursor dot (exclusion blend) replacing the system cursor
+  // S.hov = {f: figmaId, a, b}: hovering that node plays the [a, b] segment of the timeline forward
+  const ptrOn = fine && !reduced;
+  let pin = false, ex = -200, ey = -200, cx = -200, cy = -200, pxs = 0, pys = 0, hv = 0, curScale = 1;
+  const pBlocks = (S.ptr && ptrOn) ? Object.entries(S.ptr.blocks).map(([k, f]) => ({ b: blocks.find((x) => x.k === k), f })).filter((o) => o.b) : [];
+  let curEl = null;
+  if (S.cur && ptrOn) { curEl = document.createElement('div'); curEl.className = 'cur'; curEl.setAttribute('aria-hidden', 'true'); stage.appendChild(curEl); }
+  const hovEl = S.hov && ptrOn ? document.querySelector(`[data-f="${CSS.escape(S.hov.f)}"]`) : null;
+  if (ptrOn && (pBlocks.length || curEl || hovEl)) {
+    window.addEventListener('pointermove', (e) => { const r = stage.getBoundingClientRect(); ex = e.clientX - r.left; ey = e.clientY - r.top; if (!pin) { cx = ex; cy = ey; } pin = true; }, { passive: true });
+    document.documentElement.addEventListener('pointerleave', () => { pin = false; });
+  }
+  const fadeW = (fd) => (!fd ? 1 : t <= fd[0] ? 1 : t >= fd[1] ? 0 : 1 - (t - fd[0]) / (fd[1] - fd[0]));
+  function pointerFx() {
+    const W = stage.clientWidth, H = stage.clientHeight;
+    const nx = pin ? Math.max(-1, Math.min(1, (ex / W - 0.5) * 2)) : 0, ny = pin ? Math.max(-1, Math.min(1, (ey / H - 0.5) * 2)) : 0;
+    pxs += (nx - pxs) * 0.06; pys += (ny - pys) * 0.06;
+    if (pBlocks.length) {
+      const w = isM ? 0 : fadeW(S.ptr.fade);
+      for (const o of pBlocks) o.b.el.style.translate = `${(pxs * o.f[0] * w).toFixed(2)}px ${(pys * o.f[1] * w).toFixed(2)}px`;
+    }
+    if (curEl) {
+      const cw = isM ? 0 : fadeW(S.cur.fade);
+      cx += (ex - cx) * 0.3; cy += (ey - cy) * 0.3;
+      const sz = S.cur.size * curScale;
+      curEl.style.width = curEl.style.height = px(sz);
+      curEl.style.transform = `translate(${px(cx - sz / 2)},${px(cy - sz / 2)})`;
+      curEl.style.opacity = pin ? cw : 0;
+      root.classList.toggle('has-cur', pin && cw > 0.5);
+    }
+    if (hovEl) {
+      let on = false;
+      if (pin && t >= S.hov.a - 0.05 && t <= S.hov.b) {
+        const r = hovEl.getBoundingClientRect(), sr = stage.getBoundingClientRect();
+        const dx = ex - (r.left - sr.left + r.width / 2), dy = ey - (r.top - sr.top + r.height / 2);
+        on = r.width > 0 && dx * dx + dy * dy <= (r.width / 2) * (r.width / 2);
+      }
+      hv += ((on ? 1 : 0) - hv) * 0.12;
+      if (hv < 0.001) hv = 0;
+    }
+  }
+  function effT() {
+    if (!S.hov || !hv || t < S.hov.a - 0.05 || t > S.hov.b) return t;
+    return Math.max(t, S.hov.a + hv * (S.hov.b - S.hov.a));
+  }
+
+  /* ---------------------------------------------------------------- loop */
+  function frame(now) {
+    if (lenis) lenis.raf(now);
+    pointerFx();
+    applyAt(effT()); syncMedia(t); parallax();
+    requestAnimationFrame(frame);
+  }
+
+  /* ---------------------------------------------------------------- boot */
+  calibrateZoom();
+  layout();
+  applyAt(0);
+  if (!reduced && window.Lenis) {
+    lenis = new Lenis({ lerp: 0.085, wheelMultiplier: 0.9, smoothWheel: true });
+    lenis.on('scroll', onScroll);
+    lenis.stop();
+  } else {
+    window.addEventListener('scroll', onScroll, { passive: true });
+  }
+  window.scrollTo(0, 0);
+  root.classList.add('is-locked');
+  let rz = 0;
+  window.addEventListener('resize', () => { cancelAnimationFrame(rz); rz = requestAnimationFrame(() => { layout(); if (ready) t = tFromY(lenis ? lenis.scroll : scrollY); }); });
+  requestAnimationFrame(frame);
+
+  const loaderBar = $('#loaderBar'), loaderPct = $('#loaderPct');
+  function preload() {
+    const jobs = [], prog = new Map(), wt = new Map();
+    let shown = 0;
+    const report = () => { let a = 0, b = 0; wt.forEach((w, k) => { b += w; a += w * (prog.get(k) || 0); }); shown = Math.max(shown, b ? a / b : 1); if (loaderBar) loaderBar.style.transform = `scaleX(${shown})`; if (loaderPct) loaderPct.textContent = String(Math.round(shown * 100)).padStart(3, '0'); };
+    wt.set('fonts', 1);
+    jobs.push(document.fonts.ready.then(() => { prog.set('fonts', 1); report(); }));
+    document.querySelectorAll('#stage img').forEach((im, i) => {
+      const k = 'i' + i; wt.set(k, 0.4);
+      // wait until the image is loaded AND decoded, so nothing paints late (empty boxes) once the loader is gone
+      const loaded = im.complete ? Promise.resolve() : new Promise((r) => { im.addEventListener('load', r, { once: true }); im.addEventListener('error', r, { once: true }); });
+      jobs.push(loaded.then(() => (im.decode ? im.decode().catch(() => {}) : null)).then(() => { prog.set(k, 1); report(); }));
+    });
+    const seen = new Set();
+    videos.forEach((v) => {
+      const url = v.el.dataset.src; if (seen.has(url)) return; seen.add(url);
+      wt.set(url, v.mode === 'scrub' ? 6 : 1.5);
+      jobs.push(fetchBlob(url, (p) => { prog.set(url, p); report(); }).then(() => { prog.set(url, 1); report(); }));
+    });
+    report();
+    return Promise.race([Promise.all(jobs), new Promise((r) => setTimeout(r, 14000))]);
+  }
+  function waitVideos() {
+    return Promise.race([Promise.all(videos.map((v) => new Promise((r) => { if (v.el.readyState >= 2) return r(); v.el.addEventListener('loadeddata', r, { once: true }); v.el.addEventListener('error', r, { once: true }); }))), new Promise((r) => setTimeout(r, 3000))]);
+  }
+  preload().then(() => { videos.forEach(attach); return waitVideos(); }).then(() => {
+    root.classList.remove('is-locked');
+    const ld = $('#loader'); if (ld) ld.classList.add('is-done');
+    const finish = () => { ready = true; started = true; t = INTRO; if (lenis) lenis.start(); };
+    if (reduced || INTRO <= 0) { t = INTRO; finish(); return; }
+    // the intro starts once the loader has (mostly) faded out, so it is never seen half-way behind it
+    setTimeout(() => {
+      let t0 = null;
+      const intro = (now) => { if (t0 === null) { t0 = now; started = true; } const p = Math.max(0, Math.min(1, (now - t0) / 1000 / INTRO)); t = p * INTRO; if (p < 1) requestAnimationFrame(intro); else finish(); };
+      requestAnimationFrame(intro);
+    }, (S.introDelay || 0) * 1000);
+  });
+  window.__hero = { get t() { return t; }, set t(v) { t = v; }, layout, yFromT, S };
+})();
+</script>
+</body>
+</html>
