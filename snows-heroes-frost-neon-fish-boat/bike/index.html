@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Zephyr — The Future of Cycling</title>
+<meta name="description" content="Experience the future of cycling with the revolutionary Zephyr bicycle today.">
+<meta name="theme-color" content="#ffffff">
+<style>
+@font-face{font-family:'Cindie Mono';src:url(assets/fonts/cindiemono-d.woff2) format('woff2');font-weight:400;font-style:normal;font-display:block}
+@font-face{font-family:'Clash Display Variable';src:url(assets/fonts/ClashDisplay-Variable.woff2) format('woff2');font-weight:200 700;font-style:normal;font-display:block}
+:root{--bg:#ffffff;--ink:#1b1b1f;color-scheme:light}
+html,body{background:var(--bg);margin:0}
+body{overflow-x:clip;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:geometricPrecision}
+html.is-locked,html.is-locked body{overflow:hidden}
+.hero{position:relative;height:calc(100vh + var(--track,400vh));height:calc(100svh + var(--track,400vh))}
+.stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;background:var(--bg)}
+.blk{position:absolute;left:0;top:0;width:0;height:0}
+.org{position:absolute;left:0;top:0}
+.blk *{box-sizing:border-box}
+.b,.t,.v,.g{position:absolute}
+.t{margin:0}
+.pl img{display:block}
+.sx{position:absolute;left:0;top:0;width:0;height:0;margin:0;padding:0;list-style:none}
+.blk li{list-style:none;margin:0;padding:0}
+.blk a{color:inherit;text-decoration:none;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.blk a.lk{position:absolute;left:0;top:0;right:0;bottom:0;display:block;border-radius:inherit}
+.blk a:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+.blk *{pointer-events:none}
+.blk .t,.blk .t *,.blk a,.blk a *{pointer-events:auto}
+.v svg{display:block}
+.ko .t,.ko .t *{color:#000!important;-webkit-text-fill-color:#000!important;background:none!important}
+.loader{position:fixed;inset:0;z-index:50;display:grid;place-items:center;background:var(--bg);transition:opacity .9s cubic-bezier(.22,1,.36,1),visibility .9s}
+.loader.is-done{opacity:0;visibility:hidden;pointer-events:none}
+.loader-in{display:grid;justify-items:center;gap:14px;color:var(--ink);font:500 11px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.24em}
+.loader-bar{width:160px;height:1px;background:color-mix(in srgb,var(--ink) 20%,transparent);overflow:hidden}
+.loader-bar i{display:block;height:100%;width:100%;background:var(--ink);transform:scaleX(0);transform-origin:left}
+
+.blk .hvo{position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .35s cubic-bezier(.22,1,.36,1)}
+.blk .hvo.is-hv{opacity:1}
+.blk a.hv-tr,.blk a.hv-tr *{transition:color .35s cubic-bezier(.22,1,.36,1)}
+.blk a.is-hv,.blk a.is-hv *{color:var(--hvc)!important}
+.blk a.hv-ic{transition:opacity .3s ease}
+.blk a.hv-ic:hover,.blk a.hv-ic:focus-visible{opacity:.72!important}
+.blk .hz{pointer-events:auto}
+.blk .hz i.pl{transition:scale .8s cubic-bezier(.22,1,.36,1)}
+.blk .hz:hover i.pl{scale:var(--hz,1.06)}
+
+
+#stage::after{content:'';position:absolute;z-index:60;pointer-events:none;inset:calc(10px * var(--s,1) + .5px);border-radius:calc(30px * var(--s,1) - .5px);box-shadow:0 0 0 2000px #fff}
+html.is-m #stage::after{inset:calc(10px * var(--s,1) + 2px);border-radius:calc(30px * var(--s,1) - 2px)}
+[data-f="13080:136"]{overflow:visible!important;clip-path:inset(-4px 0 -14px 0)}
+html.is-m [data-f="I13080:135;13080:187"]::after{content:'';position:absolute;left:176px;top:74.5px;width:60px;height:46px;pointer-events:none;background:radial-gradient(circle at 0 100%,transparent 45px,#fff 45.7px)}
+[data-f="I13080:139;13080:215"],[data-f="I13080:139;13080:220"]{-webkit-backdrop-filter:blur(20px) saturate(1.25);backdrop-filter:blur(20px) saturate(1.25)}[data-f="I13080:139;13080:215"]>.gl,[data-f="I13080:139;13080:220"]>.gl{display:none}
+</style>
+</head>
+<body>
+<div class="loader" id="loader" aria-hidden="true"><div class="loader-in"><span>ZEPHYR</span><div class="loader-bar"><i id="loaderBar"></i></div><span id="loaderPct">000</span></div></div>
+<main class="hero" id="hero" aria-label="Zephyr — The Future of Cycling">
+<div class="stage" id="stage">
+<div class="blk bleed" id="bk0" style="width:1440px;height:810px"><div class="org"><div class="b" id="e1" data-f="13080:132" data-n="home" style="position:absolute;left:0px;top:0px;width:1440px;height:810px;border-radius:40px;background-color:#ffffff"><i class="sk" style="position:absolute;inset:0px;pointer-events:none;border-radius:40px;border:10px solid #ffffff"></i></div></div></div>
+<div class="blk bleed" id="bk1" data-k="capcut-edit 1"><div class="org" style="left:0px;top:0px"><div class="b" id="e2" data-f="13080:133" data-n="capcut-edit 1" style="position:absolute;left:0;top:0;width:1440px;height:810px;transform-origin:0 0;transform:translate(1440px,0px) rotate(3.141593rad) scale(1,-1)"><i class="pl" style="position:absolute;inset:0;border-radius:inherit;overflow:hidden;pointer-events:none"><video id="e2v0" class="vid" muted playsinline preload="auto" data-src="assets/video/72f339ca58.mp4" poster="assets/video/72f339ca58.jpg" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></video></i><i class="pl" style="position:absolute;inset:0;border-radius:inherit;overflow:hidden;pointer-events:none;background:linear-gradient(180deg, rgba(0,0,0,0) 27.37%, rgba(0,0,0,0.8) 96.55%)"></i><i class="bb pb" style="position:absolute;inset:0;border-radius:inherit;pointer-events:none;-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);-webkit-mask:linear-gradient(180deg, rgba(0,0,0,0) 70.134%, rgba(0,0,0,1) 100%);mask:linear-gradient(180deg, rgba(0,0,0,0) 70.134%, rgba(0,0,0,1) 100%)"></i></div></div></div>
+<div class="blk" id="bk2" data-k="Component 5"><div class="org" style="left:-10px;top:-441.196px"><div class="b" id="e3" data-f="13080:134" data-n="Component 5" style="position:absolute;left:10px;top:441.196px;width:432px;height:359.21px"><div class="g" id="e4" data-f="I13080:134;13080:253" data-n="Group 9" style="position:absolute;left:0;top:0;width:0;height:0"><div class="v" id="e5" data-f="I13080:134;13080:254" data-n="Rectangle 2" style="position:absolute;left:0px;top:290px;width:432px;height:359px"><svg aria-hidden="true" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;overflow:visible" width="432" height="359" viewBox="0 0 432 359" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M432 358.854H0V-0.000244141V99.3264C0 137.986 31.3401 169.326 70 169.326H142.679H226.835C255.077 169.326 280.553 186.298 291.432 212.36L334.682 315.966C345.606 342.134 371.237 359.127 399.593 358.999L432 358.854Z" fill="white"/>
+</svg>
+</div><div class="g" id="e6" data-f="I13080:134;13080:255" data-n="Mask group" style="position:absolute;left:0;top:0;width:0;height:0"><div class="g" id="e8" style="position:absolute;left:0;top:0;width:0;height:0"><div class="mk" style="position:absolute;left:0;top:0;width:4367.774px;height:4648.804px;-webkit-mask:url('data:image/svg+xml,%3Csvg%20width%3D%22367.77441%22%20height%3D%22180.41016%22%20viewBox%3D%220%200%20367.77441%20180.41016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20transform%3D%22matrix%281%200%200%201%200%200%29%22%3E%3Cpath%20fill-rule%3D%22nonzero%22%20d%3D%22M162.535%200%20C168.502%200%20173.879%203.60004%20176.152%209.11621%20L189.264%2040.9229%20C196.52%2058.5261%20213.68%2070.0127%20232.72%2070.0127%20L274.1%2070.0127%20C287.873%2070.0127%20300.285%2078.3218%20305.534%2091.0553%20L332.685%20156.921%20C338.544%20171.135%20352.4%20180.41%20367.774%20180.41%20L30%20180.41%20C13.4315%20180.41%201.52945e-05%20166.979%200%20150.41%20L0%2030%20C5.46067e-05%2013.4315%2013.4315%20-3.51422e-15%2030%200%20L162.535%200%20Z%22%20fill%3D%22%23d9d9d9%22/%3E%3C/g%3E%3C/svg%3E') no-repeat 0px 468.394px/367.774px 180.41px;mask:url('data:image/svg+xml,%3Csvg%20width%3D%22367.77441%22%20height%3D%22180.41016%22%20viewBox%3D%220%200%20367.77441%20180.41016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20transform%3D%22matrix%281%200%200%201%200%200%29%22%3E%3Cpath%20fill-rule%3D%22nonzero%22%20d%3D%22M162.535%200%20C168.502%200%20173.879%203.60004%20176.152%209.11621%20L189.264%2040.9229%20C196.52%2058.5261%20213.68%2070.0127%20232.72%2070.0127%20L274.1%2070.0127%20C287.873%2070.0127%20300.285%2078.3218%20305.534%2091.0553%20L332.685%20156.921%20C338.544%20171.135%20352.4%20180.41%20367.774%20180.41%20L30%20180.41%20C13.4315%20180.41%201.52945e-05%20166.979%200%20150.41%20L0%2030%20C5.46067e-05%2013.4315%2013.4315%20-3.51422e-15%2030%200%20L162.535%200%20Z%22%20fill%3D%22%23d9d9d9%22/%3E%3C/g%3E%3C/svg%3E') no-repeat 0px 468.394px/367.774px 180.41px"><div class="g" id="e9" style="position:absolute;left:0;top:0;width:0;height:0"><div class="b" id="e7" data-f="I13080:134;13080:259" data-n="small 1" style="position:absolute;left:0;top:0;width:705.745px;height:396.982px;transform-origin:0 0;transform:translate(525.704px,377.582px) rotate(3.141593rad) scale(1,-1)"><i class="pl" style="position:absolute;inset:0;border-radius:inherit;overflow:hidden;pointer-events:none"><video id="e7v1" class="vid" muted playsinline preload="auto" data-src="assets/video/8e1e447019.mp4" poster="assets/video/8e1e447019.jpg" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></video></i></div></div></div></div></div><a href="#" aria-label="View details" class="v" id="e10" data-f="I13080:134;13080:260" data-n="Union" style="position:absolute;left:0;top:0;width:16.472px;height:15.889px;transform-origin:0 0;transform:matrix(-0.258821,-0.965925,0.965925,-0.258821,229.379,509.047)"><svg aria-hidden="true" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;overflow:visible" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7217 6.3041L16.1882 9.77058V14.9012H12.5767V6.44911L3.13643 15.8894L0.582838 13.3358L10.3076 3.61102L2.73254e-05 3.61171V0.000216815H13.9184L16.472 2.55381L12.7217 6.3041Z" fill="black"/>
+</svg>
+</a></div></div></div></div>
+<div class="blk" id="bk3" data-k="Component 2"><div class="org" style="left:-716.181px;top:-9.821px"><div class="b" id="e11" data-f="13080:135" data-n="Component 2" style="position:absolute;left:716.181px;top:9.821px;width:713.819px;height:143.08px"><div class="g" id="e12" data-f="I13080:135;13080:182" data-n="Group 26" style="position:absolute;left:0;top:0;width:0;height:0"><div class="g" id="e13" data-f="I13080:135;13080:183" data-n="Group 25" style="position:absolute;left:0;top:0;width:0;height:0"><div class="v" id="e14" data-f="I13080:135;13080:184" data-n="Rectangle 2" style="position:absolute;left:807.301px;top:0.298px;width:234.944px;height:63.767px"><svg aria-hidden="true" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;overflow:visible" width="235" height="64" viewBox="0 0 235 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<foreignObject x="-40" y="-40" width="314.944" height="143.767"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(20px);clip-path:url(#e14_i0);height:100%;width:100%"></div></foreignObject><path data-figma-bg-blur-radius="40" d="M0 0.000418134H234.944V32.5854C234.944 49.8067 220.983 63.7673 203.762 63.7673H87.8691C66.9565 63.7673 48.0923 51.2003 40.0361 31.9016L36.943 24.492C30.726 9.59907 16.1383 -0.0719304 0 0.000418134Z" fill="white" fill-opacity="0.1"/>
+<defs>
+<clipPath id="e14_i0" transform="translate(40 40)"><path d="M0 0.000418134H234.944V32.5854C234.944 49.8067 220.983 63.7673 203.762 63.7673H87.8691C66.9565 63.7673 48.0923 51.2003 40.0361 31.9016L36.943 24.492C30.726 9.59907 16.1383 -0.0719304 0 0.000418134Z"/>
+</clipPath></defs>
+</svg>
+</div><a href="#" aria-label="Search" class="b" id="e15" data-f="I13080:135;13080:185" data-n="MagnifyingGlass" style="position:absolute;left:886.12px;top:20.179px;width:20px;height:20px"><div class="v" id="e17" data-f="I13080:135;13080:185;8899:47244" data-n="Vector" style="position:absolute;left:2px;top:2px;width:13.5px;height:13.5px"><svg aria-hidden="true" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;overflow:visible" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.75 13C10.2018 13 13 10.2018 13 6.75C13 3.29822 10.2018 0.5 6.75 0.5C3.29822 0.5 0.5 3.29822 0.5 6.75C0.5 10.2018 3.29822 13 6.75 13Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div><div class="v" id="e18" data-f="I13080:135;13080:185;8899:47245" data-n="Vector" style="position:absolute;left:12.669px;top:12.669px;width:5.331px;height:5.331px"><svg aria-hidden="true" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;overflow:visible" width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.5 0.5L4.83047 4.83047" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div></a></div><div class="g" id="e19" data-f="I13080:135;13080:186" data-n="Group 28" style="position:absolute;left:0;top:0;width:0;height:0"><div class="v" id="e20" data-f="I13080:135;13080:187" data-n="Rectangle 1" style="position:absolute;left:590.672px;top:0.135px;width:620.448px;height:142.945px"><svg aria-hidden="true" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;overflow:visible" width="621" height="143" viewBox="0 0 621 143" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0.00702175H620.448V142.945V120.499C620.448 95.6466 600.301 75.4994 575.448 75.4994H563.617H93.1246C74.969 75.4994 58.5917 64.5891 51.5977 47.8347L43.1778 27.6648C36.1555 10.8426 19.678 -0.0811956 1.44914 0.000525206L0 0.00702175Z" fill="white"/>
+</svg>
+</div><div class="b" id="e21" data-f="I13080:135;13080:188" data-n="Frame 10" style="position:absolute;left:659.12px;top:6.179px;width:552px;height:52px"><nav class="sx" aria-label="Main navigation"><ul class="sx"><li class="b" id="e22" data-f="I13080:135;13080:189" data-n="Frame 5" style="position:absolute;left:445px;top:1.5px;width:147px;height:49px;border-radius:999px"><a href="#" class="lk"><div class="t" id="e23" data-f="I13080:135;13080:190" style="position:absolute;left:20px;top:20px;width:107px;height:9px;white-space:pre;text-align:right;text-box:trim-both cap alphabetic;font-family:'Clash Display Variable',system-ui,sans-serif;font-weight:400;font-size:13px;line-height:normal;letter-spacing:0.22em;text-transform:uppercase;color:#000000">Collection</div></a></li><li class="b" id="e24" data-f="I13080:135;13080:191" data-n="Frame 6" style="position:absolute;left:480px;top:1.5px;width:112px;height:49px;border-radius:999px"><a href="#" class="lk"><div class="t" id="e25" data-f="I13080:135;13080:192" style="position:absolute;left:20px;top:20px;width:72px;height:9px;white-space:pre;text-align:right;text-box:trim-both cap alphabetic;font-family:'Clash Display Variable',system-ui,sans-serif;font-weight:400;font-size:13px;line-height:normal;letter-spacing:0.22em;text-transform:uppercase;color:#000000">Designs</div></a></li><li class="b" id="e26" data-f="I13080:135;13080:193" data-n="Frame 7" style="position:absolute;left:464px;top:1.5px;width:128px;height:49px;border-radius:999px"><a href="#" class="lk"><div class="t" id="e27" data-f="I13080:135;13080:194" style="position:absolute;left:20px;top:20px;width:88px;height:9px;white-space:pre;text-align:right;text-box:trim-both cap alphabetic;font-family:'Clash Display Variable',system-ui,sans-serif;font-weight:400;font-size:13px;line-height:normal;letter-spacing:0.22em;text-transform:uppercase;color:#000000">Patterns</div></a></li></ul></nav><a href="#" class="b" id="e28" data-f="I13080:135;13080:195" data-n="Frame 8" style="position:absolute;left:439px;top:0px;width:153px;height:52px;border-radius:999px;background-color:#000000"><div class="b" id="e29" data-f="I13080:135;13080:196" data-n="Frame 9" style="position:absolute;left:8px;top:8px;width:36px;height:36px;border-radius:999px;overflow:hidden;background-color:#ffffff"><div class="b" id="e30" data-f="I13080:135;13080:197" data-n="PaperPlaneTilt" style="position:absolute;left:11px;top:11px;width:14px;height:14px"><div class="v" id="e32" data-f="I13080:135;13080:197;8899:6303" data-n="Vector" style="position:absolute;left:0.438px;top:1.315px;width:12.249px;height:12.248px"><svg aria-hidden="true" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;overflow:visible" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.2171 1.10996C12.2171 1.10996 12.2171 1.11543 12.2171 1.11816L9.03433 11.6149C8.98615 11.7854 8.88699 11.937 8.75013 12.0496C8.61328 12.1621 8.44529 12.23 8.2687 12.2443C8.24355 12.2465 8.21839 12.2476 8.19324 12.2476C8.02775 12.2481 7.86557 12.2013 7.72584 12.1126C7.58611 12.024 7.47466 11.8972 7.40464 11.7472L5.41402 7.66207C5.3941 7.62113 5.38745 7.57499 5.395 7.5301C5.40255 7.4852 5.42392 7.44377 5.45613 7.4116L8.62363 4.2441C8.70221 4.16138 8.74537 4.05124 8.74391 3.93716C8.74245 3.82308 8.69648 3.71408 8.61581 3.6334C8.53513 3.55273 8.42613 3.50676 8.31205 3.5053C8.19797 3.50384 8.08783 3.547 8.00511 3.62558L4.83597 6.79308C4.8038 6.82529 4.76237 6.84666 4.71747 6.85421C4.67258 6.86176 4.62644 6.85511 4.5855 6.83519L0.496518 4.84511C0.336622 4.7684 0.203811 4.64492 0.115683 4.49102C0.0275555 4.33712 -0.0117277 4.16008 0.00303924 3.98335C0.0178062 3.80662 0.0859261 3.63855 0.198372 3.50141C0.310818 3.36427 0.462281 3.26454 0.632689 3.21543L11.1294 0.0326143H11.1376C11.2871 -0.00937396 11.445 -0.0108459 11.5952 0.0283494C11.7454 0.0675446 11.8825 0.145996 11.9924 0.255654C12.1023 0.365313 12.181 0.50223 12.2205 0.652359C12.26 0.802487 12.2588 0.960422 12.2171 1.10996Z" fill="#020202"/>
+</svg>
+</div></div></div><div class="t" id="e33" data-f="I13080:135;13080:198" style="position:absolute;left:52px;top:21.5px;width:81px;height:9px;white-space:pre;text-align:right;text-box:trim-both cap alphabetic;font-family:'Clash Display Variable',system-ui,sans-serif;font-weight:400;font-size:13px;line-height:normal;letter-spacing:0.22em;text-transform:uppercase;color:#ffffff">Contact</div></a></div></div></div></div></div></div>
+<div class="blk" id="bk4" data-k="Component 7"><div class="org" style="left:-920.889px;top:-691px"><div class="b" id="e34" data-f="13080:136" data-n="Component 7" style="position:absolute;left:920.889px;top:691px;width:229px;height:55px;overflow:hidden"><div class="t" id="e35" data-f="I13080:136;13080:279" style="position:absolute;left:-230px;top:0px;width:229px;height:55px;white-space:pre-wrap;overflow-wrap:break-word;word-spacing:-0.3px;text-align:left;text-box:trim-both cap alphabetic;font-family:'Clash Display Variable',system-ui,sans-serif;font-weight:400;font-size:16px;line-height:1.4;color:#ffffff">Experience the future of cycling with the revolutionary Zephyr bicycle today.</div></div></div></div>
+<div class="blk" id="bk5" data-k="Component 8"><div class="org" style="left:-1221.627px;top:-570.303px"><div class="b" id="e36" data-f="13080:137" data-n="Component 8" style="position:absolute;left:1221.627px;top:570.303px;width:162.745px;height:169.411px"><div class="g" id="e37" data-f="I13080:137;13080:284" data-n="Group 15" style="position:absolute;left:0;top:0;width:0;height:0"><div class="g" id="e38" data-f="I13080:137;13080:285" data-n="Group 13" style="position:absolute;left:0;top:0;width:0;height:0"><div class="g" id="e39" data-f="I13080:137;13080:286" data-n="Repeat group 1" style="position:absolute;left:0;top:0;width:0;height:0"><div class="b" id="e40" data-f="I13080:137;13080:287" data-n="Line 8" style="position:absolute;left:0;top:0;width:5.949px;height:1px;transform-origin:0 0;transform:translate(119.26px,414.63px) rotate(-2.042033rad) scale(1,-1);opacity:0.4;background-color:#ffffff"></div><div class="b" id="e41" data-f="I13080:137;13080:288" data-n="Line 8" style="position:absolute;left:0;top:0;width:3.745px;height:1px;transform-origin:0 0;transform:translate(129.607px,406.91px) rotate(-2.199117rad) scale(1,-1);opacity:0.4;background-color:#ffffff"></div><div class="b" id="e42" data-f="I13080:137;13080:289" data-n="Line 8" style="position:absolute;left:0;top:0;width:3.745px;height:1px;transform-origin:0 0;transform:translate(139.265px,398.558px) rotate(-2.356194rad) scale(1,-1);opacity:0.4;background-color:#ffffff"></div><div class="b" id="e43" data-f="I13080:137;13080:290" data-n="Line 8" style="position:absolute;left:0;top:0;width:3.745px;height:1px;transform-origin:0 0;transform:translate(147.498px,388.797px) rotate(-2.513272rad) scale(1,-1);opacity:0.4;background-color:#ffffff"></div><div class="b" id="e44" data-f="I13080:137;13080:291" data-n="Line 8" style="position:absolute;left:0;top:0;width:3.745px;height:1px;transform-origin:0 0;transform:translate(154.103px,377.869px) rotate(-2.670356rad) scale(1,-1);opacity:0.4;background-color:#ffffff"></div><div class="b" id="e45" data-f="I13080:137;13080:292" data-n="Line 8" style="position:absolute;left:0;top:0;width:3.745px;height:1px;transform-origin:0 0;transform:translate(158.917px,366.042px) rotate(-2.827432rad) scale(1,-1);opacity:0.4;background-color:#ffffff"></div><div class="b" id="e46" data-f="I13080:137;13080:293" data-n="Line 8" style="position:absolute;left:0;top:0;width:3.745px;height:1px;transform-origin:0 0;transform:translate(161.821px,353.608px) rotate(-2.984518rad) scale(1,-1);opacity:0.4;background-color:#ffffff"></div><div class="b" id="e47" data-f="I13080:137;13080:294" data-n="Line 8" style="position:absolute;left:0;top:0;width:3.745px;height:1px;transform-origin:0 0;transform:translate(162.745px,340.872px) rotate(3.141593rad) scale(1,-1);opacity:0.4;background-color:#ffffff"></div><div class="b" id="e48" data-f="I13080:137;13080:295" data-n="Line 8" style="position:absolute;left:0;top:0;width:3.745px;height:1px;transform-origin:0 0;transform:translate(161.665px,328.149px) rotate(2.984518rad) scale(1,-1);opacity:0.4;background-color:#ffffff"></div><div class="b" id="e49" data-f="I13080:137;13080:296" data-n="Line 8" style="position:absolute;left:0;top:0;width:3.745px;height:1px;transform-origin:0 0;transform:translate(158.608px,315.751px) rotate(2.827432rad) scale(1,-1);opacity:0.4;background-color:#ffffff"></div><div class="b" id="e50" data-f="I13080:137;13080:297" data-n="Line 8" style="position:absolute;left:0;top:0;width:3.745px;height:1px;transform-origin:0 0;transform:translate(153.649px,303.984px) rotate(2.670356rad) scale(1,-1);opacity:0.4;background-color:#ffffff"></div><div class="b" id="e51" data-f="I13080:137;13080:298" data-n="Line 8" style="position:absolute;left:0;top:0;width:3.745px;height:1px;transform-origin:0 0;transform:translate(146.91px,293.138px) rotate(2.513272rad) scale(1,-1);opacity:0.4;background-color:#ffffff"></div><div class="b" id="e52" data-f="I13080:137;13080:299" data-n="Line 8" style="position:absolute;left:0;top:0;width:3.745px;height:1px;transform-origin:0 0;transform:translate(138.558px,283.48px) rotate(2.356194rad) scale(1,-1);opacity:0.4;background-color:#ffffff"></div><div class="b" id="e53" data-f="I13080:137;13080:300" data-n="Line 8" style="position:absolute;left:0;top:0;width:3.745px;height:1px;transform-origin:0 0;transform:translate(128.797px,275.247px) rotate(2.199117rad) scale(1,-1);opacity:0.4;background-color:#ffffff"></div><div class="b" id="e54" data-f="I13080:137;13080:301" data-n="Line 8" style="position:absolute;left:0;top:0;width:3.745px;height:1px;transform-origin:0 0;transform:translate(117.869px,268.642px) rotate(2.042033rad) scale(1,-1);opacity:0.4;background-color:#ffffff"></div><div class="b" id="e55" data-f="I13080:137;13080:302" data-n="Line 8" style="position:absolute;left:0;top:0;width:3.745px;height:1px;transform-origin:0 0;transform:translate(106.042px,263.828px) rotate(1.884957rad) scale(1,-1);opacity:0.4;background-color:#ffffff"></div><div class="b" id="e56" data-f="I13080:137;13080:303" data-n="Line 8" style="position:absolute;left:0;top:0;width:3.745px;height:1px;transform-origin:0 0;transform:translate(93.608px,260.923px) rotate(1.727871rad) scale(1,-1);opacity:0.4;background-color:#ffffff"></div><div class="b" id="e57" data-f="I13080:137;13080:304" data-n="Line 8" style="position:absolute;left:0;top:0;width:3.745px;height:1px;transform-origin:0 0;transform:translate(80.872px,260px) rotate(1.570796rad) scale(1,-1);opacity:0.4;background-color:#ffffff"></div><div class="b" id="e58" data-f="I13080:137;13080:305" data-n="Line 8" style="position:absolute;left:0;top:0;width:3.745px;height:1px;transform-origin:0 0;transform:translate(68.149px,261.08px) rotate(1.413721rad) scale(1,-1);opacity:0.4;background-color:#ffffff"></div><div class="b" id="e59" data-f="I13080:137;13080:306" data-n="Line 8" style="position:absolute;left:0;top:0;width:3.745px;height:1px;transform-origin:0 0;transform:translate(55.751px,264.137px) rotate(1.256635rad) scale(1,-1);opacity:0.4;background-color:#ffffff"></div><div class="b" id="e60" data-f="I13080:137;13080:307" data-n="Line 8" style="position:absolute;left:0;top:0;width:3.745px;height:1px;transform-origin:0 0;transform:translate(43.985px,269.096px) rotate(1.099559rad) scale(1,-1);opacity:0.4;background-color:#ffffff"></div><div class="b" id="e61" data-f="I13080:137;13080:308" data-n="Line 8" style="position:absolute;left:0;top:0;width:3.745px;height:1px;transform-origin:0 0;transform:translate(33.138px,275.834px) rotate(0.942476rad) scale(1,-1);opacity:0.4;background-color:#ffffff"></div><div class="b" id="e62" data-f="I13080:137;13080:309" data-n="Line 8" style="position:absolute;left:0;top:0;width:3.745px;height:1px;transform-origin:0 0;transform:translate(23.48px,284.187px) rotate(0.785398rad) scale(1,-1);opacity:0.4;background-color:#ffffff"></div><div class="b" id="e63" data-f="I13080:137;13080:310" data-n="Line 8" style="position:absolute;left:0;top:0;width:3.745px;height:1px;transform-origin:0 0;transform:translate(15.247px,293.947px) rotate(0.628321rad) scale(1,-1);opacity:0.4;background-color:#ffffff"></div><div class="b" id="e64" data-f="I13080:137;13080:311" data-n="Line 8" style="position:absolute;left:0;top:0;width:3.745px;height:1px;transform-origin:0 0;transform:translate(8.642px,304.875px) rotate(0.471237rad) scale(1,-1);opacity:0.4;background-color:#ffffff"></div><div class="b" id="e65" data-f="I13080:137;13080:312" data-n="Line 8" style="position:absolute;left:0;top:0;width:3.745px;height:1px;transform-origin:0 0;transform:translate(3.828px,316.702px) rotate(0.314161rad) scale(1,-1);opacity:0.4;background-color:#ffffff"></div><div class="b" id="e66" data-f="I13080:137;13080:313" data-n="Line 8" style="position:absolute;left:0;top:0;width:3.745px;height:1px;transform-origin:0 0;transform:translate(0.923px,329.137px) rotate(0.157075rad) scale(1,-1);opacity:0.4;background-color:#ffffff"></div><div class="b" id="e67" data-f="I13080:137;13080:314" data-n="Line 8" style="position:absolute;left:0;top:0;width:3.745px;height:1px;transform-origin:0 0;transform:translate(0px,341.872px) rotate(0rad) scale(1,-1);opacity:0.4;background-color:#ffffff"></div><div class="b" id="e68" data-f="I13080:137;13080:315" data-n="Line 8" style="position:absolute;left:0;top:0;width:3.745px;height:1px;transform-origin:0 0;transform:translate(1.08px,354.596px) rotate(-0.157075rad) scale(1,-1);opacity:0.4;background-color:#ffffff"></div><div class="b" id="e69" data-f="I13080:137;13080:316" data-n="Line 8" style="position:absolute;left:0;top:0;width:3.745px;height:1px;transform-origin:0 0;transform:translate(4.137px,366.993px) rotate(-0.314161rad) scale(1,-1);opacity:0.4;background-color:#ffffff"></div><div class="b" id="e70" data-f="I13080:137;13080:317" data-n="Line 8" style="position:absolute;left:0;top:0;width:3.745px;height:1px;transform-origin:0 0;transform:translate(9.096px,378.76px) rotate(-0.471237rad) scale(1,-1);opacity:0.4;background-color:#ffffff"></div><div class="b" id="e71" data-f="I13080:137;13080:318" data-n="Line 8" style="position:absolute;left:0;top:0;width:3.745px;height:1px;transform-origin:0 0;transform:translate(15.834px,389.606px) rotate(-0.628321rad) scale(1,-1);opacity:0.4;background-color:#ffffff"></div><div class="b" id="e72" data-f="I13080:137;13080:319" data-n="Line 8" style="position:absolute;left:0;top:0;width:3.745px;height:1px;transform-origin:0 0;transform:translate(24.187px,399.265px) rotate(-0.785398rad) scale(1,-1);opacity:0.4;background-color:#ffffff"></div><div class="b" id="e73" data-f="I13080:137;13080:320" data-n="Line 8" style="position:absolute;left:0;top:0;width:3.745px;height:1px;transform-origin:0 0;transform:translate(33.947px,407.498px) rotate(-0.942484rad) scale(1,-1);opacity:0.4;background-color:#ffffff"></div><div class="b" id="e74" data-f="I13080:137;13080:321" data-n="Line 8" style="position:absolute;left:0;top:0;width:5.912px;height:1px;transform-origin:0 0;transform:translate(44.384px,415.068px) rotate(-1.099559rad) scale(1,-1);opacity:0.4;background-color:#ffffff"></div></div><div class="g" id="e75" data-f="I13080:137;13080:322" data-n="Group 12" style="position:absolute;left:0;top:0;width:0;height:0"><div class="b" id="e76" data-f="I13080:137;13080:323" data-n="Line 8" style="position:absolute;left:0;top:0;width:17.076px;height:1px;transform-origin:0 0;transform:translate(81.872px,429.41px) rotate(-1.570796rad) scale(1,-1);background-color:#ffffff"></div><div class="b" id="e77" data-f="I13080:137;13080:324" data-n="Line 8" style="position:absolute;left:0;top:0;width:12.723px;height:1px;transform-origin:0 0;transform:translate(95.298px,426.099px) rotate(-1.727871rad) scale(1,-1);background-color:#ffffff"></div><div class="b" id="e78" data-f="I13080:137;13080:325" data-n="Line 8" style="position:absolute;left:0;top:0;width:8.395px;height:1px;transform-origin:0 0;transform:translate(107.712px,420.819px) rotate(-1.884957rad) scale(1,-1);background-color:#ffffff"></div><div class="b" id="e79" data-f="I13080:137;13080:326" data-n="Line 8" style="position:absolute;left:0;top:0;width:8.375px;height:1px;transform-origin:0 0;transform:translate(55.987px,421.119px) rotate(-1.256635rad) scale(1,-1);background-color:#ffffff"></div><div class="b" id="e80" data-f="I13080:137;13080:327" data-n="Line 8" style="position:absolute;left:0;top:0;width:12.723px;height:1px;transform-origin:0 0;transform:translate(68.435px,426.255px) rotate(-1.413721rad) scale(1,-1);background-color:#ffffff"></div></div></div><div class="t" id="e81" data-f="I13080:137;13080:328" style="position:absolute;left:46.373px;top:339.893px;width:70px;height:13px;white-space:pre;text-align:center;text-box:trim-both cap alphabetic;font-family:'Clash Display Variable',system-ui,sans-serif;font-weight:600;font-size:20px;line-height:normal"><span style="font-family:'Clash Display Variable',system-ui,sans-serif;font-weight:600;font-size:20px;line-height:normal;letter-spacing:-0.01em;text-transform:uppercase;color:#ffffff">12.6</span><span style="font-family:'Clash Display Variable',system-ui,sans-serif;font-weight:300;font-size:20px;line-height:normal;letter-spacing:-0.01em;text-transform:uppercase;color:#ffffff">KM</span></div><div class="b" id="e82" data-f="I13080:137;13080:329" data-n="Ellipse 3" style="position:absolute;left:11.567px;top:267.544px;width:139.611px;height:139.611px;border-radius:50%"><i class="pl" style="position:absolute;inset:0;border-radius:inherit;overflow:hidden;pointer-events:none"><img src="assets/img/ed62c75711.webp" alt="" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover"></i></div></div></div></div></div>
+<div class="blk" id="bk6" data-k="Component 6"><div class="org" style="left:-404.523px;top:-655.009px"><div class="b" id="e83" data-f="13080:138" data-n="Component 6" style="position:absolute;left:404.523px;top:655.009px;width:419px;height:96.991px"><div class="g" id="e84" data-f="I13080:138;13080:268" data-n="Group 27" style="position:absolute;left:0;top:0;width:0;height:0"><div class="t" id="e85" data-f="I13080:138;13080:269" style="position:absolute;left:0px;top:269.991px;width:419px;height:67px;white-space:pre;text-align:left;text-box:trim-both cap alphabetic;font-family:'Clash Display Variable',system-ui,sans-serif;font-weight:700;font-size:100px;line-height:normal;letter-spacing:-0.01em;text-transform:uppercase;color:#ffffff">Zephyr</div><div class="t" id="e86" data-f="I13080:138;13080:270" style="position:absolute;left:0px;top:160px;width:245px;height:11px;white-space:pre;text-align:left;text-box:trim-both cap alphabetic;font-family:'Clash Display Variable',system-ui,sans-serif;font-weight:400;font-size:17px;line-height:normal;letter-spacing:1.34em;text-transform:uppercase;color:#ffffff">09/vyper</div><div class="b" id="e87" data-f="I13080:138;13080:271" data-n="Line 9" style="position:absolute;left:278.476px;top:165px;width:21.255px;height:1px;background-color:#ffffff"></div></div></div></div></div>
+<div class="blk" id="bk7" data-k="Component 4"><div class="org" style="left:-1067.671px;top:-200px"><div class="b" id="e88" data-f="13080:139" data-n="Component 4" style="position:absolute;left:1067.671px;top:200px;width:312px;height:298px"><div class="b" id="e89" data-f="I13080:139;13080:214" data-n="Frame 1597882319" style="position:absolute;left:0px;top:0px;width:312px;height:298px"><div class="b" id="e90" data-f="I13080:139;13080:215" data-n="Frame 1171275741" style="position:absolute;left:0px;top:-40px;width:156px;height:149px;opacity:0;border-radius:32px 32px 0px 32px;background-color:rgba(255,255,255,0.002)"><i class="gl" style="position:absolute;inset:0;border-radius:inherit;pointer-events:none;-webkit-backdrop-filter:blur(0px) saturate(1.25);backdrop-filter:blur(0px) saturate(1.25)"></i><i class="is" style="position:absolute;inset:0;border-radius:inherit;pointer-events:none;box-shadow:inset 1.2px 0px 0 0 rgba(255,255,255,0.11),inset -1.2px 0px 0 0 rgba(255,255,255,0.036),inset 0 0 24px 0 rgba(255,255,255,0.036)"></i><div class="t" id="e91" data-f="I13080:139;13080:216" style="position:absolute;left:25px;top:110px;width:43px;height:9px;white-space:pre;text-align:left;text-box:trim-both cap alphabetic;font-family:'Clash Display Variable',system-ui,sans-serif;font-weight:400;font-size:14px;line-height:1.4;font-feature-settings:'liga' 0,'salt' 1;color:#ffffff">Range</div><div class="b" id="e92" data-f="I13080:139;13080:217" data-n="Frame 20" style="position:absolute;left:23.385px;top:28.5px;width:114px;height:27px"><div class="t" id="e93" data-f="I13080:139;13080:218" style="position:absolute;left:0px;top:0px;width:53px;height:27px;white-space:pre;text-align:left;text-box:trim-both cap alphabetic;font-family:'Clash Display Variable',system-ui,sans-serif;font-weight:600;font-size:40px;line-height:1.2;text-transform:uppercase;font-feature-settings:'liga' 0,'salt' 1;color:#ffffff">32</div><div class="t" id="e94" data-f="I13080:139;13080:219" style="position:absolute;left:52px;top:0px;width:62px;height:27px;white-space:pre;text-align:left;text-box:trim-both cap alphabetic;font-family:'Clash Display Variable',system-ui,sans-serif;font-weight:300;font-size:40px;line-height:1.2;text-transform:uppercase;font-feature-settings:'liga' 0,'salt' 1;color:#ffffff">km</div></div><i class="sk" style="position:absolute;inset:-0.5px;pointer-events:none;border-radius:32px 32px 0px 32px;padding:1px;background:linear-gradient(-43.63deg, rgba(255,255,255,0.032) 0%, rgba(255,255,255,0.2) 55.25%, rgba(255,255,255,0) 102.57%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0)"></i></div><div class="b" id="e95" data-f="I13080:139;13080:220" data-n="Frame 1171275742" style="position:absolute;left:156px;top:189px;width:156px;height:149px;opacity:0;border-radius:0px 32px 32px 32px;background-color:rgba(255,255,255,0.002)"><i class="gl" style="position:absolute;inset:0;border-radius:inherit;pointer-events:none;-webkit-backdrop-filter:blur(0px) saturate(1.25);backdrop-filter:blur(0px) saturate(1.25)"></i><i class="is" style="position:absolute;inset:0;border-radius:inherit;pointer-events:none;box-shadow:inset 1.2px 0px 0 0 rgba(255,255,255,0.11),inset -1.2px 0px 0 0 rgba(255,255,255,0.036),inset 0 0 24px 0 rgba(255,255,255,0.036)"></i><div class="t" id="e96" data-f="I13080:139;13080:221" style="position:absolute;left:25px;top:110px;width:86px;height:9px;white-space:pre;text-align:left;text-box:trim-both cap alphabetic;font-family:'Clash Display Variable',system-ui,sans-serif;font-weight:400;font-size:14px;line-height:1.4;font-feature-settings:'liga' 0,'salt' 1;color:#ffffff">Charge Time</div><div class="b" id="e97" data-f="I13080:139;13080:222" data-n="Frame 21" style="position:absolute;left:23.385px;top:28.5px;width:90px;height:27px"><div class="t" id="e98" data-f="I13080:139;13080:223" style="position:absolute;left:0px;top:0px;width:63px;height:27px;white-space:pre;text-align:left;text-box:trim-both cap alphabetic;font-family:'Clash Display Variable',system-ui,sans-serif;font-weight:600;font-size:40px;line-height:1.2;text-transform:uppercase;font-feature-settings:'liga' 0,'salt' 1;color:#ffffff">3.2 </div><div class="t" id="e99" data-f="I13080:139;13080:224" style="position:absolute;left:62px;top:0px;width:28px;height:27px;white-space:pre;text-align:left;text-box:trim-both cap alphabetic;font-family:'Clash Display Variable',system-ui,sans-serif;font-weight:300;font-size:40px;line-height:1.2;text-transform:uppercase;font-feature-settings:'liga' 0,'salt' 1;color:#ffffff">H</div></div><i class="sk" style="position:absolute;inset:-0.5px;pointer-events:none;border-radius:0px 32px 32px 32px;padding:1px;background:linear-gradient(-43.63deg, rgba(255,255,255,0.032) 0%, rgba(255,255,255,0.2) 55.25%, rgba(255,255,255,0) 102.57%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0)"></i></div></div></div></div></div>
+<div class="blk" id="bk8" data-k="Component 3"><div class="org" style="left:-43px;top:-186px"><div class="b" id="e100" data-f="13080:140" data-n="Component 3" style="position:absolute;left:43px;top:186px;width:53px;height:271px"><nav class="sx" aria-label="Models"><ul class="sx"><li class="t" id="e101" data-f="I13080:140;13080:207" style="position:absolute;left:-130px;top:0px;width:28px;height:19px;white-space:pre;text-align:left;text-box:trim-both cap alphabetic;font-family:'Clash Display Variable',system-ui,sans-serif;font-weight:400;font-size:28px;line-height:1.4;color:#ffffff"><a href="#" class="lt">01</a></li><li class="t" id="e102" data-f="I13080:140;13080:208" style="position:absolute;left:-213px;top:69px;width:27px;height:13px;opacity:0.8;white-space:pre;text-align:left;text-box:trim-both cap alphabetic;font-family:'Clash Display Variable',system-ui,sans-serif;font-weight:400;font-size:20px;line-height:1.4;color:#ffffff"><a href="#" class="lt">02</a></li><li class="t" id="e103" data-f="I13080:140;13080:209" style="position:absolute;left:-313px;top:132px;width:27px;height:13px;opacity:0.6;white-space:pre;text-align:left;text-box:trim-both cap alphabetic;font-family:'Clash Display Variable',system-ui,sans-serif;font-weight:400;font-size:20px;line-height:1.4;color:#ffffff"><a href="#" class="lt">03</a></li><li class="t" id="e104" data-f="I13080:140;13080:210" style="position:absolute;left:-373px;top:195px;width:28px;height:13px;opacity:0.4;white-space:pre;text-align:left;text-box:trim-both cap alphabetic;font-family:'Clash Display Variable',system-ui,sans-serif;font-weight:400;font-size:20px;line-height:1.4;color:#ffffff"><a href="#" class="lt">04</a></li><li class="t" id="e105" data-f="I13080:140;13080:211" style="position:absolute;left:-453px;top:258px;width:27px;height:13px;opacity:0.2;white-space:pre;text-align:left;text-box:trim-both cap alphabetic;font-family:'Clash Display Variable',system-ui,sans-serif;font-weight:400;font-size:20px;line-height:1.4;color:#ffffff"><a href="#" class="lt">05</a></li></ul></nav></div></div></div>
+<div class="blk" id="bk9" data-k="Component 1"><div class="org" style="left:-43px;top:-40px"><div class="b" id="e106" data-f="13080:141" data-n="Component 1" style="position:absolute;left:43px;top:40px;width:150.529px;height:21.76px;overflow:hidden"><a href="#" class="g" id="e107" data-f="I13080:141;13080:154" data-n="Group 11" style="position:absolute;left:0;top:0;width:0;height:0"><div class="t" id="e108" data-f="I13080:141;13080:155" style="position:absolute;left:63.529px;top:-62.647px;width:87px;height:13px;white-space:pre;text-align:left;text-box:trim-both cap alphabetic;font-family:'Cindie Mono',system-ui,sans-serif;font-weight:400;font-size:12.7px;line-height:normal;letter-spacing:-0.05em;color:#ffffff">Cycle</div><div class="v" id="e109" data-f="I13080:141;13080:156" data-n="Union" style="position:absolute;left:0px;top:-30px;width:43.803px;height:21.76px"><svg aria-hidden="true" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;overflow:visible" width="44" height="22" viewBox="0 0 44 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M40.375 8.20801H43.8027L37.5459 21.7598H23.9941L26.9531 15.3506L15.3857 17.7852L13.5508 21.7598H0L4.63477 11.7217L1.04883 10.1104L2.75781 6.30566L6.99219 8.20801H19.8086L17.5664 13.0625L29.1328 10.6289L30.252 8.20801H35.2705L31.1826 2.40332L34.5947 0L40.375 8.20801Z" fill="white"/>
+</svg>
+</div></a></div></div></div>
+</div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js"></script>
+<script>window.SCENE={"frame":{"w":1440,"h":810},"E":[["s",1,80,20,1.6668],["s",1,80,20,1.2501],["s",1,80,20,0.6251],["l"]],"els":[{"id":"e5","m":"lt","b":{"x":0.0,"y":290.0002,"w":432,"h":359,"a":0,"f":false,"o":1},"t":{"y":[[0,290.00024999999994,0],[1.5,290.00024999999994,3],[3.1668,0.0,0]]}},{"id":"e7","m":"tf","b":{"x":525.7035,"y":377.5815,"w":705.7452,"h":396.9817,"a":3.1416,"f":true,"o":1},"t":{"x":[[0,525.70355,0],[1.5,525.70355,3],[3.1668,365.66187,0]],"y":[[0,377.58154,0],[1.5,377.58154,3],[3.1668,177.60461,0]],"w":[[0,705.74524,0],[1.5,705.74524,3],[3.1668,385.66193,0]],"h":[[0,396.98169,0],[1.5,396.98169,3],[3.1668,216.93483,0]]}},{"id":"e8","m":"g","b":{"o":1},"t":{"ty":[[0,0.0,0],[1.5,0.0,3],[3.1668,-290.0002,0]]},"org":[0,0]},{"id":"e9","m":"g","b":{"o":1},"t":{"ty":[[0,-0.0,0],[1.5,-0.0,3],[3.1668,290.0002,0]]},"org":[0,0]},{"id":"e10","m":"tf","b":{"x":0,"y":0,"w":16.472,"h":15.8892,"a":0,"f":false,"o":1,"pv":[8.064,7.481],"mt":[-0.258821,-0.965925,0.965925,-0.258821,229.379,509.047]},"t":{"y":[[0,0.0,0],[1.5,0.0,3],[3.1668,-290.0,0]],"ar":[[0,-0.0,0],[1.5,-0.0,3],[3.1668,105.0,0]]}},{"id":"e14","m":"lt","b":{"x":807.3008,"y":0.2983,"w":234.9438,"h":63.7673,"a":0,"f":false,"o":1},"t":{"x":[[0,807.30084,0],[0.3,807.30084,3],[1.5501,0.0,1]]}},{"id":"e15","m":"lt","b":{"x":886.1199,"y":20.1792,"w":20,"h":20,"a":0.0,"f":false,"o":1},"t":{"x":[[0,886.11993,0],[0.3,886.11993,3],[1.5501,78.81909,1]]}},{"id":"e20","m":"lt","b":{"x":590.6717,"y":0.1345,"w":620.4482,"h":142.9453,"a":0,"f":false,"o":1},"t":{"x":[[0,590.6716899999998,0],[0.3,590.6716899999998,3],[1.5501,93.37084999999979,1]]}},{"id":"e22","m":"lt","b":{"x":445.0002,"y":1.5,"w":147,"h":49,"a":0.0,"f":false,"o":1},"t":{"x":[[0,445.00024,0],[0.3,445.00024,3],[1.5501,0,1]]}},{"id":"e24","m":"lt","b":{"x":480.0002,"y":1.5,"w":112,"h":49,"a":0.0,"f":false,"o":1},"t":{"x":[[0,480.00024,0],[0.3,480.00024,3],[1.5501,151,1]]}},{"id":"e26","m":"lt","b":{"x":464.0002,"y":1.5,"w":128,"h":49,"a":0.0,"f":false,"o":1},"t":{"x":[[0,464.00024,0],[0.3,464.00024,3],[1.5501,267,1]]}},{"id":"e28","m":"lt","b":{"x":439.0002,"y":0,"w":153,"h":52,"a":0.0,"f":false,"o":1},"t":{"x":[[0,439.00024,0],[0.3,439.00024,3],[1.5501,399,1]]}},{"id":"e21","m":"lt","b":{"x":659.1199,"y":6.1792,"w":552,"h":52,"a":0.0,"f":false,"o":1},"t":{"x":[[0,659.11993,0],[0.3,659.11993,3],[1.5501,161.81909,1]]}},{"id":"e35","m":"lt","b":{"x":-230,"y":0,"w":229,"h":55,"a":0.0,"f":false,"o":1},"t":{"x":[[0,-230,0],[2.0,-230,3],[3.2501,0,1]]}},{"id":"e40","m":"tf","b":{"x":119.2604,"y":414.6305,"w":5.9486,"h":1,"a":-2.042,"f":true,"o":0.4},"t":{"x":[[0,119.260415,0],[2.3,119.260415,3],[3.5501,43.484535,1]],"y":[[0,414.630475,0],[2.3,414.630475,3],[3.5501,14.779915,1]],"a":[[0,-2.042033201582516,0],[2.3,-2.042033201582516,3],[3.5501,1.0995594520072771,1]]}},{"id":"e41","m":"tf","b":{"x":129.6065,"y":406.9102,"w":3.7452,"h":1,"a":-2.1991,"f":true,"o":0.4},"t":{"x":[[0,129.60651,0],[2.3,129.60651,3],[3.5501,33.138439999999996,1]],"y":[[0,406.910245,0],[2.3,406.910245,3],[3.5501,22.500145,1]],"a":[[0,-2.1991169318160164,0],[2.3,-2.1991169318160164,3],[3.5501,0.9424757217737767,1]]}},{"id":"e42","m":"tf","b":{"x":139.2651,"y":398.5579,"w":3.7452,"h":1,"a":-2.3562,"f":true,"o":0.4},"t":{"x":[[0,139.265065,0],[2.3,139.265065,3],[3.5501,23.479895,1]],"y":[[0,398.55788500000006,0],[2.3,398.55788500000006,3],[3.5501,30.852505,1]],"a":[[0,-2.356194490192345,0],[2.3,-2.356194490192345,3],[3.5501,0.7853981633974483,1]]}},{"id":"e43","m":"tf","b":{"x":147.4981,"y":388.7974,"w":3.7452,"h":1,"a":-2.5133,"f":true,"o":0.4},"t":{"x":[[0,147.49809499999998,0],[2.3,147.49809499999998,3],[3.5501,15.246855,1]],"y":[[0,388.79742999999996,0],[2.3,388.79742999999996,3],[3.5501,40.61296,1]],"a":[[0,-2.5132720485686733,0],[2.3,-2.5132720485686733,3],[3.5501,0.62832060502112,1]]}},{"id":"e44","m":"tf","b":{"x":154.1029,"y":377.8692,"w":3.7452,"h":1,"a":-2.6704,"f":true,"o":0.4},"t":{"x":[[0,154.102905,0],[2.3,154.102905,3],[3.5501,8.642045,1]],"y":[[0,377.869215,0],[2.3,377.869215,3],[3.5501,51.541174999999996,1]],"a":[[0,-2.6703557788021737,0],[2.3,-2.6703557788021737,3],[3.5501,0.47123687478761944,1]]}},{"id":"e45","m":"tf","b":{"x":158.9168,"y":366.0423,"w":3.7452,"h":1,"a":-2.8274,"f":true,"o":0.4},"t":{"x":[[0,158.91684999999998,0],[2.3,158.91684999999998,3],[3.5501,3.8281,1]],"y":[[0,366.04232,0],[2.3,366.04232,3],[3.5501,63.368069999999996,1]],"a":[[0,-2.827431606243082,0],[2.3,-2.827431606243082,3],[3.5501,0.314161047346711,1]]}},{"id":"e46","m":"tf","b":{"x":161.8214,"y":353.608,"w":3.7452,"h":1,"a":-2.9845,"f":true,"o":0.4},"t":{"x":[[0,161.821375,0],[2.3,161.821375,3],[3.5501,0.9235749999999999,1]],"y":[[0,353.607955,0],[2.3,353.607955,3],[3.5501,75.802425,1]],"a":[[0,-2.9845176905622,0],[2.3,-2.9845176905622,3],[3.5501,0.15707496302759325,1]]}},{"id":"e47","m":"tf","b":{"x":162.745,"y":340.8723,"w":3.7452,"h":1,"a":3.1416,"f":true,"o":0.4},"t":{"x":[[0,162.74499,0],[2.3,162.74499,3],[3.5501,-4e-05,1]],"y":[[0,340.87233,0],[2.3,340.87233,3],[3.5501,88.53805,1]],"a":[[0,3.141592653589793,0],[2.3,3.141592653589793,3],[3.5501,0.0,1]]}},{"id":"e48","m":"tf","b":{"x":161.6649,"y":328.149,"w":3.7452,"h":1,"a":2.9845,"f":true,"o":0.4},"t":{"x":[[0,161.664945,0],[2.3,161.664945,3],[3.5501,1.0800049999999999,1]],"y":[[0,328.14901499999996,0],[2.3,328.14901499999996,3],[3.5501,101.26137499999999,1]],"a":[[0,2.9845176905622,0],[2.3,2.9845176905622,3],[3.5501,-0.15707496302759325,1]]}},{"id":"e49","m":"tf","b":{"x":158.6078,"y":315.7513,"w":3.7452,"h":1,"a":2.8274,"f":true,"o":0.4},"t":{"x":[[0,158.60781,0],[2.3,158.60781,3],[3.5501,4.13714,1]],"y":[[0,315.75129,0],[2.3,315.75129,3],[3.5501,113.65910000000001,1]],"a":[[0,2.827431606243082,0],[2.3,2.827431606243082,3],[3.5501,-0.314161047346711,1]]}},{"id":"e50","m":"tf","b":{"x":153.6489,"y":303.9844,"w":3.7452,"h":1,"a":2.6704,"f":true,"o":0.4},"t":{"x":[[0,153.64891500000002,0],[2.3,153.64891500000002,3],[3.5501,9.096035,1]],"y":[[0,303.98443499999996,0],[2.3,303.98443499999996,3],[3.5501,125.425945,1]],"a":[[0,2.6703557788021737,0],[2.3,2.6703557788021737,3],[3.5501,-0.47123687478761944,1]]}},{"id":"e51","m":"tf","b":{"x":146.9103,"y":293.1382,"w":3.7452,"h":1,"a":2.5133,"f":true,"o":0.4},"t":{"x":[[0,146.910325,0],[2.3,146.910325,3],[3.5501,15.834624999999999,1]],"y":[[0,293.13822,0],[2.3,293.13822,3],[3.5501,136.27217,1]],"a":[[0,2.5132720485686733,0],[2.3,2.5132720485686733,3],[3.5501,-0.62832060502112,1]]}},{"id":"e52","m":"tf","b":{"x":138.558,"y":283.4797,"w":3.7452,"h":1,"a":2.3562,"f":true,"o":0.4},"t":{"x":[[0,138.557955,0],[2.3,138.557955,3],[3.5501,24.186995,1]],"y":[[0,283.47967500000004,0],[2.3,283.47967500000004,3],[3.5501,145.930715,1]],"a":[[0,2.356194490192345,0],[2.3,2.356194490192345,3],[3.5501,-0.7853981633974483,1]]}},{"id":"e53","m":"tf","b":{"x":128.7975,"y":275.2466,"w":3.7452,"h":1,"a":2.1991,"f":true,"o":0.4},"t":{"x":[[0,128.79749,0],[2.3,128.79749,3],[3.5501,33.94745,1]],"y":[[0,275.246625,0],[2.3,275.246625,3],[3.5501,154.16376499999998,1]],"a":[[0,2.1991169318160164,0],[2.3,2.1991169318160164,3],[3.5501,-0.9424757217737767,1]]}},{"id":"e54","m":"tf","b":{"x":117.8693,"y":268.6418,"w":3.7452,"h":1,"a":2.042,"f":true,"o":0.4},"t":{"x":[[0,117.869265,0],[2.3,117.869265,3],[3.5501,44.875674999999994,1]],"y":[[0,268.64182500000004,0],[2.3,268.64182500000004,3],[3.5501,160.768555,1]],"a":[[0,2.042033201582516,0],[2.3,2.042033201582516,3],[3.5501,-1.0995594520072771,1]]}},{"id":"e55","m":"tf","b":{"x":106.0424,"y":263.8279,"w":3.7452,"h":1,"a":1.885,"f":true,"o":0.4},"t":{"x":[[0,106.04236999999999,0],[2.3,106.04236999999999,3],[3.5501,56.70257,1]],"y":[[0,263.82788999999997,0],[2.3,263.82788999999997,3],[3.5501,165.58249999999998,1]],"a":[[0,1.8849573741416077,0],[2.3,1.8849573741416077,3],[3.5501,-1.2566352794481856,1]]}},{"id":"e56","m":"tf","b":{"x":93.608,"y":260.9234,"w":3.7452,"h":1,"a":1.7279,"f":true,"o":0.4},"t":{"x":[[0,93.60802500000001,0],[2.3,93.60802500000001,3],[3.5501,69.13691499999999,1]],"y":[[0,260.923365,0],[2.3,260.923365,3],[3.5501,168.487035,1]],"a":[[0,1.72787128982249,0],[2.3,1.72787128982249,3],[3.5501,-1.4137213637673034,1]]}},{"id":"e57","m":"tf","b":{"x":80.8724,"y":259.9998,"w":3.7452,"h":1,"a":1.5708,"f":true,"o":0.4},"t":{"x":[[0,80.87239,0],[2.3,80.87239,3],[3.5501,81.87255,1]],"y":[[0,259.99975,0],[2.3,259.99975,3],[3.5501,169.41065,1]],"a":[[0,1.5707963267948966,0],[2.3,1.5707963267948966,3],[3.5501,-1.5707963267948966,1]]}},{"id":"e58","m":"tf","b":{"x":68.1491,"y":261.0798,"w":3.7452,"h":1,"a":1.4137,"f":true,"o":0.4},"t":{"x":[[0,68.14906500000001,0],[2.3,68.14906500000001,3],[3.5501,94.595885,1]],"y":[[0,261.079795,0],[2.3,261.079795,3],[3.5501,168.330605,1]],"a":[[0,1.4137213637673034,0],[2.3,1.4137213637673034,3],[3.5501,-1.72787128982249,1]]}},{"id":"e59","m":"tf","b":{"x":55.7514,"y":264.1369,"w":3.7452,"h":1,"a":1.2566,"f":true,"o":0.4},"t":{"x":[[0,55.75136,0],[2.3,55.75136,3],[3.5501,106.99359000000001,1]],"y":[[0,264.13691,0],[2.3,264.13691,3],[3.5501,165.27349,1]],"a":[[0,1.2566352794481856,0],[2.3,1.2566352794481856,3],[3.5501,-1.8849573741416077,1]]}},{"id":"e60","m":"tf","b":{"x":43.9845,"y":269.0958,"w":3.7452,"h":1,"a":1.0996,"f":true,"o":0.4},"t":{"x":[[0,43.984505000000006,0],[2.3,43.984505000000006,3],[3.5501,118.760435,1]],"y":[[0,269.095815,0],[2.3,269.095815,3],[3.5501,160.31457500000002,1]],"a":[[0,1.0995594520072771,0],[2.3,1.0995594520072771,3],[3.5501,-2.042033201582516,1]]}},{"id":"e61","m":"tf","b":{"x":33.1383,"y":275.8344,"w":3.7452,"h":1,"a":0.9425,"f":true,"o":0.4},"t":{"x":[[0,33.13827,0],[2.3,33.13827,3],[3.5501,129.60666999999998,1]],"y":[[0,275.834425,0],[2.3,275.834425,3],[3.5501,153.575965,1]],"a":[[0,0.9424757217737767,0],[2.3,0.9424757217737767,3],[3.5501,-2.1991169318160164,1]]}},{"id":"e62","m":"tf","b":{"x":23.4797,"y":284.1868,"w":3.7452,"h":1,"a":0.7854,"f":true,"o":0.4},"t":{"x":[[0,23.479725,0],[2.3,23.479725,3],[3.5501,139.265225,1]],"y":[[0,284.18679499999996,0],[2.3,284.18679499999996,3],[3.5501,145.223605,1]],"a":[[0,0.7853981633974483,0],[2.3,0.7853981633974483,3],[3.5501,-2.356194490192345,1]]}},{"id":"e63","m":"tf","b":{"x":15.2467,"y":293.9472,"w":3.7452,"h":1,"a":0.6283,"f":true,"o":0.4},"t":{"x":[[0,15.246685,0],[2.3,15.246685,3],[3.5501,147.498265,1]],"y":[[0,293.94725,0],[2.3,293.94725,3],[3.5501,135.46314,1]],"a":[[0,0.62832060502112,0],[2.3,0.62832060502112,3],[3.5501,-2.5132720485686733,1]]}},{"id":"e64","m":"tf","b":{"x":8.6419,"y":304.8755,"w":3.7452,"h":1,"a":0.4712,"f":true,"o":0.4},"t":{"x":[[0,8.641885,0],[2.3,8.641885,3],[3.5501,154.103065,1]],"y":[[0,304.87547500000005,0],[2.3,304.87547500000005,3],[3.5501,124.534915,1]],"a":[[0,0.47123687478761944,0],[2.3,0.47123687478761944,3],[3.5501,-2.6703557788021737,1]]}},{"id":"e65","m":"tf","b":{"x":3.828,"y":316.7023,"w":3.7452,"h":1,"a":0.3142,"f":true,"o":0.4},"t":{"x":[[0,3.82796,0],[2.3,3.82796,3],[3.5501,158.91699,1]],"y":[[0,316.70234,0],[2.3,316.70234,3],[3.5501,112.70805999999999,1]],"a":[[0,0.314161047346711,0],[2.3,0.314161047346711,3],[3.5501,-2.827431606243082,1]]}},{"id":"e66","m":"tf","b":{"x":0.9234,"y":329.1367,"w":3.7452,"h":1,"a":0.1571,"f":true,"o":0.4},"t":{"x":[[0,0.923425,0],[2.3,0.923425,3],[3.5501,161.821525,1]],"y":[[0,329.13669500000003,0],[2.3,329.13669500000003,3],[3.5501,100.273705,1]],"a":[[0,0.15707496302759325,0],[2.3,0.15707496302759325,3],[3.5501,-2.9845176905622,1]]}},{"id":"e67","m":"tf","b":{"x":-0.0002,"y":341.8723,"w":3.7452,"h":1,"a":0.0,"f":true,"o":0.4},"t":{"x":[[0,-0.00019,0],[2.3,-0.00019,3],[3.5501,162.74514,1]],"y":[[0,341.87233,0],[2.3,341.87233,3],[3.5501,87.53807,1]],"a":[[0,0.0,0],[2.3,0.0,3],[3.5501,3.141592653589793,1]]}},{"id":"e68","m":"tf","b":{"x":1.0799,"y":354.5957,"w":3.7452,"h":1,"a":-0.1571,"f":true,"o":0.4},"t":{"x":[[0,1.079855,0],[2.3,1.079855,3],[3.5501,161.665095,1]],"y":[[0,354.595665,0],[2.3,354.595665,3],[3.5501,74.81473500000001,1]],"a":[[0,-0.15707496302759325,0],[2.3,-0.15707496302759325,3],[3.5501,2.9845176905622,1]]}},{"id":"e69","m":"tf","b":{"x":4.137,"y":366.9934,"w":3.7452,"h":1,"a":-0.3142,"f":true,"o":0.4},"t":{"x":[[0,4.13698,0],[2.3,4.13698,3],[3.5501,158.60797000000002,1]],"y":[[0,366.99339,0],[2.3,366.99339,3],[3.5501,62.41701,1]],"a":[[0,-0.314161047346711,0],[2.3,-0.314161047346711,3],[3.5501,2.827431606243082,1]]}},{"id":"e70","m":"tf","b":{"x":9.0959,"y":378.7602,"w":3.7452,"h":1,"a":-0.4712,"f":true,"o":0.4},"t":{"x":[[0,9.095895,0],[2.3,9.095895,3],[3.5501,153.649055,1]],"y":[[0,378.760235,0],[2.3,378.760235,3],[3.5501,50.650165,1]],"a":[[0,-0.47123687478761944,0],[2.3,-0.47123687478761944,3],[3.5501,2.6703557788021737,1]]}},{"id":"e71","m":"tf","b":{"x":15.8345,"y":389.6065,"w":3.7452,"h":1,"a":-0.6283,"f":true,"o":0.4},"t":{"x":[[0,15.834495,0],[2.3,15.834495,3],[3.5501,146.910455,1]],"y":[[0,389.60647,0],[2.3,389.60647,3],[3.5501,39.80393,1]],"a":[[0,-0.62832060502112,0],[2.3,-0.62832060502112,3],[3.5501,2.5132720485686733,1]]}},{"id":"e72","m":"tf","b":{"x":24.1869,"y":399.265,"w":3.7452,"h":1,"a":-0.7854,"f":true,"o":0.4},"t":{"x":[[0,24.186865,0],[2.3,24.186865,3],[3.5501,138.558095,1]],"y":[[0,399.26501499999995,0],[2.3,399.26501499999995,3],[3.5501,30.145375,1]],"a":[[0,-0.7853981633974483,0],[2.3,-0.7853981633974483,3],[3.5501,2.356194490192345,1]]}},{"id":"e73","m":"tf","b":{"x":33.9473,"y":407.498,"w":3.7452,"h":1,"a":-0.9425,"f":true,"o":0.4},"t":{"x":[[0,33.94733,0],[2.3,33.94733,3],[3.5501,128.79763000000003,1]],"y":[[0,407.49805,0],[2.3,407.49805,3],[3.5501,21.91235,1]],"a":[[0,-0.9424838119368321,0],[2.3,-0.9424838119368321,3],[3.5501,2.1991088416529614,1]]}},{"id":"e74","m":"tf","b":{"x":44.3837,"y":415.068,"w":5.9116,"h":1,"a":-1.0996,"f":true,"o":0.4},"t":{"x":[[0,44.383734999999994,0],[2.3,44.383734999999994,3],[3.5501,118.361225,1]],"y":[[0,415.067965,0],[2.3,415.067965,3],[3.5501,14.342435,1]],"a":[[0,-1.0995594520072771,0],[2.3,-1.0995594520072771,3],[3.5501,2.042033201582516,1]]}},{"id":"e76","m":"tf","b":{"x":81.8724,"y":429.4104,"w":17.0757,"h":1,"a":-1.5708,"f":true,"o":1},"t":{"x":[[0,81.87237,0],[2.3,81.87237,3],[3.5501,80.87259,1]],"y":[[0,429.41039,0],[2.3,429.41039,3],[3.5501,0.0,1]],"a":[[0,-1.5707963267948966,0],[2.3,-1.5707963267948966,3],[3.5501,1.5707963267948966,1]]}},{"id":"e77","m":"tf","b":{"x":95.2979,"y":426.0987,"w":12.7234,"h":1,"a":-1.7279,"f":true,"o":1},"t":{"x":[[0,95.297855,0],[2.3,95.297855,3],[3.5501,67.44710500000001,1]],"y":[[0,426.098715,0],[2.3,426.098715,3],[3.5501,3.311675,1]],"a":[[0,-1.72787128982249,0],[2.3,-1.72787128982249,3],[3.5501,1.4137213637673034,1]]}},{"id":"e78","m":"tf","b":{"x":107.7119,"y":420.8188,"w":8.395,"h":1,"a":-1.885,"f":true,"o":1},"t":{"x":[[0,107.71191,0],[2.3,107.71191,3],[3.5501,55.03304,1]],"y":[[0,420.81883999999997,0],[2.3,420.81883999999997,3],[3.5501,8.59155,1]],"a":[[0,-1.8849573741416077,0],[2.3,-1.8849573741416077,3],[3.5501,1.2566352794481856,1]]}},{"id":"e79","m":"tf","b":{"x":55.9868,"y":421.1186,"w":8.3755,"h":1,"a":-1.2566,"f":true,"o":1},"t":{"x":[[0,55.98681,0],[2.3,55.98681,3],[3.5501,106.75814,1]],"y":[[0,421.11861,0],[2.3,421.11861,3],[3.5501,8.29178,1]],"a":[[0,-1.2566352794481856,0],[2.3,-1.2566352794481856,3],[3.5501,1.8849573741416077,1]]}},{"id":"e80","m":"tf","b":{"x":68.4346,"y":426.2551,"w":12.7234,"h":1,"a":-1.4137,"f":true,"o":1},"t":{"x":[[0,68.434575,0],[2.3,68.434575,3],[3.5501,94.31038500000001,1]],"y":[[0,426.255145,0],[2.3,426.255145,3],[3.5501,3.155245,1]],"a":[[0,-1.4137213637673034,0],[2.3,-1.4137213637673034,3],[3.5501,1.72787128982249,1]]}},{"id":"e81","m":"lt","b":{"x":46.3726,"y":339.8926,"w":70,"h":13,"a":0.0,"f":false,"o":1},"t":{"x":[[0,46.37256,0],[2.3,46.37256,3],[3.5501,46.3726,1]],"y":[[0,339.89258,0],[2.3,339.89258,3],[3.5501,39.89253,1]]}},{"id":"e82","m":"lt","b":{"x":11.5674,"y":267.5444,"w":139.6107,"h":139.6107,"a":0.0,"f":false,"o":1},"t":{"x":[[0,11.56738,0],[2.3,11.56738,3],[3.5501,39.53054,1]],"y":[[0,267.54443,0],[2.3,267.54443,3],[3.5501,63.47121,1]],"w":[[0,139.61072,0],[2.3,139.61072,3],[3.5501,83.68396,1]],"h":[[0,139.61072,0],[2.3,139.61072,3],[3.5501,83.68396,1]]}},{"id":"e85","m":"lt","b":{"x":0,"y":269.9912,"w":419,"h":67,"a":0.0,"f":false,"o":1},"t":{"y":[[0,269.99121,0],[1.8,269.99121,3],[3.0501,29.99121,1]]}},{"id":"e86","m":"lt","b":{"x":0,"y":160,"w":245,"h":11,"a":0.0,"f":false,"o":1},"t":{"y":[[0,160,0],[1.8,160,3],[3.0501,0,1]]}},{"id":"e87","m":"lt","b":{"x":278.4758,"y":165.0,"w":21.2554,"h":1,"a":0.0,"f":false,"o":1},"t":{"y":[[0,165.0,0],[1.8,165.0,3],[3.0501,5.0,1]],"w":[[0,21.25537,0],[1.8,21.25537,3],[3.0501,140.52417,1]]}},{"id":"e91","m":"lt","b":{"x":25,"y":110,"w":43,"h":9,"a":0.0,"f":false,"o":1},"t":{"y":[[0,110,0],[2.5,110,3],[3.1251,90,2]]}},{"id":"e92","m":"lt","b":{"x":23.3848,"y":28.5,"w":114,"h":27,"a":0.0,"f":false,"o":1},"t":{"y":[[0,28.5,0],[2.5,28.5,3],[3.1251,48.5,2]]}},{"id":"e90","m":"lt","b":{"x":0,"y":-40,"w":156,"h":149,"a":0.0,"f":false,"o":0},"t":{"y":[[0,-40,0],[2.5,-40,3],[3.1251,0,2]],"o":[[0,0,0],[2.5,0,3],[3.1251,1,2]]}},{"id":"e96","m":"lt","b":{"x":25,"y":110,"w":86,"h":9,"a":0.0,"f":false,"o":1},"t":{"y":[[0,110,0],[2.5,110,3],[3.1251,90,2]]}},{"id":"e97","m":"lt","b":{"x":23.3848,"y":28.5,"w":90,"h":27,"a":0.0,"f":false,"o":1},"t":{"y":[[0,28.5,0],[2.5,28.5,3],[3.1251,48.5,2]]}},{"id":"e95","m":"lt","b":{"x":156,"y":189,"w":156,"h":149,"a":0.0,"f":false,"o":0},"t":{"y":[[0,189,0],[2.5,189,3],[3.1251,149,2]],"o":[[0,0,0],[2.5,0,3],[3.1251,1,2]]}},{"id":"e101","m":"lt","b":{"x":-130,"y":0,"w":28,"h":19,"a":0.0,"f":false,"o":1},"t":{"x":[[0,-130,0],[0.3,-130,3],[0.9251,0,2]]}},{"id":"e102","m":"lt","b":{"x":-213,"y":69,"w":27,"h":13,"a":0.0,"f":false,"o":0.8},"t":{"x":[[0,-213,0],[0.3,-213,3],[0.9251,0,2]]}},{"id":"e103","m":"lt","b":{"x":-313,"y":132,"w":27,"h":13,"a":0.0,"f":false,"o":0.6},"t":{"x":[[0,-313,0],[0.3,-313,3],[0.9251,0,2]]}},{"id":"e104","m":"lt","b":{"x":-373,"y":195,"w":28,"h":13,"a":0.0,"f":false,"o":0.4},"t":{"x":[[0,-373,0],[0.3,-373,3],[0.9251,0,2]]}},{"id":"e105","m":"lt","b":{"x":-453,"y":258,"w":27,"h":13,"a":0.0,"f":false,"o":0.2},"t":{"x":[[0,-453,0],[0.3,-453,3],[0.9251,0,2]]}},{"id":"e108","m":"lt","b":{"x":63.5288,"y":-62.6475,"w":87,"h":13,"a":0.0,"f":false,"o":1},"t":{"x":[[0,63.52881,0],[0.3,63.52881,3],[0.9251,63.52877,2]],"y":[[0,-62.64746,0],[0.3,-62.64746,3],[0.9251,7.35234,2]]}},{"id":"e109","m":"lt","b":{"x":0.0,"y":-30.0,"w":43.8027,"h":21.7598,"a":0,"f":false,"o":1},"t":{"y":[[0,-30.0,0],[0.3,-30.0,3],[0.9251,0.0,2]]}}],"blocks":[{"id":"bk0","k":"__bg","bleed":true,"x":0,"y":0,"w":1440,"h":810,"ax":0,"ay":0,"par":0},{"id":"bk1","k":"capcut-edit 1","bleed":true,"x":0,"y":0,"w":1440.0,"h":810.0,"ax":0,"ay":0,"par":0},{"id":"bk2","k":"Component 5","bleed":false,"x":10.0,"y":441.2,"w":432.0,"h":359.21,"ax":-1,"ay":1,"par":0},{"id":"bk3","k":"Component 2","bleed":false,"x":716.18,"y":9.82,"w":713.82,"h":143.08,"ax":1,"ay":-1,"par":0},{"id":"bk4","k":"Component 7","bleed":false,"x":920.89,"y":691.0,"w":229.0,"h":55.0,"ax":1,"ay":1,"par":0},{"id":"bk5","k":"Component 8","bleed":false,"x":1221.63,"y":570.3,"w":162.75,"h":169.41,"ax":1,"ay":1,"par":0},{"id":"bk6","k":"Component 6","bleed":false,"x":404.52,"y":655.01,"w":419.0,"h":96.99,"ax":0,"ay":1,"par":0},{"id":"bk7","k":"Component 4","bleed":false,"x":1067.67,"y":200.0,"w":312.0,"h":298.0,"ax":1,"ay":0,"par":0},{"id":"bk8","k":"Component 3","bleed":false,"x":43.0,"y":186.0,"w":53.0,"h":271.0,"ax":-1,"ay":0,"par":0},{"id":"bk9","k":"Component 1","bleed":false,"x":43.0,"y":40.0,"w":150.53,"h":21.76,"ax":-1,"ay":-1,"par":0}],"videos":[{"id":"e2v0","mode":"once","t0":0,"rate":1,"wrap":false},{"id":"e7v1","mode":"loop","t0":0,"rate":1,"wrap":false}],"end":3.55,"intro":3.55,"holds":[],"vhPerSec":40,"vhPerSecM":34,"mobile":{"w":390,"h":844,"blocks":{"capcut-edit 1":{"fx":0.5,"fy":0.5},"Component 1":{"x":26,"y":30,"z":1,"ax":-1,"ay":-1},"Component 2":{"x":-333.8,"y":9.8,"z":1,"ax":1,"ay":-1},"Component 3":{"x":26,"y":140,"z":0.8,"ax":-1},"Component 4":{"x":150,"y":122,"z":0.7,"ax":1},"Component 8":{"x":256,"y":344,"z":0.66,"ax":1},"Component 6":{"x":26,"y":470,"z":0.78,"ax":-1},"Component 7":{"x":26,"y":566,"z":1,"ax":-1},"Component 5":{"x":10,"y":540,"z":0.82,"ay":1,"ax":-1}},"nodes":{"I13080:135;13080:189":{"hide":1},"I13080:135;13080:191":{"hide":1},"I13080:135;13080:193":{"hide":1},"I13080:135;13080:184":{"hide":1},"I13080:135;13080:185":{"hide":1},"I13080:135;13080:187":{"dx":399.4},"I13080:137;13080:284":{"tk":[1,0.3],"fin":[2.85,3.55]},"I13080:138;13080:268":{"fin":[1.8,2.45]}}},"ptr":null,"cur":null,"hov":null,"cn":null,"cnb":null,"ns":null,"nfx":null,"introDelay":0,"hv":{"text":"#8a8a8a","mix":0.45,"light":"rgba(0,0,0,.07)","dark":"rgba(255,255,255,.16)"},"glass":false};</script>
+<script>/* Figma hero runtime: layout (zoomed blocks), smart-animate + keyframe tracks, scroll-driven timeline. */
+(() => {
+  'use strict';
+  const S = window.SCENE;
+  const root = document.documentElement;
+  const $ = (s) => document.querySelector(s);
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const fine = matchMedia('(hover: hover) and (pointer: fine)').matches;
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+
+  /* ---------------------------------------------------------------- easing */
+  function bezier(x1, y1, x2, y2) {
+    const cx = 3 * x1, bx = 3 * (x2 - x1) - cx, ax = 1 - cx - bx;
+    const cy = 3 * y1, by = 3 * (y2 - y1) - cy, ay = 1 - cy - by;
+    const X = (t) => ((ax * t + bx) * t + cx) * t, Y = (t) => ((ay * t + by) * t + cy) * t;
+    const dX = (t) => (3 * ax * t + 2 * bx) * t + cx;
+    return (x) => {
+      if (x <= 0) return 0; if (x >= 1) return 1;
+      let t = x;
+      for (let i = 0; i < 8; i++) { const e = X(t) - x, d = dX(t); if (Math.abs(e) < 1e-6) break; if (Math.abs(d) < 1e-6) break; t -= e / d; }
+      if (t < 0 || t > 1 || Math.abs(X(t) - x) > 1e-4) { let lo = 0, hi = 1; t = x; for (let i = 0; i < 30; i++) { const v = X(t); if (Math.abs(v - x) < 1e-6) break; if (v < x) lo = t; else hi = t; t = (lo + hi) / 2; } }
+      return Y(t);
+    };
+  }
+  function spring(m, k, c, dur) {
+    const w0 = Math.sqrt(k / m), z = c / (2 * Math.sqrt(k * m));
+    let x;
+    if (z < 1) { const wd = w0 * Math.sqrt(1 - z * z); x = (t) => 1 - Math.exp(-z * w0 * t) * (Math.cos(wd * t) + (z * w0 / wd) * Math.sin(wd * t)); }
+    else if (z === 1) { x = (t) => 1 - Math.exp(-w0 * t) * (1 + w0 * t); }
+    else { const q = Math.sqrt(z * z - 1), r1 = -w0 * (z - q), r2 = -w0 * (z + q); x = (t) => 1 + (r2 * Math.exp(r1 * t) - r1 * Math.exp(r2 * t)) / (r1 - r2); }
+    const end = x(dur) || 1;
+    return (p) => (p <= 0 ? 0 : p >= 1 ? 1 : x(p * dur) / end);
+  }
+  const EF = S.E.map((e) => e[0] === 'l' ? (p) => p : e[0] === 'h' ? (p) => (p < 1 ? 0 : 1)
+    : e[0] === 'b' ? bezier(e[1], e[2], e[3], e[4]) : spring(e[1], e[2], e[3], e[4]));
+
+  function tv(tr, t, d) {
+    if (Array.isArray(tr)) return val(tr, t);
+    let v = tr.s ? val(tr.s, t) : d;
+    if (tr.a) for (const a of tr.a) v += val(a, t);
+    if (tr.m) for (const m of tr.m) v *= val(m, t);
+    return v;
+  }
+  const lerp = (a, b, k) => (Array.isArray(a) ? a.map((v, i) => v + (b[i] - v) * k) : a + (b - a) * k);
+  function val(tr, t) {
+    const n = tr.length;
+    if (t <= tr[0][0]) return tr[0][1];
+    if (t >= tr[n - 1][0]) return tr[n - 1][1];
+    let i = 1; while (i < n && tr[i][0] < t) i++;
+    const a = tr[i - 1], b = tr[i];
+    const span = b[0] - a[0];
+    const p = span > 0 ? (t - a[0]) / span : 1;
+    return lerp(a[1], b[1], EF[b[2]](p));
+  }
+
+  /* ---------------------------------------------------------------- elements */
+  const stage = $('#stage'), hero = $('#hero');
+  const els = S.els.map((r) => ({ ...r, el: document.getElementById(r.id), c: {} })).filter((r) => r.el);
+  let isM = false;
+  const px = (v) => (Math.round(v * 100) / 100) + 'px';
+  function put(r, k, v, fn) { if (r.c[k] !== v) { r.c[k] = v; fn(v); } }
+
+  /* per-node overrides, keyed by figma id
+     mobile (S.mobile.nodes): {hide} | {dx, dy, z} offsets in parent units | {mx, my, mz, rx, ry, may}: place the node so that its
+       frame point (rx, ry) lands on (mx, my) of the mobile design, at mz × the mobile scale (independent of the block's zoom)
+     desktop (S.cn): nodes inside a bleed (cover) block that must keep the contain scale/position of the frame */
+  let nodeOv = null, L$ = {};
+  const fxOnly = [];
+  function initNodeOv() {
+    const map = new Map();
+    const add = (fid, key, val) => document.querySelectorAll(`[data-f="${CSS.escape(fid)}"]`).forEach((el) => {
+      if (!map.has(el)) { const blkEl = el.closest('.blk'); map.set(el, { el, rec: els.find((r) => r.el === el), blk: blocks.find((b) => b.el === blkEl), l: el.style.left, t0: el.style.top, d: el.style.display }); }
+      map.get(el)[key] = val;
+    });
+    if (S.mobile && S.mobile.nodes) for (const [fid, ov] of Object.entries(S.mobile.nodes)) add(fid, 'm', ov);
+    if (S.cn) for (const fid of S.cn) add(fid, 'c', true);
+    if (S.ns) for (const [fid, spec] of Object.entries(S.ns)) add(fid, 's', spec);
+    if (S.nfx) for (const [fid, spec] of Object.entries(S.nfx)) add(fid, 'x', spec);
+    nodeOv = [...map.values()];
+  }
+  function applyNodeOv() {
+    if (!nodeOv) initNodeOv();
+    for (const n of nodeOv) {
+      const { el, rec, blk } = n, ov = isM ? n.m : null;
+      if (ov && ov.hide) { el.style.display = 'none'; continue; }
+      el.style.display = n.d;
+      let z = 1, mo = null, tk = null;
+      let bl = null;
+      // place: map frame coords to screen = (OX, OY) + x * Se; with a blend window bw the node moves from its
+      // natural (block) mapping to that target while t crosses bw
+      const place = (Se, OX, OY, bw) => {
+        if (bw && rec) { bl = { bz: blk.z, sx0: blk.sx0, sy0: blk.sy0, Q1: Se, P1x: OX, P1y: OY, w: bw }; return; }
+        z = Se / blk.z; mo = [(OX - blk.sx0) / Se, (OY - blk.sy0) / Se, zoomScalesOffsets ? 1 : 1 / z];
+      };
+      if (ov && ov.mx != null && blk) {
+        const Se = L$.sm * (ov.mz || 1);
+        place(Se, L$.mox + ov.mx * L$.sm - (ov.rx || 0) * Se, L$.moy * (1 + (ov.may || 0)) + ov.my * L$.sm - (ov.ry || 0) * Se, ov.bw);
+        tk = ov.tk || null;
+      } else if (ov) {
+        z = ov.z || 1; mo = [ov.dx || 0, ov.dy || 0, zoomScalesOffsets ? z : 1]; tk = ov.tk || null;
+      } else if (!isM && n.c && blk && blk.bleed) {
+        place(L$.s, (L$.W - L$.FW * L$.s) / 2, (L$.H - L$.FH * L$.s) / 2, S.cnb);
+      } else if (n.s) {
+        // uniform enlargement about a fixed frame point (a = [x, y])
+        z = n.s.k; const a = n.s.a || [0, 0];
+        mo = zoomScalesOffsets ? [a[0] * (1 / z - 1), a[1] * (1 / z - 1), 1] : [a[0] * (1 - z) / z, a[1] * (1 - z) / z, 1 / z];
+      }
+      el.style.zoom = z === 1 ? '' : z;
+      if (n.w0 === undefined) n.w0 = el.style.width;
+      const wo = ov && ov.w ? ov.w : 0;
+      el.style.width = wo ? px(wo) : n.w0;
+      if (rec) { rec.mo = mo; rec.bl = bl; rec.tk = tk; rec.wo = wo; rec.fd = ov && ov.fade ? ov.fade : (n.x && n.x.fo ? n.x.fo : null); rec.fi = ov && ov.fin ? ov.fin : (n.x && n.x.fi ? n.x.fi : null); rec.c = {}; continue; }
+      // a node without its own tracks (e.g. an instance whose variants animate inside it) can still be faded in/out
+      n.fo = (ov && ov.fade) || (n.x && n.x.fo) || null; n.fi = (ov && ov.fin) || (n.x && n.x.fi) || null;
+      if ((n.fo || n.fi) && !fxOnly.includes(n)) fxOnly.push(n);
+      const L = parseFloat(n.l) || 0, T = parseFloat(n.t0) || 0;
+      el.style.left = mo ? ((L + mo[0]) / mo[2]) + 'px' : n.l;
+      el.style.top = mo ? ((T + mo[1]) / mo[2]) + 'px' : n.t0;
+    }
+  }
+  function applyAt(t) {
+    for (const n of fxOnly) {
+      let o = 1;
+      if (n.fo && t > n.fo[0]) o *= Math.max(0, Math.min(1, (n.fo[1] - t) / (n.fo[1] - n.fo[0])));
+      if (n.fi) o *= Math.max(0, Math.min(1, (t - n.fi[0]) / (n.fi[1] - n.fi[0])));
+      o = Math.round(o * 1000) / 1000;
+      if (n.fxo !== o) { n.fxo = o; n.el.style.opacity = o; n.el.style.visibility = o <= 0.001 ? 'hidden' : ''; }
+    }
+    for (const r of els) {
+      const T = r.t, b = (isM && S.mobile && S.mobile.base && S.mobile.base[r.id]) ? { ...r.b, ...S.mobile.base[r.id] } : r.b, st = r.el.style;
+      const g = (k, d) => (T[k] ? tv(T[k], t, d) : d);
+      const kx = r.tk ? r.tk[0] : 1, ky = r.tk ? r.tk[1] : 1;
+      if (r.bl) {
+        const B = r.bl; let w = Math.max(0, Math.min(1, (t - B.w[0]) / (B.w[1] - B.w[0]))); w = w * w * (3 - 2 * w);
+        const Q = B.bz + (B.Q1 - B.bz) * w, Px = B.sx0 + (B.P1x - B.sx0) * w, Py = B.sy0 + (B.P1y - B.sy0) * w, k = Q / B.bz;
+        put(r, 'zm', Math.round(k * 10000) / 10000, (v) => (st.zoom = v === 1 ? '' : v));
+        r.mo = [(Px - B.sx0) / Q, (Py - B.sy0) / Q, zoomScalesOffsets ? 1 : 1 / k];
+      }
+      let o = g('o', b.o == null ? 1 : b.o);
+      if (r.fd && t > r.fd[0]) o *= Math.max(0, Math.min(1, (r.fd[1] - t) / (r.fd[1] - r.fd[0])));
+      if (r.fi) o *= Math.max(0, Math.min(1, (t - r.fi[0]) / (r.fi[1] - r.fi[0])));
+      put(r, 'o', Math.round(o * 1000) / 1000, (v) => (st.opacity = v));
+      // fully transparent layers are also taken out of hit-testing / tab order, so hidden states never catch clicks
+      put(r, 'vh', o <= 0.001, (v) => (st.visibility = v ? 'hidden' : ''));
+      if (r.m === 'o') continue;
+      if (r.m === 'g') {
+        if (r.mo) { put(r, 'ml', r.mo[0] / r.mo[2], (v) => (st.left = px(v))); put(r, 'mt', r.mo[1] / r.mo[2], (v) => (st.top = px(v))); }
+        if (T.tx || T.ty || T.ar || T.sx || T.sy) {
+          const tf = `translate(${px(g('tx', 0) * kx)},${px(g('ty', 0) * ky)}) rotate(${g('ar', 0)}deg) scale(${g('sx', 1)},${g('sy', 1)})`;
+          put(r, 'tf', tf, (v) => (st.transform = v));
+        }
+        continue;
+      }
+      let x = g('x', b.x) + g('tx', 0) * kx, y = g('y', b.y) + g('ty', 0) * ky;
+      const w = r.wo || g('w', b.w), h = g('h', b.h);
+      if (r.mo) { x = (x + r.mo[0]) / r.mo[2]; y = (y + r.mo[1]) / r.mo[2]; }
+      if (r.m === 'lt') {
+        put(r, 'x', x, (v) => (st.left = px(v)));
+        put(r, 'y', y, (v) => (st.top = px(v)));
+        if (T.w || r.wo) put(r, 'w', w, (v) => (st.width = px(v)));
+        if (T.h) put(r, 'h', h, (v) => (st.height = px(v)));
+      } else {
+        const a = g('a', b.a || 0), ar = g('ar', 0), sx = g('sx', 1), sy = g('sy', 1);
+        let tf = b.mt ? `translate(${px(x)},${px(y)}) matrix(${b.mt.join(',')})` : `translate(${px(x)},${px(y)}) rotate(${a}rad)${b.f ? ' scale(1,-1)' : ''}`;
+        if (T.k) tf += ` scale(${Math.round(g('k', 1) * 100000) / 100000})`;
+        if (ar || sx !== 1 || sy !== 1) { const cx = b.pv ? b.pv[0] : w / 2, cy = b.pv ? b.pv[1] : h / 2; tf += ` translate(${px(cx)},${px(cy)}) rotate(${ar}deg) scale(${sx},${sy}) translate(${px(-cx)},${px(-cy)})`; }
+        put(r, 'tf', tf, (v) => (st.transform = v));
+        if (T.w || r.wo) put(r, 'w', w, (v) => (st.width = px(v)));
+        if (T.h) put(r, 'h', h, (v) => (st.height = px(v)));
+      }
+      if (T.r) put(r, 'r', g('r', 0), (v) => (st.borderRadius = px(v)));
+      if (T.bg) { const c = g('bg'); put(r, 'bg', `rgba(${c[0] | 0},${c[1] | 0},${c[2] | 0},${Math.round(c[3] * 1000) / 1000})`, (v) => (b.fc ? (st.color = v) : (st.backgroundColor = v))); }
+      if (T.tc) { const c = g('tc'); put(r, 'tc', `rgba(${c[0] | 0},${c[1] | 0},${c[2] | 0},${Math.round(c[3] * 1000) / 1000})`, (v) => (st.color = v)); }
+      if (T.ex) put(r, 'ex', g('ex', 0), (v) => (st.filter = `brightness(${Math.round((1 + v) * 10000) / 10000})`));
+      if (T.blur) put(r, 'blur', g('blur', 0), (v) => (st.filter = `blur(${px(v)})`));
+    }
+  }
+
+  /* ---------------------------------------------------------------- layout */
+  const blocks = S.blocks.map((b) => ({ ...b, el: document.getElementById(b.id) })).filter((b) => b.el);
+  let zoomScalesOffsets = true;
+  function calibrateZoom() {
+    const p = document.createElement('div');
+    p.style.cssText = 'position:absolute;left:10px;top:0;width:2px;height:2px;zoom:2;visibility:hidden';
+    stage.appendChild(p);
+    zoomScalesOffsets = Math.abs(p.getBoundingClientRect().left - stage.getBoundingClientRect().left - 20) < 3;
+    p.remove();
+  }
+  function layout() {
+    const W = stage.clientWidth, H = stage.clientHeight;
+    const M = S.mobile && (W < 768 || W / H < 0.82) ? S.mobile : null;
+    isM = !!M;
+    root.classList.toggle('is-m', isM);
+    const FW = S.frame.w, FH = S.frame.h;
+    const s = Math.min(W / FW, H / FH), cov = Math.max(W / FW, H / FH);
+    const sm = M ? Math.min(W / M.w, H / M.h) : 0;
+    curScale = M ? sm : s;
+    stage.style.setProperty('--s', curScale);  // design px → css px (for config CSS that must follow the design scale)
+    for (const b of blocks) {
+      const cov$ = b.bleed && !(M && b.dbo); // dbo: cover only on desktop
+      const cfg = M ? (M.blocks[b.k] || M.blocks[b.id] || (cov$ ? {} : null)) : null;
+      if (M && (!cfg || cfg.hide)) { b.el.style.display = 'none'; continue; }
+      b.el.style.display = '';
+      let z, L, T;
+      if (cov$) {
+        const fx = cfg && cfg.fx != null ? cfg.fx : (b.fa ? b.fa[0] : 0.5), fy = cfg && cfg.fy != null ? cfg.fy : (b.fa ? b.fa[1] : 0.5);
+        z = cov * (cfg && cfg.z ? cfg.z : 1);
+        L = (W - FW * z) * fx + b.x * z; T = (H - FH * z) * fy + b.y * z;
+      } else if (M) {
+        z = sm * (cfg.z || 1);
+        const ox = (W - M.w * sm) / 2, oy = (H - M.h * sm) / 2;
+        const ax = cfg.ax != null ? cfg.ax : 0, ay = cfg.ay != null ? cfg.ay : 0;
+        L = ox * (1 + ax) + cfg.x * sm; T = oy * (1 + ay) + cfg.y * sm;
+      } else {
+        z = s;
+        const mx = (W - FW * s) / 2, my = (H - FH * s) / 2;
+        L = mx * (1 + b.ax) + b.x * s; T = my * (1 + b.ay) + b.y * s;
+      }
+      const f = zoomScalesOffsets ? z : 1;
+      b.el.style.zoom = z;
+      b.el.style.left = (L / f) + 'px';
+      b.el.style.top = (T / f) + 'px';
+      b.z = z; b.sx0 = L - b.x * z; b.sy0 = T - b.y * z;
+    }
+    L$ = { W, H, FW, FH, s, cov, sm, mox: M ? (W - M.w * sm) / 2 : 0, moy: M ? (H - M.h * sm) / 2 : 0 };
+    const per = isM ? S.vhPerSecM || 34 : S.vhPerSec || 40;
+    hero.style.setProperty('--track', Math.max(0, Math.round((S.end - S.intro) * per)) + 'vh');
+    for (const r of els) r.c = {};
+    applyNodeOv();
+  }
+
+  /* ---------------------------------------------------------------- media */
+  const videos = (S.videos || []).map((v) => ({ ...v, el: document.getElementById(v.id) })).filter((v) => v.el);
+  const blobs = {};
+  function fetchBlob(url, onp) {
+    if (blobs[url]) return Promise.resolve(blobs[url]);
+    return fetch(url).then((res) => {
+      if (!res.ok) throw new Error(res.status);
+      const total = +res.headers.get('content-length') || 0;
+      if (!res.body || !total) return res.blob();
+      const rd = res.body.getReader(), chunks = []; let got = 0;
+      const pump = () => rd.read().then(({ done, value }) => { if (done) return new Blob(chunks, { type: res.headers.get('content-type') || 'video/mp4' }); chunks.push(value); got += value.length; onp && onp(got / total); return pump(); });
+      return pump();
+    }).then((b) => (blobs[url] = URL.createObjectURL(b))).catch(() => url);
+  }
+  function attach(v) {
+    const url = v.el.dataset.src;
+    v.el.addEventListener('error', () => { if (v.el.src.startsWith('blob:')) { v.el.src = url; v.el.load(); } }, { once: true });
+    v.el.src = blobs[url] || url;
+    if (v.mode === 'loop') { v.el.loop = true; }
+    if (v.mode === 'once') { v.el.loop = false; v.el.removeAttribute('loop'); }
+  }
+  function syncMedia(t) {
+    for (const v of videos) {
+      if (v.mode === 'scrub') {
+        if (v.el.readyState >= 2 && !v.el.seeking) {
+          const d = v.el.duration || v.dur || 1;
+          let vt = Math.max(0, t - (v.t0 || 0)) * (v.rate || 1);
+          vt = v.wrap ? vt % d : Math.min(vt, d - 0.04);
+          if (Math.abs(v.el.currentTime - vt) > 0.012) v.el.currentTime = vt;
+        }
+      } else if (v.mode === 'once') {
+        // plays through once with the autoplayed timeline (no scroll scrubbing) and rests on its last frame
+        const on = started && t >= (v.t0 || 0) - 0.05;
+        if (on !== v.on) {
+          v.on = on;
+          if (on && reduced) { const d = v.el.duration || v.dur || 1; v.el.currentTime = Math.max(0, d - 0.05); }
+          else if (on) { v.el.currentTime = Math.max(0, t - (v.t0 || 0)); const p = v.el.play(); p && p.catch(() => {}); }
+          else v.el.pause();
+        }
+      } else {
+        const on = t >= (v.t0 || 0) - 0.05;
+        if (on !== v.on) { v.on = on; if (on) { const p = v.el.play(); p && p.catch(() => {}); } else v.el.pause(); }
+      }
+    }
+  }
+
+  /* ---------------------------------------------------------------- scroll */
+  let lenis = null, t = 0, ready = false, started = false, snapping = false, dir = 1, idle = 0, lastY = 0;
+  const INTRO = reduced ? S.end : S.intro, END = S.end;
+  const range = () => { const top = hero.offsetTop; return [top, top + hero.offsetHeight - stage.clientHeight]; };
+  const tFromY = (y) => { const [a, b] = range(); const p = b > a ? Math.min(1, Math.max(0, (y - a) / (b - a))) : 1; return INTRO + p * (END - INTRO); };
+  const yFromT = (tt) => { const [a, b] = range(); return a + ((tt - INTRO) / (END - INTRO || 1)) * (b - a); };
+  function onScroll() {
+    const y = lenis ? lenis.scroll : window.scrollY;
+    dir = y > lastY ? 1 : y < lastY ? -1 : dir; lastY = y;
+    if (!ready) return;
+    t = tFromY(y);
+    if (!reduced) armSnap();
+  }
+  function armSnap() {
+    clearTimeout(idle);
+    if (snapping || !lenis || window.__noSnap || !S.holds || !S.holds.length) return;
+    idle = setTimeout(() => {
+      if (S.holds.some(([a, b]) => t >= a - 0.02 && t <= b + 0.02)) return;
+      let target;
+      if (dir > 0) target = (S.holds.find(([a]) => a > t) || S.holds[S.holds.length - 1])[0];
+      else target = ([...S.holds].reverse().find(([, b]) => b < t) || S.holds[0])[1];
+      snapping = true;
+      lenis.scrollTo(yFromT(target), { duration: Math.min(1.8, Math.max(0.6, Math.abs(target - t) * 0.45)), easing: (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2), onComplete: () => { snapping = false; } });
+      setTimeout(() => { snapping = false; }, 2200);
+    }, 170);
+  }
+
+  /* ---------------------------------------------------------------- parallax */
+  let px0 = 0, py0 = 0, pxT = 0, pyT = 0;
+  const bleeds = blocks.filter((b) => b.bleed && b.par);
+  if (fine && !reduced && bleeds.length) {
+    window.addEventListener('pointermove', (e) => { pxT = (e.clientX / innerWidth - 0.5); pyT = (e.clientY / innerHeight - 0.5); }, { passive: true });
+  }
+  function parallax() {
+    if (!bleeds.length) return;
+    px0 += (pxT - px0) * 0.06; py0 += (pyT - py0) * 0.06;
+    for (const b of bleeds) b.el.style.translate = `${(-px0 * b.par).toFixed(2)}% ${(-py0 * b.par).toFixed(2)}%`;
+  }
+
+  /* ---------------------------------------------------------------- pointer: parallax, custom cursor, hover */
+  // S.ptr = {blocks: {key: [kx, ky]}, fade: [t0, t1]}: blocks follow the pointer (frame px per normalised offset)
+  // S.cur = {size, fade: [t0, t1]}: custom cursor dot (exclusion blend) replacing the system cursor
+  // S.hov = {f: figmaId, a, b}: hovering that node plays the [a, b] segment of the timeline forward
+  const ptrOn = fine && !reduced;
+  let pin = false, ex = -200, ey = -200, cx = -200, cy = -200, pxs = 0, pys = 0, hv = 0, curScale = 1;
+  const pBlocks = (S.ptr && ptrOn) ? Object.entries(S.ptr.blocks).map(([k, f]) => ({ b: blocks.find((x) => x.k === k), f })).filter((o) => o.b) : [];
+  let curEl = null;
+  if (S.cur && ptrOn) { curEl = document.createElement('div'); curEl.className = 'cur'; curEl.setAttribute('aria-hidden', 'true'); stage.appendChild(curEl); }
+  const hovEl = S.hov && ptrOn ? document.querySelector(`[data-f="${CSS.escape(S.hov.f)}"]`) : null;
+  if (ptrOn && (pBlocks.length || curEl || hovEl)) {
+    window.addEventListener('pointermove', (e) => { const r = stage.getBoundingClientRect(); ex = e.clientX - r.left; ey = e.clientY - r.top; if (!pin) { cx = ex; cy = ey; } pin = true; }, { passive: true });
+    document.documentElement.addEventListener('pointerleave', () => { pin = false; });
+  }
+  const fadeW = (fd) => (!fd ? 1 : t <= fd[0] ? 1 : t >= fd[1] ? 0 : 1 - (t - fd[0]) / (fd[1] - fd[0]));
+  function pointerFx() {
+    const W = stage.clientWidth, H = stage.clientHeight;
+    const nx = pin ? Math.max(-1, Math.min(1, (ex / W - 0.5) * 2)) : 0, ny = pin ? Math.max(-1, Math.min(1, (ey / H - 0.5) * 2)) : 0;
+    pxs += (nx - pxs) * 0.06; pys += (ny - pys) * 0.06;
+    if (pBlocks.length) {
+      const w = isM ? 0 : fadeW(S.ptr.fade);
+      for (const o of pBlocks) o.b.el.style.translate = `${(pxs * o.f[0] * w).toFixed(2)}px ${(pys * o.f[1] * w).toFixed(2)}px`;
+    }
+    if (curEl) {
+      const cw = isM ? 0 : fadeW(S.cur.fade);
+      cx += (ex - cx) * 0.3; cy += (ey - cy) * 0.3;
+      const sz = S.cur.size * curScale;
+      curEl.style.width = curEl.style.height = px(sz);
+      curEl.style.transform = `translate(${px(cx - sz / 2)},${px(cy - sz / 2)})`;
+      curEl.style.opacity = pin ? cw : 0;
+      root.classList.toggle('has-cur', pin && cw > 0.5);
+    }
+    if (hovEl) {
+      let on = false;
+      if (pin && t >= S.hov.a - 0.05 && t <= S.hov.b) {
+        const r = hovEl.getBoundingClientRect(), sr = stage.getBoundingClientRect();
+        const dx = ex - (r.left - sr.left + r.width / 2), dy = ey - (r.top - sr.top + r.height / 2);
+        on = r.width > 0 && dx * dx + dy * dy <= (r.width / 2) * (r.width / 2);
+      }
+      hv += ((on ? 1 : 0) - hv) * 0.12;
+      if (hv < 0.001) hv = 0;
+    }
+  }
+  function effT() {
+    if (!S.hov || !hv || t < S.hov.a - 0.05 || t > S.hov.b) return t;
+    return Math.max(t, S.hov.a + hv * (S.hov.b - S.hov.a));
+  }
+
+  /* ---------------------------------------------------------------- hover states: buttons, menu links, cards */
+  // S.hv = {text: accentColor, mix: 0..1, light: overlayOnLightButtons, dark: overlayOnDarkOrGlassButtons, zoom: {figmaId: scale}}
+  // buttons (links with a visible surface) get a soft tint layer above their fill; menu/text links blend their text colour
+  // towards the accent; icon-only links dim slightly; zoom cards scale their images inside their own clip.
+  if (S.hv && window.matchMedia && matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    const HV = S.hv, K = HV.mix == null ? 1 : HV.mix;
+    const rgbOf = (c) => { const m = (c || '').match(/rgba?\(([^)]+)\)/); if (!m) return null; const q = m[1].split(/[\s,/]+/).filter(Boolean).map(Number); return { r: q[0], g: q[1], b: q[2], a: q.length > 3 ? q[3] : 1 }; };
+    const probe = document.createElement('i'); probe.style.color = HV.text || '#ffffff'; document.body.appendChild(probe);
+    const acc = rgbOf(getComputedStyle(probe).color) || { r: 255, g: 255, b: 255 }; probe.remove();
+    const mixC = (c) => `rgb(${Math.round(c.r + (acc.r - c.r) * K)},${Math.round(c.g + (acc.g - c.g) * K)},${Math.round(c.b + (acc.b - c.b) * K)})`;
+    const isLayer = (el) => el.tagName === 'I' && /\b(pl|bb|gl|is)\b/.test(el.className);
+    const surfaceOf = (a) => {
+      const own = a.classList.contains('lk') ? a.parentElement : a;
+      // a surface is a coloured/glass fill or an outline; an image fill alone (logo, icon, photo) is not a button surface
+      const vis = (el) => { const cs = getComputedStyle(el), bg = rgbOf(cs.backgroundColor); return (bg && bg.a > 0.03) || cs.backgroundImage !== 'none' || [...el.children].some((c) => c.tagName === 'I' && (/\b(bb|gl)\b/.test(c.className) || (/\bpl\b/.test(c.className) && !c.querySelector('img,video')))) || el.querySelector(':scope > .sk'); };
+      if (own.classList.contains('g')) {   // group link: its surface is the largest filled child box
+        let best = null, ba = 0;
+        own.querySelectorAll(':scope > .b').forEach((c) => { const r = c.getBoundingClientRect(), ar = r.width * r.height; if (vis(c) && ar > ba) { best = c; ba = ar; } });
+        return best;
+      }
+      return vis(own) ? own : null;
+    };
+    const tone = (el) => { const bg = rgbOf(getComputedStyle(el).backgroundColor); const lum = bg && bg.a > 0.5 ? (0.2126 * bg.r + 0.7152 * bg.g + 0.0722 * bg.b) / 255 : 0; return lum > 0.6 ? (HV.light || 'rgba(0,0,0,.07)') : (HV.dark || 'rgba(255,255,255,.16)'); };
+    const bind = (a, on, off) => { a.addEventListener('pointerenter', on); a.addEventListener('pointerleave', off); a.addEventListener('focus', on); a.addEventListener('blur', off); };
+    document.querySelectorAll('#stage .blk a').forEach((a) => {
+      if (a.closest('nav') || a.matches('.t, .lt')) {   // menu items and text links: colour change
+        const els = [a, ...a.querySelectorAll('*')];
+        let tm = 0;
+        bind(a, () => {
+          clearTimeout(tm);
+          els.forEach((el) => { const c = rgbOf(getComputedStyle(el).color); if (c && c.a > 0) el.style.setProperty('--hvc', mixC(c)); });
+          a.classList.add('hv-tr'); requestAnimationFrame(() => a.classList.add('is-hv'));
+        }, () => { a.classList.remove('is-hv'); tm = setTimeout(() => a.classList.remove('hv-tr'), 420); });
+        a.classList.add('hv-tx');
+        return;
+      }
+      const sf = surfaceOf(a);
+      if (!sf) { a.classList.add('hv-ic'); return; }
+      const o = document.createElement('i'); o.className = 'hvo'; o.setAttribute('aria-hidden', 'true');
+      o.style.background = tone(sf);
+      const first = [...sf.children].find((c) => !isLayer(c));
+      sf.insertBefore(o, first || null);
+      a.classList.add('hv-bt');
+      bind(a, () => o.classList.add('is-hv'), () => o.classList.remove('is-hv'));
+    });
+    for (const [f, k] of Object.entries(HV.zoom || {})) {
+      document.querySelectorAll(`[data-f="${CSS.escape(f)}"]`).forEach((el) => { el.classList.add('hz'); el.style.setProperty('--hz', k); });
+    }
+  }
+
+  /* ---------------------------------------------------------------- loop */
+  function frame(now) {
+    if (lenis) lenis.raf(now);
+    pointerFx();
+    applyAt(effT()); syncMedia(t); parallax();
+    requestAnimationFrame(frame);
+  }
+
+  /* ---------------------------------------------------------------- boot */
+  calibrateZoom();
+  // lock the page before the first measure: with classic (non-overlay) scrollbars, measuring while the page can still
+  // scroll would lay everything out for a viewport narrowed by the scrollbar, which then disappears
+  root.classList.add('is-locked');
+  layout();
+  applyAt(0);
+  if (!reduced && window.Lenis) {
+    lenis = new Lenis({ lerp: 0.085, wheelMultiplier: 0.9, smoothWheel: true });
+    lenis.on('scroll', onScroll);
+    lenis.stop();
+  } else {
+    window.addEventListener('scroll', onScroll, { passive: true });
+  }
+  window.scrollTo(0, 0);
+  let rz = 0, lastWH = '';
+  const relayout = () => { cancelAnimationFrame(rz); rz = requestAnimationFrame(() => { layout(); if (ready) t = tFromY(lenis ? lenis.scroll : scrollY); }); };
+  window.addEventListener('resize', relayout);
+  // the stage can change size without a window resize (a scrollbar appearing or going away, a side panel…):
+  // follow its real box so the layers always sit where the frame is
+  if (window.ResizeObserver) new ResizeObserver(() => { const k = stage.clientWidth + 'x' + stage.clientHeight; if (k !== lastWH) { lastWH = k; relayout(); } }).observe(stage);
+  requestAnimationFrame(frame);
+
+  const loaderBar = $('#loaderBar'), loaderPct = $('#loaderPct');
+  function preload() {
+    const jobs = [], prog = new Map(), wt = new Map();
+    let shown = 0;
+    const report = () => { let a = 0, b = 0; wt.forEach((w, k) => { b += w; a += w * (prog.get(k) || 0); }); shown = Math.max(shown, b ? a / b : 1); if (loaderBar) loaderBar.style.transform = `scaleX(${shown})`; if (loaderPct) loaderPct.textContent = String(Math.round(shown * 100)).padStart(3, '0'); };
+    wt.set('fonts', 1);
+    jobs.push(document.fonts.ready.then(() => { prog.set('fonts', 1); report(); }));
+    document.querySelectorAll('#stage img').forEach((im, i) => {
+      const k = 'i' + i; wt.set(k, 0.4);
+      // wait until the image is loaded AND decoded, so nothing paints late (empty boxes) once the loader is gone
+      const loaded = im.complete ? Promise.resolve() : new Promise((r) => { im.addEventListener('load', r, { once: true }); im.addEventListener('error', r, { once: true }); });
+      jobs.push(loaded.then(() => (im.decode ? im.decode().catch(() => {}) : null)).then(() => { prog.set(k, 1); report(); }));
+    });
+    const seen = new Set();
+    videos.forEach((v) => {
+      const url = v.el.dataset.src; if (seen.has(url)) return; seen.add(url);
+      wt.set(url, v.mode === 'scrub' ? 6 : 1.5);
+      jobs.push(fetchBlob(url, (p) => { prog.set(url, p); report(); }).then(() => { prog.set(url, 1); report(); }));
+    });
+    report();
+    return Promise.race([Promise.all(jobs), new Promise((r) => setTimeout(r, 14000))]);
+  }
+  function waitVideos() {
+    return Promise.race([Promise.all(videos.map((v) => new Promise((r) => { if (v.el.readyState >= 2) return r(); v.el.addEventListener('loadeddata', r, { once: true }); v.el.addEventListener('error', r, { once: true }); }))), new Promise((r) => setTimeout(r, 3000))]);
+  }
+  preload().then(() => { videos.forEach(attach); return waitVideos(); }).then(() => {
+    root.classList.remove('is-locked');
+    const ld = $('#loader'); if (ld) ld.classList.add('is-done');
+    const finish = () => { ready = true; started = true; t = INTRO; if (lenis) lenis.start(); };
+    if (reduced || INTRO <= 0) { t = INTRO; finish(); return; }
+    // the intro starts once the loader has (mostly) faded out, so it is never seen half-way behind it
+    setTimeout(() => {
+      let t0 = null;
+      const intro = (now) => { if (t0 === null) { t0 = now; started = true; } const p = Math.max(0, Math.min(1, (now - t0) / 1000 / INTRO)); t = p * INTRO; if (p < 1) requestAnimationFrame(intro); else finish(); };
+      requestAnimationFrame(intro);
+    }, (S.introDelay || 0) * 1000);
+  });
+  window.__hero = { get t() { return t; }, set t(v) { t = v; }, layout, yFromT, S };
+})();
+</script>
+</body>
+</html>
